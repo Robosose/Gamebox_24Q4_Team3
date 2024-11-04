@@ -5,7 +5,9 @@ using Zenject;
 public class PlayerInput : MonoBehaviour
 {
     [Header("Movement Settings")]
-    [SerializeField, Range(0.5f, 2)] private float _speed;
+    [SerializeField, Range(1f, 2f)] private float _walkSpeed;
+    [SerializeField, Range(1.5f, 3f)] private float _springSpeed;
+    [SerializeField, Range(0.5f, 1f)] private float _crouchSpeed;
     [SerializeField] private float _gravityValue = -9.81f;
 
     private Vector3 _playerVelocity;
@@ -32,7 +34,7 @@ public class PlayerInput : MonoBehaviour
         move = _cameraTransform.forward * move.z + _cameraTransform.right * move.x;
         move.y = 0f;
 
-        _characterController.Move(move * _speed * Time.deltaTime);
+        _characterController.Move(move * _walkSpeed * Time.deltaTime);
 
         _playerVelocity.y += _gravityValue * Time.deltaTime;
         _characterController.Move(_playerVelocity * Time.deltaTime);
