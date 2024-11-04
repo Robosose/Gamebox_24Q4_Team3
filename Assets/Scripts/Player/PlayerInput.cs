@@ -34,8 +34,12 @@ public class PlayerInput : MonoBehaviour
         _currentMovementMode = _walkMode;
     }
 
-    private void Update() => Move();
-    
+    private void Update()
+    {
+        Move();
+        Rotate();
+    }
+
     private void Move()
     {
         SetMovementMode();
@@ -60,5 +64,17 @@ public class PlayerInput : MonoBehaviour
             _currentMovementMode = _crouchMode;
         else
             _currentMovementMode = _walkMode;
+    }
+
+    private void Rotate()
+    {
+        var cameraFarward = _cameraTransform.forward;
+        cameraFarward.y = 0f;
+
+        if (cameraFarward.sqrMagnitude > 0.001f)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(cameraFarward);
+            transform.rotation = targetRotation;
+        }
     }
 }
