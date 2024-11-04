@@ -1,11 +1,11 @@
 public class SprintMode : IMovementMode
 {
-    private readonly float _springSpeed;
+    private readonly float _sprintSpeed;
 
     public SprintMode(float springSpeed)
     {
-        _springSpeed = springSpeed;
+        _sprintSpeed = springSpeed;
     }
 
-    public float GetSpeed() => _springSpeed;
+    public float GetSpeed() => _sprintSpeed;
 }

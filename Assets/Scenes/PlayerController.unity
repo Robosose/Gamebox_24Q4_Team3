@@ -806,7 +806,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8b8570c3d4fd84ba1113c867f9a1a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 2
+  _walkSpeed: 2
+  _sprintSpeed: 3
+  _crouchSpeed: 0.5
   _gravityValue: -9.81
 --- !u!143 &1461778680
 CharacterController:

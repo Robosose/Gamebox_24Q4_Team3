@@ -30,4 +30,7 @@ public class InputManager : MonoBehaviour
     {
         return _action.Player.Look.ReadValue<Vector2>();
     }
+
+    public bool IsSprinting() => _action.Player.Sprint.ReadValue<float>() > 0;
+    public bool IsCrouching() => _action.Player.Crouch.ReadValue<float>() > 0;
 }
