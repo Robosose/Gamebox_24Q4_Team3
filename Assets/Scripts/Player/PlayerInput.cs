@@ -6,7 +6,7 @@ public class PlayerInput : MonoBehaviour
 {
     [Header("Movement Settings")]
     [SerializeField, Range(1f, 2f)] private float _walkSpeed;
-    [SerializeField, Range(1.5f, 3f)] private float _sprintSpeed;
+    [SerializeField, Range(1.5f, 5f)] private float _sprintSpeed;
     [SerializeField, Range(0.5f, 1f)] private float _crouchSpeed;
     [SerializeField] private float _gravityValue = -9.81f;
 
