@@ -68,6 +68,9 @@ public class PlayerInput : MonoBehaviour
 
     private void Rotate()
     {
+        if (_inputManager.IsUsingMirror())
+            return;
+        
         var cameraFarward = _cameraTransform.forward;
         cameraFarward.y = 0f;
 

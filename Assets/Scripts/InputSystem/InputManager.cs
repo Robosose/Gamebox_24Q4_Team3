@@ -33,4 +33,5 @@ public class InputManager : MonoBehaviour
 
     public bool IsSprinting() => _action.Player.Sprint.ReadValue<float>() > 0;
     public bool IsCrouching() => _action.Player.Crouch.ReadValue<float>() > 0;
+    public bool IsUsingMirror() => _action.Player.Mirror.ReadValue<float>() > 0;
 }
