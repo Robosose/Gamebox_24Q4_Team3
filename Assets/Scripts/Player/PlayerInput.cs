@@ -14,6 +14,7 @@ public class PlayerInput : MonoBehaviour
     private CharacterController _characterController;
     private InputManager _inputManager;
     private Transform _cameraTransform;
+    private PlayerView _playerView;
 
     private IMovementMode _currentMovementMode;
     private IMovementMode _walkMode;
@@ -24,6 +25,7 @@ public class PlayerInput : MonoBehaviour
     private void Construct(InputManager inputManager)
     {
         _characterController = GetComponent<CharacterController>();
+        _playerView = GetComponent<PlayerView>();
         _cameraTransform = Camera.main.transform;
         _inputManager = inputManager;
 
