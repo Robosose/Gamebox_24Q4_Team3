@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2549632884799567375}
   - component: {fileID: 1114685820240769761}
   - component: {fileID: 1881110678664771357}
+  - component: {fileID: 9200973851643760696}
   m_Layer: 0
   m_Name: Mirror
   m_TagString: Untagged
@@ -101,8 +102,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _baseRotationAngle: 190
-  _boundariesRotationAngle: 20
+  _boundariesRotationAngle: 30
   _sensitivity: 15
+  _mirrorActivate: {fileID: 9200973851643760696}
+--- !u!114 &9200973851643760696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3115469063662117187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c17f8564476d5ab4fb15a41257db1479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activateTime: 1
+  _showTransform: {fileID: 0}
+  _removeTransform: {fileID: 0}
 --- !u!1 &3163825779829149678
 GameObject:
   m_ObjectHideFlags: 0
