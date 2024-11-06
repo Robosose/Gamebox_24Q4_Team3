@@ -87,9 +87,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Mirror",
+                    "name": "UseMirror",
                     "type": "Button",
                     "id": "67660b07-ec64-4500-9412-a1e12795d783",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RotateMirror",
+                    "type": "Button",
+                    "id": "1d81f078-6244-45af-a7e3-79177e6d7492",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -474,11 +483,22 @@
                 {
                     "name": "",
                     "id": "526bfb86-2993-4584-9ee0-7f565f364a09",
-                    "path": "<Mouse>/rightButton",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "Mirror",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "UseMirror",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "23314eb4-819e-4672-9308-3336a21efc16",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "RotateMirror",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -1,11 +1,13 @@
 using UnityEngine;
 using Zenject;
 
-public class RotateMirror : MonoBehaviour
+public class Mirror_Rotate : MonoBehaviour
 {
     [SerializeField] private float _baseRotationAngle = 180f;
     [SerializeField] private float _boundariesRotationAngle = 30f;
     [SerializeField] private float _sensitivity = 5f;
+    [SerializeField] private Mirror_Activate _mirrorActivate;
+    
     private InputManager _inputManager;
 
     private float _mirrorRotation;
@@ -23,7 +25,10 @@ public class RotateMirror : MonoBehaviour
 
     private void SetRotate()
     {
-        if (!_inputManager.IsUsingMirror())
+        if (!_mirrorActivate.Activated())
+            return;
+        
+        if (!_inputManager.IsRotatingMirror())
             return;
 
         var direction = _inputManager.GetMouseDelta().x;

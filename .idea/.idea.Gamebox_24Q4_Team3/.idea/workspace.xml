@@ -7,12 +7,11 @@
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mirror.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mirror.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderTexture/MirrorRenderTexture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderTexture/MirrorRenderTexture.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayerController.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayerController.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputSystem_Actions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputSystem_Actions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mirror/RotateMirror.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mirror/Mirror_Rotate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mirror/RotateMirror.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mirror/Mirror_Rotate.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/CinemachinePOVExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/CinemachinePOVExtension.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInput.cs" afterDir="false" />
     </list>
@@ -25,7 +24,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mirror/RotateMirror.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mirror/Mirror_Activate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mirror/Mirror_Rotate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Patterns/ObjectPool/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem/InputSystem/Actions/InputActionAsset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9ff2ec5163204af481ac0a675d8e1bf82ac00/90/57ae773b/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -105,6 +106,8 @@
       <workItem from="1730736556758" duration="3003000" />
       <workItem from="1730740038614" duration="1984000" />
       <workItem from="1730742278825" duration="2545000" />
+      <workItem from="1730834411736" duration="1265000" />
+      <workItem from="1730893381460" duration="7311000" />
     </task>
     <servers />
   </component>
