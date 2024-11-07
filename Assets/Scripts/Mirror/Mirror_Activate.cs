@@ -20,10 +20,8 @@ public class Mirror_Activate : MonoBehaviour
 
     private void ActivateMirror(bool activate)
     {
-        var rotateX = Mathf.Lerp(_removeTransform.localEulerAngles.x, _showTransform.localEulerAngles.x, ActivateProgress(activate));
-        
         transform.localPosition = Vector3.Lerp(_removeTransform.localPosition, _showTransform.localPosition, ActivateProgress(activate));
-        transform.localEulerAngles = new Vector3(rotateX, transform.localEulerAngles.y, transform.localEulerAngles.z);
+        transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, transform.localEulerAngles.z);
     }
 
     private float ActivateProgress(bool activate)
