@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 3
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -5352,19 +5352,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 497070143342599880, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.08712591
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 497070143342599880, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0022814702
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 497070143342599880, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9958533
+      value: 0.99965733
       objectReference: {fileID: 0}
     - target: {fileID: 497070143342599880, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.026077311
+      value: -0.026176924
       objectReference: {fileID: 0}
     - target: {fileID: 497070143342599880, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5372,11 +5372,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 497070143342599880, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 190
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 497070143342599880, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1881110678664771357, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
+      propertyPath: _baseRotationAngle
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 3115469063662117187, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_Name
@@ -15659,6 +15663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room
       objectReference: {fileID: 0}
+    - target: {fileID: 3928832195218616192, guid: a23a4e83d5b294d4080d659c9f8e2e04, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a2e449c423ba6947b51e4c0da47769c, type: 2}
     - target: {fileID: 8349182484589475849, guid: a23a4e83d5b294d4080d659c9f8e2e04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
