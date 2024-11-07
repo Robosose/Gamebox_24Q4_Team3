@@ -12,6 +12,7 @@ namespace Enemys.StateMachine.States
         private PatrolingConfig _config;
         private IStateSwitcher _stateSwitcher;
         private NavMeshAgent _agent;
+        private EnemyFieldOfView _fov;
         private int _currentPointIndex = 0;
         private bool _isIdling;
         private Coroutine _cor;
@@ -22,6 +23,7 @@ namespace Enemys.StateMachine.States
             _config = cfg;
             _stateSwitcher = stateSwitcher;
             _agent = enemy.Agent;
+            _fov = fov;
         }
         
         public void Enter()
@@ -32,12 +34,16 @@ namespace Enemys.StateMachine.States
         
         public void Exit()
         {
-            _enemy.StopCoroutine(_cor);
+            if(_cor is not null)
+                _enemy.StopCoroutine(_cor);
             _isIdling = false;
         }
 
         public void Update()
         {
+            if(_fov.IsSeePlayer)
+                _stateSwitcher.SwitchState<AttackState>();
+            
             if(_agent.remainingDistance >= 1f || _isIdling)
             {
                 _isIdling = true;

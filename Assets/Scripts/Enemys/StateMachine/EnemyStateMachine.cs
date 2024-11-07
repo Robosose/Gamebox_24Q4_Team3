@@ -19,6 +19,7 @@ namespace Enemys.StateMachine
                 new AttackState(enemy, enemy.Config.AttackConfig, this),
             };
             _currentState = _states[0];
+            _currentState.Enter();
         }
         
         public void SwitchState<T>() where T : IState

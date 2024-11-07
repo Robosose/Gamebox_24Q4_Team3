@@ -60,7 +60,6 @@ namespace Enemys
             }
             else
                 _isSeePlayer = false;
-
         }
     }
 }

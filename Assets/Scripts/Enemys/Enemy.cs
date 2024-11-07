@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Transform[] _points;
     
     private IStateSwitcher _switcher;
-    private EnemyFieldOfView _fov;
+    [SerializeField] private EnemyFieldOfView _fov;
     public NavMeshAgent Agent => _agent;
     public EnemyConfig Config => _config;
     public Transform[] Points => _points;
@@ -21,7 +21,6 @@ public class Enemy : MonoBehaviour
     private void Awake()
     {
         _switcher = new EnemyStateMachine(this, _fov);
-        Agent.isStopped = true;
     }
 
     private void Update()

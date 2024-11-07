@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: EnemyConfig
   m_EditorClassIdentifier: 
   patrollingDataConfig:
-    Radius: 50
-    AngleOfView: 90
+    Radius: 15
+    AngleOfView: 60
     TargetMask:
       serializedVersion: 2
       m_Bits: 8
