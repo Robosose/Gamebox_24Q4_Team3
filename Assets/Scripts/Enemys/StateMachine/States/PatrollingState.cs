@@ -47,9 +47,10 @@ namespace Enemys.StateMachine.States
             if(_agent.remainingDistance >= 1f || _isIdling)
             {
                 _isIdling = true;
+                if(_cor is null)
+                    _cor = _enemy.StartCoroutine(IdlingTimer());
                 return;
             }
-            _cor = _enemy.StartCoroutine(IdlingTimer());
             if (_currentPointIndex >= _enemy.Points.Length - 1)
                 _currentPointIndex = 0;
             else
@@ -59,9 +60,11 @@ namespace Enemys.StateMachine.States
         
         private IEnumerator IdlingTimer()
         {
+            Debug.Log("Start Idling. Idling time is: " + _config.IdlingTime);
             yield return new WaitForSeconds(_config.IdlingTime);
             _isIdling = false;
             _cor = null;
+            Debug.Log("StopIdling");
         }
     }
 }
