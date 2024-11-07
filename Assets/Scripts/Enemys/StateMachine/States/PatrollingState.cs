@@ -60,11 +60,9 @@ namespace Enemys.StateMachine.States
         
         private IEnumerator IdlingTimer()
         {
-            Debug.Log("Start Idling. Idling time is: " + _config.IdlingTime);
             yield return new WaitForSeconds(_config.IdlingTime);
             _isIdling = false;
             _cor = null;
-            Debug.Log("StopIdling");
         }
     }
 }
