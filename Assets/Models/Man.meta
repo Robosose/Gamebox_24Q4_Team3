@@ -1,3 +1,4 @@
+<<<<<<<< HEAD:Assets/Models/Man.meta
 fileFormatVersion: 2
 guid: 50f8d57087a04ce41a636ca32306d242
 folderAsset: yes
@@ -6,3 +7,12 @@ DefaultImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+========
+fileFormatVersion: 2
+guid: 8645273165cb7f54290d6eaa1e10ab37
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>>> main:Assets/Plugins/Zenject/Source/Zenject.csproj.meta
