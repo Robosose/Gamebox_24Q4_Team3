@@ -1,15 +1,28 @@
 using UnityEngine;
 
-
 [RequireComponent(typeof(Animator))]
 public class PlayerView : MonoBehaviour
 {
-    [SerializeField] private Animator _animator;
+    private Animator _animator;
 
-    private static readonly int IsWalking = Animator.StringToHash("isWalking");
-
-    public void UpdateWalkingAnimation()
+    private void Awake()
     {
-        _animator.SetBool(IsWalking, true);
+        _animator = GetComponent<Animator>();
     }
+
+    public void SetWalk(bool isActive)
+    {
+        _animator.SetBool("IsWalking", isActive);
+    }
+
+    public void SetSprint(bool isActive)
+    {
+        _animator.SetBool("IsSprinting", isActive);
+    }
+
+    public void SetCrouch(bool isActive)
+    {
+        _animator.SetBool("IsCrouching", isActive);
+    }
+
 }

@@ -45,6 +45,7 @@ public class PlayerInput : MonoBehaviour
     private void Move()
     {
         SetMovementMode();
+        //UpdateAnimation();
 
         var movement = _inputManager.GetPlayerMovement();
         var move = new Vector3(movement.x, 0f, movement.y);
@@ -66,6 +67,19 @@ public class PlayerInput : MonoBehaviour
             _currentMovementMode = _crouchMode;
         else
             _currentMovementMode = _walkMode;
+    }
+
+    private void UpdateAnimation()
+    {
+        var movement = _inputManager.GetPlayerMovement();
+
+        bool isMoving = movement != Vector2.zero;
+        bool isSprinting = _currentMovementMode == _sprintMode;
+        bool isCrouching = _currentMovementMode == _crouchMode;
+
+        _playerView.SetWalk(isMoving);
+        _playerView.SetSprint(isMoving && isSprinting);
+        _playerView.SetCrouch(!isMoving && isCrouching);
     }
 
     private void Rotate()
