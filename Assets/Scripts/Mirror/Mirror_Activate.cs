@@ -9,13 +9,19 @@ public class Mirror_Activate : MonoBehaviour
     [SerializeField] private Vector3 _hidePosition;
 
     private InputManager _inputManager;
-    private bool _show;
     private float _mirrorProgress;
-
+    private bool _show;
+    private Quaternion _baseRotation;
+    
     [Inject]
     private void Construct(InputManager inputManager)
     {
         _inputManager = inputManager;
+    }
+
+    private void Start()
+    {
+        _baseRotation = transform.localRotation;
     }
 
     private void Update() => ActivateState();
@@ -43,6 +49,7 @@ public class Mirror_Activate : MonoBehaviour
     private IEnumerator ShowMirror()
     {
         _show = true;
+        transform.localRotation = _baseRotation;
         while (_mirrorProgress < 1f)
         {
             _mirrorProgress = Mathf.Clamp01(_mirrorProgress + Time.deltaTime / _activateTime);
@@ -53,7 +60,6 @@ public class Mirror_Activate : MonoBehaviour
 
     private IEnumerator HideMirror()
     {
-        _show = false;
         var lastPosition = transform.localPosition;
         while (_mirrorProgress > 0f)
         {
@@ -61,6 +67,8 @@ public class Mirror_Activate : MonoBehaviour
             transform.localPosition = Vector3.Lerp(_hidePosition, lastPosition, _mirrorProgress);
             yield return null;
         }
+
+        _show = false;
     }
 
     public bool Activated()

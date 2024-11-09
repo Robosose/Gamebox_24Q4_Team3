@@ -96,7 +96,7 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _DesaturateValue: 0.271
+    - _DesaturateValue: 1
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -109,7 +109,7 @@ Material:
     - _GreyValue: 0
     - _MOVEDIRECTION: 1
     - _Metallic: 0
-    - _MuteValue: 0.257
+    - _MuteValue: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0

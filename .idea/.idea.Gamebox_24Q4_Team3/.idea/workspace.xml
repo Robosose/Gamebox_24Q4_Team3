@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Mirror/Mirror_States.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Mirror/Mirror_States.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/MirrorMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/MirrorMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Zenject-ReflectionBaking.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Zenject-Signals.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Zenject.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mirror/Mirror.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mirror/Mirror.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mirror/Mirror_RemoveTransform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mirror/Mirror_RemoveTransform.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mirror/Mirror_ShowTransform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mirror/Mirror_ShowTransform.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderTexture/MirrorRenderTexture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderTexture/MirrorRenderTexture.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/WallMaterials/PsychoWallpaperMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/WallMaterials/PsychoWallpaperMaterial.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mechanics/CubeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mechanics/CubeScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mirror/Mirror_Activate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mirror/Mirror_Activate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Mirror/Mirror_Rotate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Mirror/Mirror_Rotate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/CinemachinePOVExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCamera/CinemachinePOVExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +107,7 @@
       <workItem from="1730742278825" duration="2545000" />
       <workItem from="1731093726925" duration="4165000" />
       <workItem from="1731125314878" duration="737000" />
-      <workItem from="1731167627278" duration="842000" />
+      <workItem from="1731167627278" duration="4848000" />
     </task>
     <servers />
   </component>
