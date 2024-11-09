@@ -15,6 +15,10 @@ public class PlayerInput : MonoBehaviour
     private InputManager _inputManager;
     private Transform _cameraTransform;
     private PlayerView _playerView;
+    private BellSoundManager _bellSoundManager;
+
+    private Vector2 _previousMousePosition;
+    private float _mouseVelocity;
 
     private IMovementMode _currentMovementMode;
     private IMovementMode _walkMode;
@@ -26,6 +30,7 @@ public class PlayerInput : MonoBehaviour
     {
         _characterController = GetComponent<CharacterController>();
         _playerView = GetComponent<PlayerView>();
+        _bellSoundManager = GetComponent<BellSoundManager>();
         _cameraTransform = Camera.main.transform;
         _inputManager = inputManager;
 
@@ -40,6 +45,7 @@ public class PlayerInput : MonoBehaviour
     {
         Move();
         Rotate();
+        HandleBellSound();
     }
 
     private void Move()
@@ -92,5 +98,18 @@ public class PlayerInput : MonoBehaviour
             Quaternion targetRotation = Quaternion.LookRotation(cameraFarward);
             transform.rotation = targetRotation;
         }
+    }
+
+    private void HandleBellSound()
+    {
+        var currentMousePosition = _inputManager.GetMouseDelta();
+        _mouseVelocity = (currentMousePosition - _previousMousePosition).magnitude / Time.deltaTime;
+
+        if(_mouseVelocity > 10000)
+        {
+            _bellSoundManager.PlayBellSound(_mouseVelocity);
+        }
+        
+        _previousMousePosition = currentMousePosition;
     }
 }
