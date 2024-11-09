@@ -1,13 +1,15 @@
+using System.Collections;
 using UnityEngine;
 using Zenject;
 
 public class Mirror_Activate : MonoBehaviour
 {
     [SerializeField] private float _activateTime;
-    [SerializeField] private Transform _showTransform;
-    [SerializeField] private Transform _removeTransform;
+    [SerializeField] private Vector3 _showPosition;
+    [SerializeField] private Vector3 _hidePosition;
 
     private InputManager _inputManager;
+    private bool _show;
     private float _mirrorProgress;
 
     [Inject]
@@ -16,25 +18,51 @@ public class Mirror_Activate : MonoBehaviour
         _inputManager = inputManager;
     }
 
-    private void Update() => ActivateMirror(_inputManager.IsUsingMirror());
+    private void Update() => ActivateState();
 
-    private void ActivateMirror(bool activate)
+    private void ActivateState()
     {
-        transform.localPosition = Vector3.Lerp(_removeTransform.localPosition, _showTransform.localPosition, ActivateProgress(activate));
-        transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, transform.localEulerAngles.z);
-    }
+        if (_inputManager.IsUsingMirror())
+        {
+            if (_show)
+                return;
 
-    private float ActivateProgress(bool activate)
-    {
-        if (activate)
-            _mirrorProgress += Time.deltaTime / _activateTime;
+            StopCoroutine(HideMirror());
+            StartCoroutine(ShowMirror());
+        }
         else
-            _mirrorProgress -= Time.deltaTime / _activateTime;
-            
-        _mirrorProgress = Mathf.Clamp01(_mirrorProgress);
-        return _mirrorProgress;
+        {
+            if (_mirrorProgress < 1f)
+                return;
+
+            StopCoroutine(ShowMirror());
+            StartCoroutine(HideMirror());
+        }
     }
-    
+
+    private IEnumerator ShowMirror()
+    {
+        _show = true;
+        while (_mirrorProgress < 1f)
+        {
+            _mirrorProgress = Mathf.Clamp01(_mirrorProgress + Time.deltaTime / _activateTime);
+            transform.localPosition = Vector3.Lerp(_hidePosition, _showPosition, _mirrorProgress);
+            yield return null;
+        }
+    }
+
+    private IEnumerator HideMirror()
+    {
+        _show = false;
+        var lastPosition = transform.localPosition;
+        while (_mirrorProgress > 0f)
+        {
+            _mirrorProgress = Mathf.Clamp01(_mirrorProgress - Time.deltaTime / _activateTime);
+            transform.localPosition = Vector3.Lerp(_hidePosition, lastPosition, _mirrorProgress);
+            yield return null;
+        }
+    }
+
     public bool Activated()
     {
         return _mirrorProgress >= 1f;

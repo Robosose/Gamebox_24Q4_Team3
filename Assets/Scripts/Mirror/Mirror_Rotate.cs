@@ -1,7 +1,8 @@
+using Patterns.States;
 using UnityEngine;
 using Zenject;
 
-public class Mirror_Rotate : MonoBehaviour
+public class Mirror_Rotate : MonoBehaviour,IMirrorState
 {
     [SerializeField] private float _baseRotationAngleX = 180f;
     [SerializeField] private float _baseRotationAngleY = 5f;
@@ -24,12 +25,14 @@ public class Mirror_Rotate : MonoBehaviour
         _baseRotation = transform.eulerAngles;
     }
 
-    private void Update() => SetRotate();
-
     private void SetRotate()
     {
         if (!_mirrorActivate.Activated())
+        {
+            _mirrorRotationX = _baseRotationAngleX;
+            _mirrorRotationY = _baseRotationAngleY;
             return;
+        }
         
         if (!_inputManager.IsRotatingMirror())
             return;
@@ -37,12 +40,32 @@ public class Mirror_Rotate : MonoBehaviour
         var directionX = _inputManager.GetMouseDelta().x;
         var directionY = _inputManager.GetMouseDelta().y;
         
-        _mirrorRotationX = Mathf.Clamp(_mirrorRotationX + directionX * _sensitivity * Time.deltaTime,
+        _mirrorRotationX = Mathf.Clamp(_mirrorRotationX - directionX * _sensitivity * Time.deltaTime,
             _baseRotationAngleX - _boundariesRotationAngle, _baseRotationAngleX + _boundariesRotationAngle);
         
         _mirrorRotationY = Mathf.Clamp(_mirrorRotationY - directionY * _sensitivity * Time.deltaTime,
             _baseRotationAngleY - _boundariesRotationAngle, _baseRotationAngleY + _boundariesRotationAngle);
         
         transform.localRotation = Quaternion.Euler(_mirrorRotationY, _mirrorRotationX, _baseRotation.z);
+    }
+
+    public void Enter()
+    {
+        
+    }
+
+    public void Execute()
+    {
+        SetRotate();
+    }
+
+    public void FixedExecute()
+    {
+        
+    }
+
+    public void Exit()
+    {
+        
     }
 }

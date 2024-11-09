@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1114685820240769761}
   - component: {fileID: 1881110678664771357}
   - component: {fileID: 9200973851643760696}
+  - component: {fileID: 8669178010495020378}
+  - component: {fileID: 7552256078662305415}
   m_Layer: 0
   m_Name: Mirror
   m_TagString: Untagged
@@ -30,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.9990483, z: -0.043619405, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8262289510622146606}
@@ -119,8 +121,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _activateTime: 0.5
-  _showTransform: {fileID: 1129807341676206898, guid: 459d0c9b4a269ca48a35829200e8bc9c, type: 3}
-  _removeTransform: {fileID: 4199438531304972930, guid: b951bd621fdbea644a776d6adcfc30db, type: 3}
+  _showPosition: {x: 0, y: 0, z: 0.4}
+  _hidePosition: {x: 0.755, y: -0.715, z: 1}
+--- !u!114 &8669178010495020378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3115469063662117187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6cfa784440588d43aa5be435e4581a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sensitivity: 0.1
+--- !u!114 &7552256078662305415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3115469063662117187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9285669df49242a3b98be916d66f8c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotateState: {fileID: 1881110678664771357}
+  _movementState: {fileID: 8669178010495020378}
 --- !u!1 &3163825779829149678
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +176,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3163825779829149678}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -172,7 +201,7 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 74.09024
+  m_FocalLength: 25.734083
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -187,7 +216,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 35
+  field of view: 50
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
