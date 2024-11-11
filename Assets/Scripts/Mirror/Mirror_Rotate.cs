@@ -27,12 +27,6 @@ public class Mirror_Rotate : MonoBehaviour,IMirrorState
 
     private void SetRotate()
     {
-        if (!_mirrorActivate.Activated())
-        {
-            _mirrorRotationX = _baseRotationAngleX;
-            _mirrorRotationY = _baseRotationAngleY;
-            return;
-        }
         
         if (!_inputManager.IsRotatingMirror())
             return;
@@ -51,7 +45,8 @@ public class Mirror_Rotate : MonoBehaviour,IMirrorState
 
     public void Enter()
     {
-        
+        _mirrorRotationX = _baseRotationAngleX;
+        _mirrorRotationY = _baseRotationAngleY;
     }
 
     public void Execute()
