@@ -5,7 +5,7 @@ public class BellSoundManager : MonoBehaviour
 {
     [SerializeField, Range(0.1f, 3f)] private float _maxVolum;
     [SerializeField, Range(0.1f, 3f)] private float _sensitivity;
-
+    
     private AudioSource _audioSource;
 
     private void Awake()
