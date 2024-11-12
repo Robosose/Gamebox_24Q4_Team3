@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Zenject;
 
@@ -24,6 +25,8 @@ public class PlayerInput : MonoBehaviour
     private IMovementMode _walkMode;
     private IMovementMode _sprintMode;
     private IMovementMode _crouchMode;
+
+    public Action LoudSound;
 
     [Inject]
     private void Construct(InputManager inputManager)
@@ -55,6 +58,9 @@ public class PlayerInput : MonoBehaviour
 
         var movement = _inputManager.GetPlayerMovement();
         var move = new Vector3(movement.x, 0f, movement.y);
+
+        if (_currentMovementMode == _sprintMode && move != Vector3.zero)
+            LoudSound?.Invoke();
 
         move = _cameraTransform.forward * move.z + _cameraTransform.right * move.x;
         move.y = 0f;
@@ -106,11 +112,12 @@ public class PlayerInput : MonoBehaviour
         var currentMousePosition = _inputManager.GetMouseDelta();
         _mouseVelocity = (currentMousePosition - _previousMousePosition).magnitude / Time.deltaTime;
 
-        if(_mouseVelocity > 10000)
+        if (_mouseVelocity > 10000)
         {
             _bellSoundManager.PlayBellSound(_mouseVelocity);
+            LoudSound?.Invoke();
         }
-        
+
         _previousMousePosition = currentMousePosition;
     }
 }
