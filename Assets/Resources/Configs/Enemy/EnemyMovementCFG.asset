@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e4af86883b64e60b89645dc6c5ac737, type: 3}
   m_Name: EnemyMovementCFG
   m_EditorClassIdentifier: 
-  Speed: 4
+  Speed: 0.1
   IdlingTimer: 3
