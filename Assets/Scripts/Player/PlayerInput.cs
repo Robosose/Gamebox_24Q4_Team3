@@ -46,18 +46,19 @@ public class PlayerInput : MonoBehaviour
     {
         Move();
         Rotate();
+        HandleBellSound();
     }
 
     private void Move()
     {
         SetMovementMode();
         //UpdateAnimation();
-        if(_currentMovementMode == _sprintMode)
-            LoudSound?.Invoke();
+        
 
         var movement = _inputManager.GetPlayerMovement();
         var move = new Vector3(movement.x, 0f, movement.y);
-
+        if (_currentMovementMode == _sprintMode && move != Vector3.zero)
+            LoudSound?.Invoke();
         move = _cameraTransform.forward * move.z + _cameraTransform.right * move.x;
         move.y = 0f;
 
