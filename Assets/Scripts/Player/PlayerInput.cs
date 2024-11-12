@@ -51,7 +51,7 @@ public class PlayerInput : MonoBehaviour
     private void Move()
     {
         SetMovementMode();
-        //UpdateAnimation();
+        UpdateAnimation();
 
         var movement = _inputManager.GetPlayerMovement();
         var move = new Vector3(movement.x, 0f, movement.y);
@@ -85,7 +85,8 @@ public class PlayerInput : MonoBehaviour
 
         _playerView.SetWalk(isMoving);
         _playerView.SetSprint(isMoving && isSprinting);
-        _playerView.SetCrouch(!isMoving && isCrouching);
+        _playerView.SetCrouch(isCrouching);
+        _playerView.SetWalkCrouch(isMoving && isCrouching);
     }
 
     private void Rotate()
