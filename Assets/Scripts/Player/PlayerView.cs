@@ -22,7 +22,12 @@ public class PlayerView : MonoBehaviour
 
     public void SetCrouch(bool isActive)
     {
-        _animator.SetBool("IsCrouching", isActive);
+        _animator.SetBool("IsCrouched", isActive);
+    }
+
+    public void SetWalkCrouch(bool isActive)
+    {
+        _animator.SetBool("IsWalkCrouching", isActive);
     }
 
 }
