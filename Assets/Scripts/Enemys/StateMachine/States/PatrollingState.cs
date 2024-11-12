@@ -29,14 +29,21 @@ namespace Enemys.StateMachine.States
         public void Enter()
         {
             _agent.speed = _config.Speed;
-            _agent.SetDestination(_enemy.Points[_currentPointIndex].position);
+            _enemy.PlayerInput.LoudSound += OnLoudSound;
         }
-        
+
+        private void OnLoudSound()
+        {
+            _stateSwitcher.SwitchState<AgrOnSoundState>();
+        }
+
+
         public void Exit()
         {
             if(_cor is not null)
                 _enemy.StopCoroutine(_cor);
             _isIdling = false;
+            _enemy.PlayerInput.LoudSound -= OnLoudSound;
         }
 
         public void Update()

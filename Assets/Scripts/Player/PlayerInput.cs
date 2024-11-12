@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Zenject;
 
@@ -19,6 +20,8 @@ public class PlayerInput : MonoBehaviour
     private IMovementMode _walkMode;
     private IMovementMode _sprintMode;
     private IMovementMode _crouchMode;
+
+    public Action LoudSound;
 
     [Inject]
     private void Construct(InputManager inputManager)
@@ -43,7 +46,13 @@ public class PlayerInput : MonoBehaviour
     private void Move()
     {
         SetMovementMode();
+<<<<<<< Updated upstream
 
+=======
+        //UpdateAnimation();
+        if(_currentMovementMode == _sprintMode)
+            LoudSound?.Invoke();
+>>>>>>> Stashed changes
         var movement = _inputManager.GetPlayerMovement();
         var move = new Vector3(movement.x, 0f, movement.y);
 
@@ -68,13 +77,39 @@ public class PlayerInput : MonoBehaviour
 
     private void Rotate()
     {
+<<<<<<< Updated upstream
         var cameraFarward = _cameraTransform.forward;
         cameraFarward.y = 0f;
+=======
+        if (!_inputManager.IsRotatingMirror())
+            return;
+        
+        var камераВперед = _cameraTransform.forward;
+        камераВперед.y = 0f;
+>>>>>>> Stashed changes
 
-        if (cameraFarward.sqrMagnitude > 0.001f)
+        if (камераВперед.sqrMagnitude > 0.001f)
         {
-            Quaternion targetRotation = Quaternion.LookRotation(cameraFarward);
+            Quaternion targetRotation = Quaternion.LookRotation(камераВперед);
             transform.rotation = targetRotation;
         }
     }
+<<<<<<< Updated upstream
 }
+=======
+
+    private void HandleBellSound()
+    {
+        var currentMousePosition = _inputManager.GetMouseDelta();
+        _mouseVelocity = (currentMousePosition - _previousMousePosition).magnitude / Time.deltaTime;
+
+        if(_mouseVelocity > 10000)
+        {
+            _bellSoundManager.PlayBellSound(_mouseVelocity);
+            LoudSound?.Invoke();
+        }
+        
+        _previousMousePosition = currentMousePosition;
+    }
+}
+>>>>>>> Stashed changes

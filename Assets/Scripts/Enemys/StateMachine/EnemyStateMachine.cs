@@ -17,7 +17,9 @@ namespace Enemys.StateMachine
             {
                 new PatrollingState(enemy, enemy.Config.PatrolingConfig, fov, this),
                 new AttackState(enemy, enemy.Config.AttackConfig, this),
+                new AgrOnSoundState(fov, enemy, enemy.Config, this)
             };
+            
             _currentState = _states[0];
             _currentState.Enter();
         }
