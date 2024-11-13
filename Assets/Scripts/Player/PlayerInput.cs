@@ -15,7 +15,11 @@ public class PlayerInput : MonoBehaviour
     private CharacterController _characterController;
     private InputManager _inputManager;
     private Transform _cameraTransform;
+    private BellSoundManager _bellSoundManager;
 
+    private Vector2 _previousMousePosition;
+    private float _mouseVelocity;
+    
     private IMovementMode _currentMovementMode;
     private IMovementMode _walkMode;
     private IMovementMode _sprintMode;
@@ -29,7 +33,7 @@ public class PlayerInput : MonoBehaviour
         _characterController = GetComponent<CharacterController>();
         _cameraTransform = Camera.main.transform;
         _inputManager = inputManager;
-
+        _bellSoundManager = GetComponent<BellSoundManager>();
         _walkMode = new WalkMode(_walkSpeed);
         _sprintMode = new SprintMode(_sprintSpeed);
         _crouchMode = new CrouchMode(_crouchSpeed);
@@ -41,18 +45,15 @@ public class PlayerInput : MonoBehaviour
     {
         Move();
         Rotate();
+        HandleBellSound();
     }
 
     private void Move()
     {
         SetMovementMode();
-<<<<<<< Updated upstream
-
-=======
         //UpdateAnimation();
         if(_currentMovementMode == _sprintMode)
             LoudSound?.Invoke();
->>>>>>> Stashed changes
         var movement = _inputManager.GetPlayerMovement();
         var move = new Vector3(movement.x, 0f, movement.y);
 
@@ -77,16 +78,13 @@ public class PlayerInput : MonoBehaviour
 
     private void Rotate()
     {
-<<<<<<< Updated upstream
         var cameraFarward = _cameraTransform.forward;
         cameraFarward.y = 0f;
-=======
-        if (!_inputManager.IsRotatingMirror())
-            return;
+        // if (!_inputManager.IsRotatingMirror())
+        //     return;
         
         var камераВперед = _cameraTransform.forward;
         камераВперед.y = 0f;
->>>>>>> Stashed changes
 
         if (камераВперед.sqrMagnitude > 0.001f)
         {
@@ -94,9 +92,6 @@ public class PlayerInput : MonoBehaviour
             transform.rotation = targetRotation;
         }
     }
-<<<<<<< Updated upstream
-}
-=======
 
     private void HandleBellSound()
     {
@@ -112,4 +107,3 @@ public class PlayerInput : MonoBehaviour
         _previousMousePosition = currentMousePosition;
     }
 }
->>>>>>> Stashed changes
