@@ -15,12 +15,12 @@ public class PlayerInput : MonoBehaviour
     private CharacterController _characterController;
     private InputManager _inputManager;
     private Transform _cameraTransform;
-    private PlayerView _playerView;
     private BellSoundManager _bellSoundManager;
+    private PlayerView _playerView;
 
     private Vector2 _previousMousePosition;
     private float _mouseVelocity;
-
+    
     private IMovementMode _currentMovementMode;
     private IMovementMode _walkMode;
     private IMovementMode _sprintMode;
@@ -36,7 +36,7 @@ public class PlayerInput : MonoBehaviour
         _bellSoundManager = GetComponent<BellSoundManager>();
         _cameraTransform = Camera.main.transform;
         _inputManager = inputManager;
-
+        _bellSoundManager = GetComponent<BellSoundManager>();
         _walkMode = new WalkMode(_walkSpeed);
         _sprintMode = new SprintMode(_sprintSpeed);
         _crouchMode = new CrouchMode(_crouchSpeed);
@@ -54,6 +54,9 @@ public class PlayerInput : MonoBehaviour
     private void Move()
     {
         SetMovementMode();
+        //UpdateAnimation();
+        if(_currentMovementMode == _sprintMode)
+            LoudSound?.Invoke();
         UpdateAnimation();
 
         var movement = _inputManager.GetPlayerMovement();
@@ -99,6 +102,11 @@ public class PlayerInput : MonoBehaviour
     {
         var cameraFarward = _cameraTransform.forward;
         cameraFarward.y = 0f;
+        // if (!_inputManager.IsRotatingMirror())
+        //     return;
+        
+        var камераВперед = _cameraTransform.forward;
+        камераВперед.y = 0f;
 
         if (cameraFarward.sqrMagnitude > 0.001f)
         {
