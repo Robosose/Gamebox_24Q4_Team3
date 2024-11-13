@@ -6,7 +6,7 @@ namespace Configs.Enemy
     [Serializable]
     public class PatrolingConfig
     {
-        [Range(1, 5f)] public float Speed;
+        [Range(0.1f, 5f)] public float Speed;
         [Range(1, 20)] public int IdlingTime;
     }
 }

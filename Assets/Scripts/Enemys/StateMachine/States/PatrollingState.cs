@@ -54,9 +54,10 @@ namespace Enemys.StateMachine.States
             if(_agent.remainingDistance >= 1f || _isIdling)
             {
                 _isIdling = true;
+                if(_cor is null)
+                    _cor = _enemy.StartCoroutine(IdlingTimer());
                 return;
             }
-            _cor = _enemy.StartCoroutine(IdlingTimer());
             if (_currentPointIndex >= _enemy.Points.Length - 1)
                 _currentPointIndex = 0;
             else
