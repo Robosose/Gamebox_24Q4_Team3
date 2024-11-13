@@ -125,6 +125,24 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""FreeCameraActivate"",
+                    ""type"": ""Value"",
+                    ""id"": ""ecc41c85-1edc-4d29-a99f-c55b6b655c4b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""FreeCameraFlyUp"",
+                    ""type"": ""Button"",
+                    ""id"": ""7e357390-73d2-4b96-b85c-93656f8df567"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -523,6 +541,50 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""action"": ""RotateMirror"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b2da8e93-63db-42fc-9681-80cbc7297696"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""FreeCameraActivate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""FlyDirection"",
+                    ""id"": ""114de24c-39b6-410e-978a-d60231962346"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""FreeCameraFlyUp"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""06c1262c-d1ac-46bc-b157-dd7d34ff0fb6"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""FreeCameraFlyUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""bd0aef75-49ea-4793-8ed9-534f4c3c16ad"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""FreeCameraFlyUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         },
@@ -1119,6 +1181,8 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
         m_Player_UseMirror = m_Player.FindAction("UseMirror", throwIfNotFound: true);
         m_Player_RotateMirror = m_Player.FindAction("RotateMirror", throwIfNotFound: true);
+        m_Player_FreeCameraActivate = m_Player.FindAction("FreeCameraActivate", throwIfNotFound: true);
+        m_Player_FreeCameraFlyUp = m_Player.FindAction("FreeCameraFlyUp", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1209,6 +1273,8 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Sprint;
     private readonly InputAction m_Player_UseMirror;
     private readonly InputAction m_Player_RotateMirror;
+    private readonly InputAction m_Player_FreeCameraActivate;
+    private readonly InputAction m_Player_FreeCameraFlyUp;
     public struct PlayerActions
     {
         private @InputSystem_Actions m_Wrapper;
@@ -1224,6 +1290,8 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
         public InputAction @UseMirror => m_Wrapper.m_Player_UseMirror;
         public InputAction @RotateMirror => m_Wrapper.m_Player_RotateMirror;
+        public InputAction @FreeCameraActivate => m_Wrapper.m_Player_FreeCameraActivate;
+        public InputAction @FreeCameraFlyUp => m_Wrapper.m_Player_FreeCameraFlyUp;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1266,6 +1334,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @RotateMirror.started += instance.OnRotateMirror;
             @RotateMirror.performed += instance.OnRotateMirror;
             @RotateMirror.canceled += instance.OnRotateMirror;
+            @FreeCameraActivate.started += instance.OnFreeCameraActivate;
+            @FreeCameraActivate.performed += instance.OnFreeCameraActivate;
+            @FreeCameraActivate.canceled += instance.OnFreeCameraActivate;
+            @FreeCameraFlyUp.started += instance.OnFreeCameraFlyUp;
+            @FreeCameraFlyUp.performed += instance.OnFreeCameraFlyUp;
+            @FreeCameraFlyUp.canceled += instance.OnFreeCameraFlyUp;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -1303,6 +1377,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @RotateMirror.started -= instance.OnRotateMirror;
             @RotateMirror.performed -= instance.OnRotateMirror;
             @RotateMirror.canceled -= instance.OnRotateMirror;
+            @FreeCameraActivate.started -= instance.OnFreeCameraActivate;
+            @FreeCameraActivate.performed -= instance.OnFreeCameraActivate;
+            @FreeCameraActivate.canceled -= instance.OnFreeCameraActivate;
+            @FreeCameraFlyUp.started -= instance.OnFreeCameraFlyUp;
+            @FreeCameraFlyUp.performed -= instance.OnFreeCameraFlyUp;
+            @FreeCameraFlyUp.canceled -= instance.OnFreeCameraFlyUp;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1496,6 +1576,8 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         void OnSprint(InputAction.CallbackContext context);
         void OnUseMirror(InputAction.CallbackContext context);
         void OnRotateMirror(InputAction.CallbackContext context);
+        void OnFreeCameraActivate(InputAction.CallbackContext context);
+        void OnFreeCameraFlyUp(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

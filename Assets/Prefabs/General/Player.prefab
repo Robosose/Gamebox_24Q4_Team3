@@ -132,6 +132,8 @@ MonoBehaviour:
   _sprintSpeed: 3
   _crouchSpeed: 0.5
   _gravityValue: -9.81
+  _normalFlySpeed: 4
+  _slowFlySpeed: 0.5
 --- !u!82 &6522586820812427968
 AudioSource:
   m_ObjectHideFlags: 0

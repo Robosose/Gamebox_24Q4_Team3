@@ -55,7 +55,7 @@ namespace Enemys.StateMachine.States
             if(Vector3.Distance(_enemy.Agent.destination.normalized, _fov.PlayerRef.transform.position) < 1f)
                 return;
             _enemy.Agent.SetDestination(_fov.PlayerRef.transform.position);
-            Debug.Log(_enemy.Agent.destination);
+            //Debug.Log(_enemy.Agent.destination);
         }
         
         private IEnumerator IdlingTimer()
