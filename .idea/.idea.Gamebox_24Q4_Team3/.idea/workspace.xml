@@ -176,59 +176,94 @@
       <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Material/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Material/New Material.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Material/New Material.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Material/New Material.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/Beta_HighLimbsGeoSG3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/Beta_HighLimbsGeoSG3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/Beta_HighLimbsGeoSG3.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/Beta_HighLimbsGeoSG3.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/Material.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/Material.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/bell.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/bell.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/bell.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/bell.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/cloth_mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/cloth_mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/cloth_mat1.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/cloth_mat1.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/eyes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/eyes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/eyes.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/eyes.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/hairs.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/hairs.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/hairs.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/hairs.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/hand_mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/hand_mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/hand_mat1.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/hand_mat1.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/head_matt.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/head_matt.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/head_matt.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/head_matt.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/lashes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/lashes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/lashes.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/lashes.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/low_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/low_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/low_mat.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/low_mat.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/pupil.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/pupil.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/pupil.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Materials/pupil.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Textures.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Textures/hair1_diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Textures/hair1_diffuse.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Textures/hair2_diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Textures/hair2_diffuse.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Textures/normal_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Textures/normal_1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair/hair1_diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair/hair1_diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair/hair2_diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair/hair2_diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair/normal_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair/normal_1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/cloth_mat1_basecorol.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/cloth_mat1_basecorol.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/cloth_mat1_metalness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/cloth_mat1_metalness.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/cloth_mat1_normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/cloth_mat1_normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/hand_mat1_basecorol.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/hand_mat1_basecorol.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/hand_mat1_metalness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/hand_mat1_metalness.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/hand_mat1_normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/hand_mat1_normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/head_matt_basecorol.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/head_matt_basecorol.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/head_matt_metalness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/head_matt_metalness.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/head_matt_normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/head_matt_normal.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Woman.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman_AnimController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Woman_AnimController.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman_AnimController.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Woman_AnimController.controller.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/cloth_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/cloth_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/cloth_mat.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/cloth_mat.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/hand_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/hand_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/hand_mat.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/hand_mat.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/head_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/head_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/head_mat.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/head_mat.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/woman (1).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/woman (1).fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/woman_150.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/woman_150.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Zenject-ReflectionBaking.csproj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Zenject-ReflectionBaking.csproj.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/woman_low (1).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/woman_low (1).fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/Textures/Campfirer.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/Textures/Campfirer.psd.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Zenject-Signals.csproj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Zenject-Signals.csproj.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Zenject.csproj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Zenject.csproj.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candle_High.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candle_High.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candle_High.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candle_High.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Env/Room.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Env/Room.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Env/Wooden_Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Env/Wooden_Door.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Env/Wooden_Door.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Env/Wooden_Door.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/General/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/General/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mirror.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mirror.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mirror/Mirror.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mirror/Mirror.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RenderTexture/MirrorRenderTexture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RenderTexture/MirrorRenderTexture.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Woman.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Woman.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Woman/Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Woman/Woman.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Woman/Woman.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Woman/Woman.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Enemy/EnemyConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Enemy/EnemyConfig.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/Enemy/EnemyConfig.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/Enemy/EnemyConfig.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/CubeScene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CubeScene.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/CubeScene/Global Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CubeScene/Global Volume Profile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/CubeScene/Global Volume Profile.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CubeScene/Global Volume Profile.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene/NavMesh-Env 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene/NavMesh-Env 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene/NavMesh-Env.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene/NavMesh-Env.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mechanics/Arkadiy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mechanics/Arkadiy.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mechanics/CubeScene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mechanics/CubeScene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mechanics/CubeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mechanics/CubeScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mechanics/CubeScene/NavMesh-Room.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mechanics/CubeScene/NavMesh-Room.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mechanics/CubeScene/NavMesh-ENV.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mechanics/CubeScene/NavMesh-ENV.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mechanics/CubeScene/NavMesh-Env 1.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mechanics/CubeScene/NavMesh-Env 1.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mechanics/PlayerController.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mechanics/PlayerController.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayerController.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayerController.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bell.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bell.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bell/BellSoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bell/BellSoundManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bell/BellSoundManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bell/BellSoundManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Door.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Door.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Door/DoorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Door/DoorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Door/DoorController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Door/DoorController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Door/DoorTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Door/DoorTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Door/DoorTrigger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Door/DoorTrigger.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect_TrypophobiaActivate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect_TrypophobiaActivate.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect_TrypophobiaActivate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect_TrypophobiaActivate.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyFieldOfView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyFieldOfView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/AgrOnSoundState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/AgrOnSoundState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/AgrOnSoundState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/AgrOnSoundState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/PatrollingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/PatrollingState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputSystem_Actions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputSystem_Actions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/PlayerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/PlayerInstaller.cs" afterDir="false" />
@@ -385,26 +420,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Arkadiy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\pv487\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\pv487\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\pv487\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\pv487\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\pv487\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\pv487\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../GameBoxBuild\GameBox.exe" />

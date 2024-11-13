@@ -13,7 +13,7 @@ namespace Enemys.StateMachine.States
         private IStateSwitcher _stateSwitcher;
         private NavMeshAgent _agent;
         private EnemyFieldOfView _fov;
-        private int _currentPointIndex = 0;
+        private int _currentPointIndex;
         private bool _isIdling;
         private Coroutine _cor;
         
@@ -30,6 +30,7 @@ namespace Enemys.StateMachine.States
         {
             _agent.speed = _config.Speed;
             _enemy.PlayerInput.LoudSound += OnLoudSound;
+            _currentPointIndex = 0;
         }
 
         private void OnLoudSound()
@@ -51,23 +52,25 @@ namespace Enemys.StateMachine.States
             if(_fov.IsSeePlayer)
                 _stateSwitcher.SwitchState<AttackState>();
             
-            if(_agent.remainingDistance >= 1f || _isIdling)
+            if(_agent.remainingDistance >= 1f || _isIdling )
             {
                 _isIdling = true;
                 if(_cor is null)
                     _cor = _enemy.StartCoroutine(IdlingTimer());
                 return;
             }
-            if (_currentPointIndex >= _enemy.Points.Length - 1)
-                _currentPointIndex = 0;
-            else
-                _currentPointIndex++;
+            
+            Debug.Log(_currentPointIndex);
             _agent.SetDestination(_enemy.Points[_currentPointIndex].position);
         }
         
         private IEnumerator IdlingTimer()
         {
             yield return new WaitForSeconds(_config.IdlingTime);
+            if (_currentPointIndex >= _enemy.Points.Length - 1)
+                _currentPointIndex = 0;
+            else
+                _currentPointIndex++;
             _isIdling = false;
             _cor = null;
         }
