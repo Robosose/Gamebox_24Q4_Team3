@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Editor/EnemyFieldOfViewEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/EnemyFieldOfViewEditor.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions.meta" afterDir="false" />
@@ -869,7 +870,7 @@
       <workItem from="1731333812673" duration="3893000" />
       <workItem from="1731407918352" duration="1797000" />
       <workItem from="1731666891076" duration="1764000" />
-      <workItem from="1731686658684" duration="1831000" />
+      <workItem from="1731686658684" duration="4333000" />
     </task>
     <servers />
   </component>

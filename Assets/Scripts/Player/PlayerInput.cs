@@ -120,7 +120,6 @@ public class PlayerInput : MonoBehaviour
 
         if (_mouseVelocity > 10000)
         {
-            print("Loud Sound");
             _bellSoundManager.PlayBellSound(_mouseVelocity);
             LoudSound?.Invoke();
         }
