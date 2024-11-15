@@ -27,7 +27,6 @@ public class Mirror_Rotate : MonoBehaviour,IMirrorState
 
     private void SetRotate()
     {
-        
         if (!_inputManager.IsRotatingMirror())
             return;
 
