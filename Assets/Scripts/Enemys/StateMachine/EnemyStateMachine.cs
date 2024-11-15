@@ -11,13 +11,13 @@ namespace Enemys.StateMachine
         private List<IState> _states;
         private IState _currentState;
 
-        public EnemyStateMachine(Enemy enemy, EnemyFieldOfView fov)
+        public EnemyStateMachine(Enemy enemy, EnemyFieldOfView fov, EnemyView view)
         {
             _states = new List<IState>()
             {
-                new PatrollingState(enemy, enemy.Config.PatrolingConfig, fov, this),
-                new AttackState(enemy, enemy.Config.AttackConfig, this),
-                new AgrOnSoundState(fov, enemy, enemy.Config, this)
+                new PatrollingState(enemy, enemy.Config.PatrolingConfig, fov, this, view),
+                new AttackState(enemy, enemy.Config.AttackConfig, this, view),
+                new AgrOnSoundState(fov, enemy, enemy.Config, this, view)
             };
             
             _currentState = _states[0];
