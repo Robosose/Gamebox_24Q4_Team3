@@ -23,19 +23,16 @@ namespace Enemys.StateMachine
             
             _currentState = _states[0];
             _currentState.Enter();
-            Debug.Log(_currentState.GetType());
         }
         
         public void SwitchState<T>() where T : IState
         {
             _currentState.Exit();
-            Debug.Log($"Exited {_currentState.GetType()}");
 
             _currentState = _states.FirstOrDefault(state => state is T);
             if (_currentState is null)
                 throw new ArgumentNullException($"{nameof(_currentState)} is null.");
             _currentState.Enter();
-            Debug.Log($"Entered {_currentState.GetType()}");
         }
 
         public void Update()
