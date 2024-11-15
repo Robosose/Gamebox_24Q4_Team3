@@ -9,7 +9,6 @@ namespace Door
 
         private void OnTriggerEnter(Collider other)
         {
-            print(other.tag);
             if(other.CompareTag("Enemy"))
                 onDoorTriggerEnter?.Invoke();
         }

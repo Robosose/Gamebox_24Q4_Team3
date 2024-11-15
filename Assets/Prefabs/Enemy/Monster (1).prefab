@@ -676,7 +676,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4264203500123137431}
   - component: {fileID: 2270616973377248046}
-  - component: {fileID: 4004226898623183326}
   m_Layer: 0
   m_Name: mixamorig:Head
   m_TagString: Enemy
@@ -716,22 +715,6 @@ MonoBehaviour:
   _isSeePlayer: 0
   PlayerRef: {fileID: 0}
   Config: {fileID: 0}
---- !u!114 &4004226898623183326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3136152873685657586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 473622edb52f49b2af49b1df30d7439b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  _isSeePlayer: 0
-  PlayerRef: {fileID: 0}
-  Config: {fileID: 11400000, guid: 754ac17f26eaa2a439d52f5a6cea4591, type: 2}
 --- !u!1 &3196207848109711916
 GameObject:
   m_ObjectHideFlags: 0

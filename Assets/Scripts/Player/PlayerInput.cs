@@ -55,8 +55,6 @@ public class PlayerInput : MonoBehaviour
     {
         SetMovementMode();
         //UpdateAnimation();
-        if(_currentMovementMode == _sprintMode)
-            LoudSound?.Invoke();
         UpdateAnimation();
 
         var movement = _inputManager.GetPlayerMovement();
@@ -122,6 +120,7 @@ public class PlayerInput : MonoBehaviour
 
         if (_mouseVelocity > 10000)
         {
+            print("Loud Sound");
             _bellSoundManager.PlayBellSound(_mouseVelocity);
             LoudSound?.Invoke();
         }

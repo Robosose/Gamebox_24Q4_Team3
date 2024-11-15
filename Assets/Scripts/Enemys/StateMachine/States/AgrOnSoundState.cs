@@ -43,7 +43,7 @@ namespace Enemys.StateMachine.States
 
         public void Update()
         {
-            if (_enemy.Agent.remainingDistance < 1f)
+            if (_enemy.Agent.remainingDistance < .05f)
                 _coroutine = _enemy.StartCoroutine(IdlingTimer());
             if (_fov.IsSeePlayer)
                 _stateSwitcher.SwitchState<AttackState>();

@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Editor/EnemyFieldOfViewEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/EnemyFieldOfViewEditor.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions.meta" afterDir="false" />
@@ -160,17 +157,10 @@
       <change beforePath="$PROJECT_DIR$/Assets/Models/Monster.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/FBX.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Animator Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Animator Controller.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Animator Controller.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Animator Controller.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Idle.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Idle.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Idle.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Run.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Run.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Run.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Run.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Run.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Walking.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Walking.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Walking.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Walking.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Walking.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Animation/Monster Walking.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Monster.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/FBX/Monster.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/Mat_Monster.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/Mat_Monster.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Monster/Mat_Monster.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Monster/Mat_Monster.mat.meta" afterDir="false" />
@@ -261,8 +251,8 @@
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/Textures/Campfirer.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/Textures/Campfirer.psd.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candle_High.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candle_High.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candle_High.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candle_High.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Monster (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Monster (1).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Env/Room.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Env/Room.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Env/Wooden_Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Env/Wooden_Door.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Env/Wooden_Door.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Env/Wooden_Door.prefab.meta" afterDir="false" />
@@ -293,13 +283,10 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect_TrypophobiaActivate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect_TrypophobiaActivate.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect_TrypophobiaActivate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect_TrypophobiaActivate.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyFieldOfView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyFieldOfView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/EnemyStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/EnemyStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/AgrOnSoundState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/AgrOnSoundState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/AgrOnSoundState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/AgrOnSoundState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/AttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/AttackState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/PatrollingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/PatrollingState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputSystem_Actions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputSystem_Actions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/PlayerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/PlayerInstaller.cs" afterDir="false" />
@@ -505,7 +492,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF Logo - URP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF Logo - URP.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF Logo.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF Logo.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF Logo.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF Logo.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset.meta" afterDir="false" />
@@ -525,7 +511,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF - Surface.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF - Surface.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF - URP.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF - URP.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF - URP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF - URP.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Unity SDF - HDRP LIT - Bloom.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Unity SDF - HDRP LIT - Bloom.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Unity SDF - HDRP LIT - Bloom.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Unity SDF - HDRP LIT - Bloom.mat.meta" afterDir="false" />
@@ -884,7 +869,7 @@
       <workItem from="1731333812673" duration="3893000" />
       <workItem from="1731407918352" duration="1797000" />
       <workItem from="1731666891076" duration="1764000" />
-      <workItem from="1731686658684" duration="1459000" />
+      <workItem from="1731686658684" duration="1831000" />
     </task>
     <servers />
   </component>
