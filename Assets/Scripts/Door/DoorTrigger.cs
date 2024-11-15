@@ -11,7 +11,6 @@ namespace Door
         {
             if(other.CompareTag("Enemy"))
                 onDoorTriggerEnter?.Invoke();
-            print("Enemy Opend door");
         }
     }
 }
