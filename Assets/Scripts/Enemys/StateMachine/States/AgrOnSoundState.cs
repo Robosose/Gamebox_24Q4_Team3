@@ -26,8 +26,6 @@ namespace Enemys.StateMachine.States
 
         public void Enter()
         {
-            Debug.Log(GetType());
-
             _enemy.Agent.speed = _config.AttackConfig.Speed;
             _enemy.PlayerInput.LoudSound += SetNewDestination;
             SetNewDestination();
@@ -43,10 +41,13 @@ namespace Enemys.StateMachine.States
 
         public void Update()
         {
-            if (_enemy.Agent.remainingDistance < .05f)
+            if (_enemy.Agent.remainingDistance < .05f && _coroutine is null)
                 _coroutine = _enemy.StartCoroutine(IdlingTimer());
             if (_fov.IsSeePlayer)
+            {
+                ZeroingOutCoroutine();
                 _stateSwitcher.SwitchState<AttackState>();
+            }
         }
 
         private void ZeroingOutCoroutine()
@@ -62,6 +63,7 @@ namespace Enemys.StateMachine.States
             if(Vector3.Distance(_enemy.Agent.destination.normalized, _fov.PlayerRef.transform.position) < 1f)
                 return;
             _enemy.Agent.SetDestination(_fov.PlayerRef.transform.position);
+            _view.StartRunning();
         }
         
         private IEnumerator IdlingTimer()

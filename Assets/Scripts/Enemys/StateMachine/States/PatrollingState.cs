@@ -31,7 +31,6 @@ namespace Enemys.StateMachine.States
         
         public void Enter()
         {
-            Debug.Log(GetType());
             _agent.speed = _config.Speed;
             _enemy.PlayerInput.LoudSound += OnLoudSound;
             _currentPointIndex = 0;
@@ -41,7 +40,10 @@ namespace Enemys.StateMachine.States
 
         private void OnLoudSound()
         {
-            Debug.Log("ONLOUDSOUND");
+            Debug.Log("OnLoudSound");
+            if(_cor is not null)
+                _enemy.StopCoroutine(_cor);
+            _cor = null;
             _stateSwitcher.SwitchState<AgrOnSoundState>();
         }
 
@@ -65,10 +67,7 @@ namespace Enemys.StateMachine.States
                 _isIdling = true;
                 if(_cor is null)
                     _cor = _enemy.StartCoroutine(IdlingTimer());
-                return;
             }
-            
-            Debug.Log(_currentPointIndex);
         }
         
         private IEnumerator IdlingTimer()
@@ -79,11 +78,10 @@ namespace Enemys.StateMachine.States
                 _currentPointIndex = 0;
             else
                 _currentPointIndex++;
-            _isIdling = false;
-            _cor = null;
-            Debug.Log("StopIdling");
             _agent.SetDestination(_enemy.Points[_currentPointIndex].position);
             _view.StartWalking();
+            _isIdling = false;
+            _cor = null;
         }
     }
 }

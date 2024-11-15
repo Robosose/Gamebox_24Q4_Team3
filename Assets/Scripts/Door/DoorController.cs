@@ -1,3 +1,5 @@
+using System;
+using DG.Tweening;
 using UnityEngine;
 
 namespace Door
@@ -5,10 +7,14 @@ namespace Door
     public class DoorController : MonoBehaviour
     {
         [SerializeField] private DoorTrigger _doorTrigger;
-        [SerializeField] private MeshRenderer _renderer;
-
+        [SerializeField] private Transform _doorRotator;
         [SerializeField] private bool _isDoorOpen;
-
+        
+        [Space]
+        [Header("Animation Params")]
+        [SerializeField, Tooltip("Задаем радиус открывания двери")] private float _doorOpendRadius = -90;
+        [SerializeField] private float _duration;
+        
         private void OnEnable()
         {
             _doorTrigger.onDoorTriggerEnter += SwitchDoorState;
@@ -22,10 +28,10 @@ namespace Door
         private void SwitchDoorState()
         {
             if (!_isDoorOpen)
-                _renderer.enabled = false;
+                _doorRotator.DOLocalRotate(new Vector3(0, _doorOpendRadius, 0), _duration, RotateMode.Fast).onComplete += () => print("Door Opened");
             else
-                _renderer.enabled = true;
-            
+                _doorRotator.DOLocalRotate(new Vector3(0, 0, 0), _duration, RotateMode.Fast);
+
             _isDoorOpen = !_isDoorOpen;
         }
     }

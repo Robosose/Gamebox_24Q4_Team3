@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Enemys.State;
 using Enemys.StateMachine.States;
+using UnityEngine;
 
 namespace Enemys.StateMachine
 {
@@ -27,6 +28,7 @@ namespace Enemys.StateMachine
         public void SwitchState<T>() where T : IState
         {
             _currentState.Exit();
+
             _currentState = _states.FirstOrDefault(state => state is T);
             if (_currentState is null)
                 throw new ArgumentNullException($"{nameof(_currentState)} is null.");
