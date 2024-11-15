@@ -1,42 +1,26 @@
+using System.Collections;
 using UnityEngine;
 
 public class InfinityRoom_WallBack : MonoBehaviour
 {
-    [SerializeField] private float _wallSpeed;
-    [SerializeField] private Direction _direction = Direction.Forward;
-    
-    private enum Direction
+    [SerializeField] private float _timeBeforeTargetPoint;
+    [SerializeField] private Transform _targetPoint;
+
+    public void DoorMove()
     {
-        Up,
-        Down,
-        Left,
-        Right,
-        Forward,
-        Back
+        StartCoroutine(DoorMovement());
     }
 
-    private void Update()
+    private IEnumerator DoorMovement()
     {
-        transform.position += MoveDirection() * (_wallSpeed * Time.deltaTime);
-    }
-
-    private Vector3 MoveDirection()
-    {
-        switch (_direction)
+        var startPosition = transform.position;
+        var move = 0f;
+        while (move < 1f)
         {
-            case Direction.Up:
-                return Vector3.up;
-            case Direction.Down:
-                return Vector3.down;
-            case Direction.Left:
-                return Vector3.left;
-            case Direction.Right:
-                return Vector3.right;
-            case Direction.Forward:
-                return Vector3.forward;
-            case Direction.Back:
-                return Vector3.back;
+            move = Mathf.Clamp01(move + Time.deltaTime / _timeBeforeTargetPoint);
+            transform.position =
+                Vector3.Lerp(startPosition, _targetPoint.position, move);
+            yield return null;
         }
-        return Vector3.zero;
     }
 }

@@ -11,6 +11,9 @@ public class InfinityRoom_DoorMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!other.CompareTag("Player"))
+            return;
+
         if (_pointIndex < _points.Length)
         {
             StartCoroutine(MoveDoor());
@@ -21,10 +24,10 @@ public class InfinityRoom_DoorMovement : MonoBehaviour
     {
         var startTransform = _doorTransform.position;
         var f = 0f;
-        while (f<1f)
+        while (f < 1f)
         {
             f += Time.deltaTime / _timeBeforeNextPoint;
-            _doorTransform.position = Vector3.Lerp(startTransform,_points[_pointIndex].position,f);
+            _doorTransform.position = Vector3.Lerp(startTransform, _points[_pointIndex].position, f);
             yield return null;
         }
 
