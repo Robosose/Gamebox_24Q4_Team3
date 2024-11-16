@@ -6,6 +6,6 @@ namespace Configs.Enemy
     [Serializable]
     public class AttackConfig
     {
-        [Range(3,10)]public float Speed;
+        [Range(0,10)]public float Speed;
     }
 }

@@ -1,6 +1,6 @@
 using System;
-using UnityEngine;
 using Zenject;
+using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerInput : MonoBehaviour
@@ -10,13 +10,15 @@ public class PlayerInput : MonoBehaviour
     [SerializeField, Range(1.5f, 5f)] private float _sprintSpeed;
     [SerializeField, Range(0.5f, 1f)] private float _crouchSpeed;
     [SerializeField] private float _gravityValue = -9.81f;
+    
+    [Space]
+    [SerializeField] private PlayerView _playerView;
 
     private Vector3 _playerVelocity;
     private CharacterController _characterController;
     private InputManager _inputManager;
     private Transform _cameraTransform;
     private BellSoundManager _bellSoundManager;
-    private PlayerView _playerView;
 
     private Vector2 _previousMousePosition;
     private float _mouseVelocity;
@@ -32,7 +34,6 @@ public class PlayerInput : MonoBehaviour
     private void Construct(InputManager inputManager)
     {
         _characterController = GetComponent<CharacterController>();
-        _playerView = GetComponent<PlayerView>();
         _bellSoundManager = GetComponent<BellSoundManager>();
         _cameraTransform = Camera.main.transform;
         _inputManager = inputManager;
@@ -57,12 +58,14 @@ public class PlayerInput : MonoBehaviour
         //UpdateAnimation();
         UpdateAnimation();
 
+
+        
         var movement = _inputManager.GetPlayerMovement();
         var move = new Vector3(movement.x, 0f, movement.y);
 
         if (_currentMovementMode == _sprintMode && move != Vector3.zero)
             LoudSound?.Invoke();
-
+        
         move = _cameraTransform.forward * move.z + _cameraTransform.right * move.x;
         move.y = 0f;
 
@@ -121,7 +124,7 @@ public class PlayerInput : MonoBehaviour
         if (_mouseVelocity > 10000)
         {
             _bellSoundManager.PlayBellSound(_mouseVelocity);
-            LoudSound?.Invoke();
+            // LoudSound?.Invoke();
         }
 
         _previousMousePosition = currentMousePosition;
