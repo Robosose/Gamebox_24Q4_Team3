@@ -692,12 +692,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116832072431385304}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.003, y: 1.376, z: 0.072}
+  m_LocalRotation: {x: 0.00000003774895, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.376, z: 0.098}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4819312748779755414}
+  m_Father: {fileID: 6503761584333300007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1169612771311187263
 GameObject:
@@ -1191,7 +1191,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3081105206507358943}
+  - {fileID: 6503761584333300007}
   - {fileID: 2512849429531518216}
   - {fileID: 815149930019089527}
   - {fileID: 2758825932663204083}
@@ -1199,7 +1199,6 @@ Transform:
   - {fileID: 1369134314304167684}
   - {fileID: 4797894414186984330}
   - {fileID: 6423376789316824413}
-  - {fileID: 6503761584333300007}
   - {fileID: 798264863495125728}
   - {fileID: 3592420708903098065}
   - {fileID: 8445396438269723896}
@@ -1223,7 +1222,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 2798d802ec116704c87277bfc7104ea4, type: 3}
   m_Controller: {fileID: 9100000, guid: 64c6d81349d23fc4991a30bc94649da1, type: 2}
-  m_CullingMode: 1
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -1301,7 +1300,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7f021e4816e942849a8730dd82762943, type: 3}
   m_Resource: {fileID: 8300000, guid: 7f021e4816e942849a8730dd82762943, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -3648,10 +3647,11 @@ Transform:
   m_GameObject: {fileID: 7324165016747208107}
   serializedVersion: 2
   m_LocalRotation: {x: -0.00000003774895, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.832648e-18, y: -8.832648e-18, z: -1.7251265e-20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3081105206507358943}
   m_Father: {fileID: 4819312748779755414}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &1885536759930949994
