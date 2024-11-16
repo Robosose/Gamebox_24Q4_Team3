@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private EnemyConfig _config;
     [SerializeField] private Transform[] _points;
     [SerializeField] private EnemyFieldOfView _fov;
+    [SerializeField] private EnemyView _view;
 
     private IStateSwitcher _switcher;
     private PlayerInput _playerInput;
@@ -31,7 +32,7 @@ public class Enemy : MonoBehaviour
     
     private void Awake()
     {
-        _switcher = new EnemyStateMachine(this, _fov);
+        _switcher = new EnemyStateMachine(this, _fov, _view);
     }
 
     private void Update()

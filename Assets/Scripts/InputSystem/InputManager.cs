@@ -35,4 +35,7 @@ public class InputManager : MonoBehaviour
     public bool IsCrouching() => _action.Player.Crouch.ReadValue<float>() > 0;
     public bool IsUsingMirror() => _action.Player.UseMirror.ReadValue<float>() > 0;
     public bool IsRotatingMirror() => _action.Player.RotateMirror.ReadValue<float>() > 0;
+    public bool FreeCameraActivate() => _action.Player.FreeCameraActivate.triggered;
+    public float FreeCameraFly() => _action.Player.FreeCameraFlyUp.ReadValue<float>();
+    public bool IsPause() => _action.UI.Pause.triggered;
 }
