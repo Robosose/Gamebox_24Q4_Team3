@@ -71,8 +71,7 @@ public class PlayerInput : MonoBehaviour
     {
         SetMovementMode();
         UpdateAnimation();
-
-
+        
         if(_freeCamera)
             return;
         

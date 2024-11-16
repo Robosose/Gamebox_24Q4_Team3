@@ -1275,8 +1275,8 @@ MonoBehaviour:
   _sprintSpeed: 3
   _crouchSpeed: 0.5
   _gravityValue: -9.81
-  _normalFlySpeed: 0
-  _slowFlySpeed: 0
+  _normalFlySpeed: 4
+  _slowFlySpeed: 0.2
 --- !u!114 &2526674385324964926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1301,7 +1301,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7f021e4816e942849a8730dd82762943, type: 3}
   m_Resource: {fileID: 8300000, guid: 7f021e4816e942849a8730dd82762943, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
