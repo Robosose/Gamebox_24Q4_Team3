@@ -1,8 +1,6 @@
-using System;
 using System.Collections;
 using Configs.Enemy;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Enemys
 {
