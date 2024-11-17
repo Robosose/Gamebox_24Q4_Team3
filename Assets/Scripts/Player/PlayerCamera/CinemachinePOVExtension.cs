@@ -12,6 +12,7 @@ public class CinemachinePOVExtension : CinemachineExtension
     [SerializeField] private float _heigtTransitionSpeed;
 
     [SerializeField] private Transform _cameraHolder;
+    [SerializeField] private Transform _playerTransform;
 
     private InputManager _inputManager;
     private Vector3 _startingRotation;
@@ -52,6 +53,7 @@ public class CinemachinePOVExtension : CinemachineExtension
             state.RawOrientation = Quaternion.Euler(-_startingRotation.y, _startingRotation.x, 0f);
 
             UpdateCameraHeight(deltaTime);
+            RotatePlayerToCamera();
         }
     }
 
@@ -65,5 +67,15 @@ public class CinemachinePOVExtension : CinemachineExtension
         var position = _cameraHolder.localPosition;
         position.y = Mathf.Lerp(position.y, _targetHeight, _heigtTransitionSpeed * deltaTime);
         _cameraHolder.localPosition = position;
+    }
+
+    private void RotatePlayerToCamera()
+    {
+        if (_playerTransform == null)
+            return;
+
+        float cameraYRotation = _startingRotation.x;
+
+        _playerTransform.rotation = Quaternion.Euler(0f, cameraYRotation, 0f);
     }
 }
