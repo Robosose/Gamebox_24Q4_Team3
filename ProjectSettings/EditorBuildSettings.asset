@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Mechanics/CubeScene.unity
     guid: aee68acab7ced594bb945e44d44be387
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: c3490559030bf8549a19a3feb3042737, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 1e75db75b1742694cbaba52f2cdc11f1, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.localization.addressable-group-rules: {fileID: 11400000, guid: f8c8f67b00fd180418d976df057e1fe3, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 3e0fa8d3fb9638044928d386d2ca3033, type: 2}
   m_UseUCBPForAssetBundles: 0

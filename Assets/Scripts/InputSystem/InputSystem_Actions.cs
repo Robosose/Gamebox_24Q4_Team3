@@ -128,7 +128,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""FreeCameraActivate"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""ecc41c85-1edc-4d29-a99f-c55b6b655c4b"",
                     ""expectedControlType"": """",
                     ""processors"": """",
