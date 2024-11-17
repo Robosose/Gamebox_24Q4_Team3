@@ -22,7 +22,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 64
   _attackConfig:
-    Speed: 3
+    Speed: 0.5
   patrolingConfig:
     Speed: 0.22
     IdlingTime: 5
