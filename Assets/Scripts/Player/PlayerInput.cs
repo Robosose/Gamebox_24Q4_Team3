@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using UnityEngine;
 using Zenject;
 
@@ -14,7 +15,9 @@ public class PlayerInput : MonoBehaviour
     [Header("Free Camera Movement Settings")] 
     [SerializeField] private float _normalFlySpeed;
     [SerializeField] private float _slowFlySpeed;
-    
+
+    [Space] [SerializeField] private LayerMask _enemyMask;
+
     private Vector3 _playerVelocity;
     private CharacterController _characterController;
     private InputManager _inputManager;
@@ -30,8 +33,7 @@ public class PlayerInput : MonoBehaviour
     private IMovementMode _walkMode;
     private IMovementMode _sprintMode;
     private IMovementMode _crouchMode;
-
-    public Action LoudSound;
+    
 
     [Inject]
     private void Construct(InputManager inputManager)
@@ -79,7 +81,7 @@ public class PlayerInput : MonoBehaviour
         var move = new Vector3(movement.x, 0f, movement.y);
 
         if (_currentMovementMode == _sprintMode && move != Vector3.zero)
-            LoudSound?.Invoke();
+            FindEnemy();
 
         move = _cameraTransform.forward * move.z + _cameraTransform.right * move.x;
         move.y = 0f;
@@ -88,6 +90,7 @@ public class PlayerInput : MonoBehaviour
         _playerVelocity.y += _gravityValue * Time.deltaTime;
         _characterController.Move(move * (_currentMovementMode.GetSpeed() * Time.deltaTime));
     }
+
 
     private void FreeMove()
     {
@@ -155,5 +158,14 @@ public class PlayerInput : MonoBehaviour
         }
 
         _previousMousePosition = currentMousePosition;
+    }
+    
+    private void FindEnemy()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, 500, _enemyMask);
+        var enemyTransform = colliders.FirstOrDefault(c => { print(c.name); return c.CompareTag("Enemy"); });
+        if (enemyTransform is null)
+            throw new ArgumentNullException("XD");
+        enemyTransform.GetComponent<Enemy>().OnLoudSound?.Invoke(transform);
     }
 }

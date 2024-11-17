@@ -1,3 +1,4 @@
+using System;
 using Configs.Enemy;
 using Enemys;
 using Enemys.State;
@@ -22,8 +23,10 @@ public class Enemy : MonoBehaviour
     public Transform[] Points => _points;
     public EnemyFieldOfView FOV => _fov;
     public PlayerInput PlayerInput => _playerInput;
-    
-    
+    public Action<Transform> OnLoudSound;
+    public Transform LastSoundPosition;
+
+
     [Inject]
     private void Construct(PlayerInput input)
     {
@@ -33,6 +36,12 @@ public class Enemy : MonoBehaviour
     private void Awake()
     {
         _switcher = new EnemyStateMachine(this, _fov, _view);
+        OnLoudSound += LoudSound;
+    }
+
+    private void LoudSound(Transform t)
+    {
+        LastSoundPosition = t;
     }
 
     private void Update()
