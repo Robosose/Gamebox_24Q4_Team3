@@ -6,6 +6,12 @@ public class LanguageSwitcher : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown _dropdown;
     private string _currentLocal;
+    private int _dropdownValue;
+    
+    private void Start()
+    {
+        _dropdown.value = _dropdownValue;
+    }
 
     public void ChoseLanguage()
     {
@@ -18,6 +24,9 @@ public class LanguageSwitcher : MonoBehaviour
         {
             ChangeLanguage("ru");
         }
+        
+        _dropdownValue = _dropdown.value;
+        ES3AutoSaveMgr.Current.Save();
     }
 
     private void ChangeLanguage(string localeCode)

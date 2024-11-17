@@ -14,7 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Localization-Assets-Russian (ru)
   m_GUID: b077e34c8fa892f4987d5ee72f85a5af
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 1b0e5d5557b31344797a9c1b39862895
+    m_Address: RUS_2-2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 234ce5058ef17834c8237ef11803913d
+    m_Address: RUS_3-2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 37e19414e91144846b36a2aac3868631
+    m_Address: RUS_4-2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c94782329c91ab42b82ae99229b7697
+    m_Address: RUS_1-2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 36925f5dffd252a4caf333ed9eb60ca0, type: 2}
   m_SchemaSet:

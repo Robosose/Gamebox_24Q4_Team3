@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
+  m_Name: Pause_ru
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ru
+  m_SharedData: {fileID: 11400000, guid: 8397d8c7313408348826369081765784, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1872008228864
+    m_Localized: '37e19414e91144846b36a2aac3868631[RUS_4-2]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2225093128192
+    m_Localized: '234ce5058ef17834c8237ef11803913d[RUS_3-2]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 563112751104
+    m_Localized: '6c94782329c91ab42b82ae99229b7697[RUS_1-2]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2619210903552
+    m_Localized: '1b0e5d5557b31344797a9c1b39862895[RUS_2-2]'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
