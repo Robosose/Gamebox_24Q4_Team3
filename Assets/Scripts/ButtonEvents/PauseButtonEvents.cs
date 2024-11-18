@@ -21,13 +21,13 @@ namespace ButtonEvents
         
         public void LoadMenuButton()
         {
-            SceneManager.LoadScene("Scenes/MainMenuScene/MainMenu");
+            SceneSaver.Instance.LoadScene(ScenesType.MainMenuScene);
             Time.timeScale = 1;
         }
 
         public void RestartButton()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneSaver.Instance.LoadScene(ScenesType.CurrentScene);
             Time.timeScale = 1;
         }
     }
