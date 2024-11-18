@@ -1276,8 +1276,8 @@ MonoBehaviour:
   _sprintSpeed: 3
   _crouchSpeed: 0.5
   _gravityValue: -9.81
-  _normalFlySpeed: 0
-  _slowFlySpeed: 0
+  _normalFlySpeed: 4
+  _slowFlySpeed: 0.2
 --- !u!114 &2526674385324964926
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -71,8 +71,7 @@ public class PlayerInput : MonoBehaviour
     {
         SetMovementMode();
         UpdateAnimation();
-
-
+        
         if(_freeCamera)
             return;
         
@@ -152,7 +151,7 @@ public class PlayerInput : MonoBehaviour
         if (_mouseVelocity > 10000)
         {
             _bellSoundManager.PlayBellSound(_mouseVelocity);
-            LoudSound?.Invoke();
+            // LoudSound?.Invoke();
         }
 
         _previousMousePosition = currentMousePosition;

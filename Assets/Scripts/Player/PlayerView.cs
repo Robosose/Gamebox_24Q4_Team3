@@ -1,9 +1,8 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
 public class PlayerView : MonoBehaviour
 {
-    private Animator _animator;
+    [SerializeField] private Animator _animator;
 
     private void Awake()
     {

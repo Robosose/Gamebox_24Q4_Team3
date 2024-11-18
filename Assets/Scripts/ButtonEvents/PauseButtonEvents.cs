@@ -24,5 +24,11 @@ namespace ButtonEvents
             SceneManager.LoadScene("Scenes/MainMenuScene/MainMenu");
             Time.timeScale = 1;
         }
+
+        public void RestartButton()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Time.timeScale = 1;
+        }
     }
 }
