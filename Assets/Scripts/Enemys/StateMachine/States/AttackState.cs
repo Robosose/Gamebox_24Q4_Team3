@@ -25,7 +25,6 @@ namespace Enemys.StateMachine.States
         
         public void Enter()
         {
-            Debug.Log(GetType());
             _enemy.Agent.speed = _config.Speed;
             _player = _enemy.FOV.PlayerRef.transform;
             _enemy.Agent.SetDestination(_player.position);

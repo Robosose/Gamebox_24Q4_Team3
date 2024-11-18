@@ -17,12 +17,12 @@ MonoBehaviour:
     AngleOfView: 60
     TargetMask:
       serializedVersion: 2
-      m_Bits: 0
+      m_Bits: 8
     ObstructionMask:
       serializedVersion: 2
       m_Bits: 64
   _attackConfig:
-    Speed: 3
+    Speed: 0.5
   patrolingConfig:
     Speed: 0.22
     IdlingTime: 5

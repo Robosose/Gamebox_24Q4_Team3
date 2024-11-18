@@ -40,7 +40,6 @@ namespace Enemys.StateMachine.States
 
         private void OnLoudSound()
         {
-            Debug.Log("OnLoudSound");
             if(_cor is not null)
                 _enemy.StopCoroutine(_cor);
             _cor = null;
