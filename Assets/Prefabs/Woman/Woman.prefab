@@ -1171,6 +1171,8 @@ GameObject:
   - component: {fileID: 2526674385324964926}
   - component: {fileID: 7648207230765096368}
   - component: {fileID: 8179544872583608379}
+  - component: {fileID: 2530730657738249302}
+  - component: {fileID: 4852580331315275638}
   m_Layer: 8
   m_Name: Woman
   m_TagString: Untagged
@@ -1399,6 +1401,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxVolum: 0.1
   _sensitivity: 0.1
+--- !u!114 &2530730657738249302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820910118444800405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b26ba4e3388224fa9b48d32ca2b6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4852580331315275638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820910118444800405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99fbfa290cf828a43981464e89f879b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2055497317384538764
 GameObject:
   m_ObjectHideFlags: 0

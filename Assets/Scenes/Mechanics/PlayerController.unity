@@ -317,6 +317,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4819312748779755414, guid: 5366b9ae9d5c4a54bbb84f50e828fbfe, type: 3}
   m_PrefabInstance: {fileID: 7527886051298604207}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1135177705 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4961778999521155055, guid: 5366b9ae9d5c4a54bbb84f50e828fbfe, type: 3}
+  m_PrefabInstance: {fileID: 7527886051298604207}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab8b8570c3d4fd84ba1113c867f9a1a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1135177709 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2530730657738249302, guid: 5366b9ae9d5c4a54bbb84f50e828fbfe, type: 3}
+  m_PrefabInstance: {fileID: 7527886051298604207}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b26ba4e3388224fa9b48d32ca2b6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1222764287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,6 +1260,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2198954830125268931, guid: 97f8fcca319bd89468b1e97ec095387c, type: 3}
+      propertyPath: _playerMirrorHandler
+      value: 
+      objectReference: {fileID: 1135177709}
     - target: {fileID: 4085551183623016939, guid: 97f8fcca319bd89468b1e97ec095387c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1282,6 +1308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneContext
       objectReference: {fileID: 0}
+    - target: {fileID: 5818990925745149685, guid: 97f8fcca319bd89468b1e97ec095387c, type: 3}
+      propertyPath: _playerInput
+      value: 
+      objectReference: {fileID: 1135177705}
     - target: {fileID: 5818990925745149685, guid: 97f8fcca319bd89468b1e97ec095387c, type: 3}
       propertyPath: _inputManager
       value: 
@@ -2504,10 +2534,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Woman_Rig
       objectReference: {fileID: 0}
-    - target: {fileID: 4150112319936390765, guid: 1dfc61c2acf33164d830d10d1d68c19c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7946287186350996825, guid: 1dfc61c2acf33164d830d10d1d68c19c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.495196
@@ -3534,10 +3560,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6985082548691509747, guid: 8e2a46189eacf994eb898cf24834a1e4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7763969578160003409, guid: 8e2a46189eacf994eb898cf24834a1e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.03
@@ -3576,14 +3598,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7763969578160003409, guid: 8e2a46189eacf994eb898cf24834a1e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8405113505740189833, guid: 8e2a46189eacf994eb898cf24834a1e4, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9221916787704727557, guid: 8e2a46189eacf994eb898cf24834a1e4, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3803,21 +3817,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2020577818}
     - target: {fileID: 663990938490510641, guid: 73dc1c463d4a4e04c885a16501b12794, type: 3}
-      propertyPath: _standingHeight
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 663990938490510641, guid: 73dc1c463d4a4e04c885a16501b12794, type: 3}
-      propertyPath: _crouchingHeight
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 663990938490510641, guid: 73dc1c463d4a4e04c885a16501b12794, type: 3}
       propertyPath: _playerTransform
       value: 
       objectReference: {fileID: 1135177701}
-    - target: {fileID: 663990938490510641, guid: 73dc1c463d4a4e04c885a16501b12794, type: 3}
-      propertyPath: _heigtTransitionSpeed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 1000730822413136765, guid: 73dc1c463d4a4e04c885a16501b12794, type: 3}
       propertyPath: m_Name
       value: CinemachineCamera

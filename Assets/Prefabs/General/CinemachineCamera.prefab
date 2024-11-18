@@ -102,6 +102,11 @@ MonoBehaviour:
   _horizontalSpeed: 10
   _verticalSpeed: 10
   _clampAngle: 50
+  _standingHeight: 1.8
+  _crouchingHeight: 1
+  _heigtTransitionSpeed: 5
+  _cameraHolder: {fileID: 0}
+  _playerTransform: {fileID: 0}
 --- !u!1 &6971763580232871143
 GameObject:
   m_ObjectHideFlags: 0
