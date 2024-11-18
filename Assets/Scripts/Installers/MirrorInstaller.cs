@@ -3,10 +3,10 @@ using Zenject;
 
 public class MirrorInstaller : MonoInstaller
 {
-    [SerializeField] private PlayerMirrorHandler _playerMirrorHandler;
+    [SerializeField] private MirrorController _mirrorController;
 
     public override void InstallBindings()
     {
-        Container.Bind<PlayerMirrorHandler>().FromInstance(_playerMirrorHandler).AsSingle().NonLazy();
+        Container.Bind<MirrorController>().FromInstance(_mirrorController).AsSingle().NonLazy();
     }
 }
