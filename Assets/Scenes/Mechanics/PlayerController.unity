@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &368988975 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3081105206507358943, guid: 1f944b5f967710245a6c34ef818a24ee, type: 3}
+  m_PrefabInstance: {fileID: 1546382912}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &438711333
 Animator:
   serializedVersion: 7
@@ -166,11 +171,6 @@ MonoBehaviour:
 --- !u!4 &611141046 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4819312748779755414, guid: 1f944b5f967710245a6c34ef818a24ee, type: 3}
-  m_PrefabInstance: {fileID: 1546382912}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &621840270 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4154128517470964422, guid: 1f944b5f967710245a6c34ef818a24ee, type: 3}
   m_PrefabInstance: {fileID: 1546382912}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &984337729
@@ -379,7 +379,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -544,6 +544,26 @@ PrefabInstance:
     - target: {fileID: 1820910118444800405, guid: 1f944b5f967710245a6c34ef818a24ee, type: 3}
       propertyPath: m_Name
       value: Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081105206507358943, guid: 1f944b5f967710245a6c34ef818a24ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081105206507358943, guid: 1f944b5f967710245a6c34ef818a24ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081105206507358943, guid: 1f944b5f967710245a6c34ef818a24ee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081105206507358943, guid: 1f944b5f967710245a6c34ef818a24ee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081105206507358943, guid: 1f944b5f967710245a6c34ef818a24ee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4819312748779755414, guid: 1f944b5f967710245a6c34ef818a24ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3873,7 +3893,15 @@ PrefabInstance:
     - target: {fileID: 663990938490510641, guid: 73dc1c463d4a4e04c885a16501b12794, type: 3}
       propertyPath: _cameraHolder
       value: 
-      objectReference: {fileID: 621840270}
+      objectReference: {fileID: 368988975}
+    - target: {fileID: 663990938490510641, guid: 73dc1c463d4a4e04c885a16501b12794, type: 3}
+      propertyPath: _standingHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 663990938490510641, guid: 73dc1c463d4a4e04c885a16501b12794, type: 3}
+      propertyPath: _crouchingHeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 663990938490510641, guid: 73dc1c463d4a4e04c885a16501b12794, type: 3}
       propertyPath: _playerTransform
       value: 
@@ -3925,7 +3953,7 @@ PrefabInstance:
     - target: {fileID: 9129105651167067720, guid: 73dc1c463d4a4e04c885a16501b12794, type: 3}
       propertyPath: m_Follow
       value: 
-      objectReference: {fileID: 621840270}
+      objectReference: {fileID: 368988975}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
