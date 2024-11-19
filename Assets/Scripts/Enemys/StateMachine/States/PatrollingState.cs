@@ -32,7 +32,7 @@ namespace Enemys.StateMachine.States
         public void Enter()
         {
             _agent.speed = _config.Speed;
-            _enemy.OnLoudSound += OnLoudSound;
+            _enemy.SoundTrigger.OnBellSoundTriggered += OnLoudSound;
             _fov.SeePlayer += OnSeePlayer;
             _currentPointIndex = 0;
             _view.StartWalking();
@@ -62,7 +62,7 @@ namespace Enemys.StateMachine.States
             _isIdling = false;
             _view.StopWalking();
             _fov.SeePlayer -= OnSeePlayer;
-            _enemy.OnLoudSound -= OnLoudSound;
+            _enemy.SoundTrigger.OnBellSoundTriggered -= OnLoudSound;
         }
 
         public void Update()

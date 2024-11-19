@@ -27,7 +27,7 @@ namespace Enemys.StateMachine.States
         public void Enter()
         {
             _enemy.Agent.speed = _config.AttackConfig.Speed;
-            _enemy.OnLoudSound += SetNewDestination;
+            _enemy.SoundTrigger.OnBellSoundTriggered += SetNewDestination;
             _fov.SeePlayer += OnSeePlayer;
             SetNewDestination(_enemy.LastSoundPosition);
             _view.StartRunning();
@@ -42,7 +42,7 @@ namespace Enemys.StateMachine.States
         public void Exit()
         {
             ZeroingOutCoroutine();
-            _enemy.OnLoudSound -= SetNewDestination;
+            _enemy.SoundTrigger.OnBellSoundTriggered -= SetNewDestination;
             _fov.SeePlayer += OnSeePlayer;
             _view.StopRunning();
         }

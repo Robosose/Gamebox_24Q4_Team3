@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 
@@ -14,6 +14,8 @@ namespace Door
         [Header("Animation Params")]
         [SerializeField, Tooltip("Задаем радиус открывания двери")] private float _doorOpendRadius = -90;
         [SerializeField] private float _duration;
+        [SerializeField] private float _timeBeforeCloseDoor;
+        private Coroutine _cor;
         
         private void OnEnable()
         {
@@ -28,11 +30,24 @@ namespace Door
         private void SwitchDoorState()
         {
             if (!_isDoorOpen)
-                _doorRotator.DOLocalRotate(new Vector3(0, _doorOpendRadius, 0), _duration, RotateMode.Fast).onComplete += () => print("Door Opened");
-            else
-                _doorRotator.DOLocalRotate(new Vector3(0, 0, 0), _duration, RotateMode.Fast);
+            {
+                _doorRotator.DOLocalRotate(new Vector3(0, _doorOpendRadius, 0), _duration, RotateMode.Fast).onComplete += StartTimer;
+                _isDoorOpen = !_isDoorOpen;
+            }
+        }
 
-            _isDoorOpen = !_isDoorOpen;
+        private void StartTimer()
+        {
+            if(_cor != null)
+                StopCoroutine(_cor);
+            _cor = StartCoroutine(Timer());
+        }
+
+        private IEnumerator Timer()
+        {
+            yield return new WaitForSeconds(_timeBeforeCloseDoor);
+            _doorRotator.DOLocalRotate(new Vector3(0, 0, 0), _duration);
+            _isDoorOpen = false;
         }
     }
 }

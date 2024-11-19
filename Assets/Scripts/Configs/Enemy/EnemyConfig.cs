@@ -8,9 +8,8 @@ namespace Configs.Enemy
     {
         [SerializeField] private PatrollingDataConfig patrollingDataConfig;
         [SerializeField] private AttackConfig _attackConfig;
-        [FormerlySerializedAs("_movementConfig")] [SerializeField] private PatrolingConfig patrolingConfig;
+        [SerializeField] private PatrolingConfig patrolingConfig;
         
-
         public PatrollingDataConfig PatrollingDataConfig => patrollingDataConfig;
         public PatrolingConfig PatrolingConfig => patrolingConfig;
         public AttackConfig AttackConfig => _attackConfig;
