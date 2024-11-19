@@ -20,7 +20,8 @@ public class SceneSaver : Singleton<SceneSaver>
     
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        SaveCurrentScene();
+        if(SceneManager.GetActiveScene().buildIndex !=0)
+            SaveCurrentScene();
     }
     
     private void OnSceneUnloaded(Scene scene)
