@@ -208,7 +208,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 255
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -312,6 +312,11 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!4 &1135177701 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4819312748779755414, guid: 5366b9ae9d5c4a54bbb84f50e828fbfe, type: 3}
+  m_PrefabInstance: {fileID: 7527886051298604207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1222764287
 GameObject:
   m_ObjectHideFlags: 0
@@ -2499,6 +2504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Woman_Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 4150112319936390765, guid: 1dfc61c2acf33164d830d10d1d68c19c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7946287186350996825, guid: 1dfc61c2acf33164d830d10d1d68c19c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.495196
@@ -3801,6 +3810,10 @@ PrefabInstance:
       propertyPath: _crouchingHeight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 663990938490510641, guid: 73dc1c463d4a4e04c885a16501b12794, type: 3}
+      propertyPath: _playerTransform
+      value: 
+      objectReference: {fileID: 1135177701}
     - target: {fileID: 663990938490510641, guid: 73dc1c463d4a4e04c885a16501b12794, type: 3}
       propertyPath: _heigtTransitionSpeed
       value: 5
