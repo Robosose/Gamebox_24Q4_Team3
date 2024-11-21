@@ -3,7 +3,7 @@
     public class StateMachine
     {
         private IMirrorState _currentMirrorState;
-    
+
         public void ChangeState(IMirrorState newMirrorState)
         {
             if(_currentMirrorState== newMirrorState)

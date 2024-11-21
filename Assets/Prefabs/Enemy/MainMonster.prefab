@@ -2014,7 +2014,7 @@ GameObject:
   - component: {fileID: 6617355260423597324}
   - component: {fileID: 576628308436631176}
   m_Layer: 0
-  m_Name: Monster (1)
+  m_Name: MainMonster
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

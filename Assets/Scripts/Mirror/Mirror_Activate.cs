@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using Zenject;
@@ -12,6 +13,8 @@ public class Mirror_Activate : MonoBehaviour
     private float _mirrorProgress;
     private bool _show;
     private Quaternion _baseRotation;
+
+    public Action SeeEnemy;
     
     [Inject]
     private void Construct(InputManager inputManager)
