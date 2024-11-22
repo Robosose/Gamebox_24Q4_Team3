@@ -1,3 +1,4 @@
+using Bell;
 using Configs.Enemy;
 using Enemys;
 using Enemys.State;
@@ -13,26 +14,47 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Transform[] _points;
     [SerializeField] private EnemyFieldOfView _fov;
     [SerializeField] private EnemyView _view;
+    [SerializeField] private bool _isTutor;
+    [SerializeField] private Mirror_Activate _mirror;
+    private BellSoundTrigger _soundTrigger;
 
     private IStateSwitcher _switcher;
     private PlayerInput _playerInput;
-    
+
+    public Mirror_Activate Mirror => _mirror;
     public NavMeshAgent Agent => _agent;
     public EnemyConfig Config => _config;
     public Transform[] Points => _points;
     public EnemyFieldOfView FOV => _fov;
-    public PlayerInput PlayerInput => _playerInput;
-    
-    
+    public BellSoundTrigger SoundTrigger => _soundTrigger;
+    public Transform LastSoundPosition;
+
     [Inject]
-    private void Construct(PlayerInput input)
+    private void Construct(BellSoundTrigger trigger)
     {
-        _playerInput = input;
+        _soundTrigger = trigger;
     }
     
     private void Awake()
     {
-        _switcher = new EnemyStateMachine(this, _fov, _view);
+        _switcher = new EnemyStateMachine(this, _fov, _view, _isTutor);
+    }
+
+    private void OnEnable()
+    {
+        if(!_isTutor)
+            SoundTrigger.OnBellSoundTriggered += LoudSound;
+    }
+
+    private void OnDisable()
+    {
+        if(!_isTutor)
+            SoundTrigger.OnBellSoundTriggered -= LoudSound;
+    }
+    
+    private void LoudSound(Transform t)
+    {
+        LastSoundPosition = t;
     }
 
     private void Update()
