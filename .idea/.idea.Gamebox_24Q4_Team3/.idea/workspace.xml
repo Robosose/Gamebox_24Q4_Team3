@@ -5,15 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/Tutorial.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/Tutorial/TutorAttackState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/Tutorial/TutorAttackState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/Tutorial/TutorPatrollingState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/Tutorial/TutorPatrollingState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/Tutorial/TutorialIdlingState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/Tutorial/TutorialIdlingState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/TutorEnemyStateMachine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/TutorEnemyStateMachine.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
@@ -874,8 +865,8 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candle_High.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candle_High.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candle_High.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candle_High.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Enemy.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Monster (1).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Monster (1).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/MainMonster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/MainMonster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/MainMonster.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/MainMonster.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Monster.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Monster.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Env/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Env/Door.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Env/Door.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Env/Door.prefab.meta" afterDir="false" />
@@ -927,13 +918,16 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect_TrypophobiaActivate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect_TrypophobiaActivate.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect_TrypophobiaActivate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect_TrypophobiaActivate.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyFieldOfView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyFieldOfView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/EnemyStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/EnemyStateMachine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/AgrOnSoundState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/AgrOnSoundState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/AgrOnSoundState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/AgrOnSoundState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/Tutorial/TutorAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/Tutorial/TutorAttackState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/Tutorial/TutorIdlingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/Tutorial/TutorIdlingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/Tutorial/TutorPatrollingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/States/Tutorial/TutorPatrollingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/TutorEnemyStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/StateMachine/TutorEnemyStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/TutorialEnemy/TutorEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/TutorialEnemy/TutorEnemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enums.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enums.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enums/ScenesType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enums/ScenesType.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enums/ScenesType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enums/ScenesType.cs.meta" afterDir="false" />
@@ -1396,7 +1390,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat.meta" afterDir="false" />
@@ -1598,7 +1591,7 @@
       <workItem from="1731698909031" duration="307000" />
       <workItem from="1731792559169" duration="1089000" />
       <workItem from="1732051871452" duration="3707000" />
-      <workItem from="1732218164730" duration="7445000" />
+      <workItem from="1732218164730" duration="7836000" />
     </task>
     <servers />
   </component>
