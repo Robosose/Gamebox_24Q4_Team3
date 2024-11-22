@@ -38,5 +38,4 @@ public class InputManager : MonoBehaviour
     public bool FreeCameraActivate() => _action.Player.FreeCameraActivate.triggered;
     public float FreeCameraFly() => _action.Player.FreeCameraFlyUp.ReadValue<float>();
     public bool IsPause() => _action.UI.Pause.triggered;
-    public bool IsTogglingMirror() => _action.Player.ToggleMirror.WasPressedThisFrame();
 }
