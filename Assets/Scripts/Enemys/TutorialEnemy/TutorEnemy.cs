@@ -13,10 +13,6 @@ public class TutorEnemy : MonoBehaviour
     [SerializeField] private Transform[] _points;
     [SerializeField] private EnemyFieldOfView _fov;
     [SerializeField] private EnemyView _view;
-    /// <summary>
-    /// Можно заменить на инжект
-    /// </summary>
-    [SerializeField] private Mirror_Activate _mirror;
     
     private BellSoundTrigger _soundTrigger;
 
@@ -27,7 +23,6 @@ public class TutorEnemy : MonoBehaviour
     public EnemyConfig Config => _config;
     public Transform[] Points => _points;
     public EnemyFieldOfView FOV => _fov;
-    public Mirror_Activate Mirror => _mirror;
     
     
     private void Awake()
