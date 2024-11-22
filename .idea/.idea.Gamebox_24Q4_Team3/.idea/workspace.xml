@@ -6,9 +6,115 @@
   <component name="ChangeListManager">
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CubeScene/Global Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CubeScene/Global Volume Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LoadLevelSystem/SceneSaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LoadLevelSystem/SceneSaver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Crouched To Standing.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Crouched To Standing.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Crouching Idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Crouching Idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Standard Run.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Standard Run.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Standard Walk.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Standard Walk.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Standing To Crouched.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Standing To Crouched.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Walk Crouching Forward.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Walk Crouching Forward.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Material.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Material/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Material/New Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/bell.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/bell.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/cloth_mat1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/cloth_mat1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/eyes.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/eyes.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/hairs.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/hairs.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/hand_mat1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/hand_mat1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/head_matt.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/head_matt.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/lashes.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/lashes.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/low_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/low_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/pupil.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Materials/pupil.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Textures/hair1_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Textures/hair1_diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Textures/hair2_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Textures/hair2_diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Textures/normal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Textures/normal_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair/hair1_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair/hair1_diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair/hair2_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair/hair2_diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair/normal_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Hair/normal_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/cloth_mat1_basecorol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/cloth_mat1_basecorol.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/cloth_mat1_metalness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/cloth_mat1_metalness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/cloth_mat1_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/cloth_mat1_normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/hand_mat1_basecorol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/hand_mat1_basecorol.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/hand_mat1_metalness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/hand_mat1_metalness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/hand_mat1_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/hand_mat1_normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/head_matt_basecorol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/head_matt_basecorol.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/head_matt_metalness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/head_matt_metalness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/head_matt_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Texturse/Women/head_matt_normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Animation/Woman_Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Animation/Woman_Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Animation/Woman_Mirror_UP.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Animation/Woman_Mirror_UP.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Animation/Woman_Walk.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Animation/Woman_Walk.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Animation/Woman_Walk_Crouch.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Animation/Woman_Walk_Crouch.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Woman_AnimController_New.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Woman_AnimController_New.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Woman_Rig.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Woman_Rig.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Woman_Rig.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman2/Woman_Rig.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman_AnimController.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman_AnimController.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman_Rig.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Woman_Rig.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/cloth_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/cloth_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/hand_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/hand_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/head_mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/WomenMaterials/head_mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Woman.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Woman/Woman.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Woman/Woman.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mechanics/CubeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mechanics/CubeScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +125,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/GoodGirl/Models/Scripts/MirrorMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/Effect_TrypophobiaActivate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_StartTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Mirror/Mirror_Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine/Samples~/Shared Assets/Scripts/SimplePlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.probuilder/Runtime/Core/ShapeGenerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Passes/AdditionalLightsShadowCasterPass.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/TMP/TMP_PackageResourceImporter.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -50,9 +159,9 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\pv487\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\pv487\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\pv487\\AppData\\Local\\Symbols\\src&quot;
+      &quot;C:\\Users\\wanch\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\wanch\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\wanch\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
@@ -129,6 +238,13 @@
       <workItem from="1731692647582" duration="3214000" />
       <workItem from="1731698909031" duration="307000" />
       <workItem from="1731792559169" duration="1089000" />
+      <workItem from="1732039960118" duration="9401000" />
+      <workItem from="1732076236123" duration="2745000" />
+      <workItem from="1732124076035" duration="12921000" />
+      <workItem from="1732161699453" duration="634000" />
+      <workItem from="1732213830661" duration="2512000" />
+      <workItem from="1732217632161" duration="2816000" />
+      <workItem from="1732247114754" duration="1096000" />
     </task>
     <servers />
   </component>
