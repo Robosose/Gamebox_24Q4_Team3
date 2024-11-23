@@ -461,7 +461,7 @@ MonoBehaviour:
   _leftBorder: 40
   _rightBorder: 15
   _border: 15
-  _sensitivity: 2
+  _sensitivity: 6
   _crouchTime: 0.35
 --- !u!1 &939081513167052268
 GameObject:
@@ -5704,7 +5704,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1881110678664771357, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
+    - {fileID: 9200973851643760696, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
+    - {fileID: 8669178010495020378, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
+    - {fileID: 7552256078662305415, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
