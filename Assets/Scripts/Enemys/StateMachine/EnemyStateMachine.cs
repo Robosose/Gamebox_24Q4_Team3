@@ -40,7 +40,7 @@ namespace Enemys.StateMachine
         private List<IState> CreateTutorStates(Enemy enemy, EnemyFieldOfView fov, EnemyView view) => new List<IState>()
         {
             new TutorPatrollingState(enemy, fov, this, view),
-            new TutorIdlingState(enemy, fov, this, view),
+            new TutorIdlingState(enemy, fov, this, view, enemy.LookAt),
             new TutorAttackState(enemy, enemy.Config.AttackConfig, this, view),
         };
 

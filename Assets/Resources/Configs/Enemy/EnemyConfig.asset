@@ -17,7 +17,7 @@ MonoBehaviour:
     AngleOfView: 60
     TargetMask:
       serializedVersion: 2
-      m_Bits: 0
+      m_Bits: 8
     ObstructionMask:
       serializedVersion: 2
       m_Bits: 64
