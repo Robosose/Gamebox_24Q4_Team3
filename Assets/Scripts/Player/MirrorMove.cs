@@ -35,9 +35,9 @@ public class MirrorMove : MonoBehaviour
 
     private void Update()
     {
-        _mirrorMove = _inputManager.IsUsingMirror()
-            ? Mathf.Clamp01(_mirrorMove + Time.deltaTime)
-            : Mathf.Clamp01(_mirrorMove - Time.deltaTime);
+        _mirrorMove = 1;//_inputManager.IsUsingMirror()
+            // ? Mathf.Clamp01(_mirrorMove + Time.deltaTime)
+            // : Mathf.Clamp01(_mirrorMove - Time.deltaTime);
 
         _crouchValue = _inputManager.IsCrouching()
             ? Mathf.Clamp01(_crouchValue + Time.deltaTime / _crouchTime)

@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 
 public class MirrorTutorialEvent : MonoBehaviour
 {
     [SerializeField] private bool _isTutor;
     [SerializeField] private LayerMask ignoreMask;
+    public Action HitEnemy;
     private bool _hit;
 
     private void Update()
@@ -24,6 +26,7 @@ public class MirrorTutorialEvent : MonoBehaviour
             {
                 print("Hit");
                 enemy.SeeEnemy?.Invoke();
+                HitEnemy?.Invoke();
             }
 
             _hit = true;
