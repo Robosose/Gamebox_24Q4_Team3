@@ -52,9 +52,6 @@ public class MirrorMove : MonoBehaviour
             Vector3.Lerp(_bottomPointPosition.localPosition, _bottomCrouchPointPosition.localPosition, _crouchValue),
             Vector3.Lerp(_upperPointPosition.localPosition, _upperCrouchPointPosition.localPosition, _crouchValue),
             MapValueToZeroToOne(_camera.transform.localEulerAngles.x, 50, -40));
-        print(MapValueToZeroToOne(_camera.transform.localEulerAngles.x, 50, -40));
-        // _rightHandTarget.localPosition =
-        //     new Vector3(_rightHandTarget.localPosition.x, moveValue, _rightHandTarget.localPosition.z);
 
         _rightHandTarget.localPosition = moveValue;
         if (_inputManager.IsRotatingMirror())
