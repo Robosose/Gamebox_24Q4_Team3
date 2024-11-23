@@ -823,6 +823,7 @@ GameObject:
   - component: {fileID: 3041198341073991137}
   - component: {fileID: 2083450693981713618}
   - component: {fileID: 1722262467805830262}
+  - component: {fileID: 4192689437916624001}
   m_Layer: 0
   m_Name: TutorialMonster
   m_TagString: Enemy
@@ -954,6 +955,25 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &4192689437916624001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3638136874085014893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ce486fc6d844ee58359ec242806249d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _agent: {fileID: 2465910244198915228}
+  _config: {fileID: 11400000, guid: 754ac17f26eaa2a439d52f5a6cea4591, type: 2}
+  _points: []
+  _fov: {fileID: 4745391635014745719}
+  _view: {fileID: 3041198341073991137}
+  _isTutor: 0
+  LastSoundPosition: {fileID: 0}
 --- !u!1 &3695077812363045353
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 using Enemys.State;
+using UnityEngine;
 
 namespace Enemys.StateMachine.States
 {
@@ -8,14 +9,15 @@ namespace Enemys.StateMachine.States
         private EnemyFieldOfView _fov;
         private IStateSwitcher _stateSwitcher;
         private EnemyView _enemyView;
-
+        private Transform _lookAt;
         public TutorIdlingState(Enemy enemy, EnemyFieldOfView fov, IStateSwitcher stateSwitcher,
-            EnemyView enemyView)
+            EnemyView enemyView, Transform lookAt)
         {
             _enemy = enemy;
             _fov = fov;
             _stateSwitcher = stateSwitcher;
             _enemyView = enemyView;
+            _lookAt = lookAt;
         }
 
         public void Enter()
@@ -23,6 +25,7 @@ namespace Enemys.StateMachine.States
             _enemy.SeeEnemy += PlayerSeeEnemy;
             _fov.SeePlayer += SeePlayer;
             _enemy.Agent.isStopped = true;
+            _enemy.transform.LookAt(_lookAt);
         }
 
         public void Exit()

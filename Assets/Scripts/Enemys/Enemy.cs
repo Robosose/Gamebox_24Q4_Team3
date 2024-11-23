@@ -16,17 +16,17 @@ public class Enemy : MonoBehaviour
     [SerializeField] private EnemyFieldOfView _fov;
     [SerializeField] private EnemyView _view;
     [SerializeField] private bool _isTutor;
+    
     private BellSoundTrigger _soundTrigger;
-
     private IStateSwitcher _switcher;
     private PlayerInput _playerInput;
-
     public NavMeshAgent Agent => _agent;
     public EnemyConfig Config => _config;
     public Transform[] Points => _points;
     public EnemyFieldOfView FOV => _fov;
     public BellSoundTrigger SoundTrigger => _soundTrigger;
     public Transform LastSoundPosition;
+    public Transform LookAt;
     public Action SeeEnemy;
 
     [Inject]
