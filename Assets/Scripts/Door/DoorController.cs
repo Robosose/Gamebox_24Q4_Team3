@@ -15,6 +15,7 @@ namespace Door
         [SerializeField, Tooltip("Задаем радиус открывания двери")] private float _doorOpendRadius = -90;
         [SerializeField] private float _duration;
         [SerializeField] private float _timeBeforeCloseDoor;
+        [SerializeField] private bool _isTutor;
         private Coroutine _cor;
         
         private void OnEnable()
@@ -40,7 +41,8 @@ namespace Door
         {
             if(_cor != null)
                 StopCoroutine(_cor);
-            _cor = StartCoroutine(Timer());
+            if(!_isTutor)
+                _cor = StartCoroutine(Timer());
         }
 
         private IEnumerator Timer()
