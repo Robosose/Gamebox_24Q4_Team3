@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
-using UnityEngine.Serialization;
 using Zenject;
 
 public class MirrorMove : MonoBehaviour
@@ -18,6 +17,10 @@ public class MirrorMove : MonoBehaviour
     [SerializeField] private float _border;
     [SerializeField] private float _sensitivity;
     [SerializeField] private float _crouchTime;
+    [SerializeField] private Transform _upperPointPosition;
+    [SerializeField] private Transform _bottomPointPosition;
+    [SerializeField] private Transform _upperCrouchPointPosition;
+    [SerializeField] private Transform _bottomCrouchPointPosition;
     private InputManager _inputManager;
     private float _rotateX;
     private float _rotateY;
@@ -45,12 +48,15 @@ public class MirrorMove : MonoBehaviour
             : Mathf.Clamp01(_crouchValue - Time.deltaTime / _crouchTime);
 
         _rig.weight = _mirrorMove;
-        var moveValue = Mathf.Lerp(Mathf.Lerp(_bottomPosition, _bottomCrouchPosition, _crouchValue),
-            Mathf.Lerp(_upperPosition, _upperCrouchPosition, _crouchValue),
+        var moveValue = Vector3.Lerp(
+            Vector3.Lerp(_bottomPointPosition.localPosition, _bottomCrouchPointPosition.localPosition, _crouchValue),
+            Vector3.Lerp(_upperPointPosition.localPosition, _upperCrouchPointPosition.localPosition, _crouchValue),
             MapValueToZeroToOne(_camera.transform.localEulerAngles.x, 50, -40));
-        _rightHandTarget.localPosition =
-            new Vector3(_rightHandTarget.localPosition.x, moveValue, _rightHandTarget.localPosition.z);
-        
+        print(MapValueToZeroToOne(_camera.transform.localEulerAngles.x, 50, -40));
+        // _rightHandTarget.localPosition =
+        //     new Vector3(_rightHandTarget.localPosition.x, moveValue, _rightHandTarget.localPosition.z);
+
+        _rightHandTarget.localPosition = moveValue;
         if (_inputManager.IsRotatingMirror())
         {
             _rotateX = Mathf.Clamp(_rotateX + _inputManager.GetMouseDelta().x * Time.deltaTime * _sensitivity,
