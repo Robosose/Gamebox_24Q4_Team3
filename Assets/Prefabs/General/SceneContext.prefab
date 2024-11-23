@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28bba6f0526a4ac4887798b325ff5eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _trigger: {fileID: 0}
 --- !u!1 &4826155611147822922
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,6 +141,7 @@ MonoBehaviour:
   _monoInstallers:
   - {fileID: 5818990925745149685}
   - {fileID: 4755486908772507239}
+  - {fileID: 2091152037671937308}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -202,4 +204,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputManager: {fileID: 0}
-  _playerInput: {fileID: 0}

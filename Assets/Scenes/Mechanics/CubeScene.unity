@@ -955,17 +955,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -900335347861351608, guid: 14fa6810e3072874ebc98ce59bd7c583, type: 3}
---- !u!114 &496648356 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2091152037671937308, guid: 97f8fcca319bd89468b1e97ec095387c, type: 3}
-  m_PrefabInstance: {fileID: 1897928031}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28bba6f0526a4ac4887798b325ff5eab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &500169296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3459,25 +3448,11 @@ PrefabInstance:
       value: SceneContext
       objectReference: {fileID: 0}
     - target: {fileID: 5818990925745149685, guid: 97f8fcca319bd89468b1e97ec095387c, type: 3}
-      propertyPath: _playerInput
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5818990925745149685, guid: 97f8fcca319bd89468b1e97ec095387c, type: 3}
       propertyPath: _inputManager
       value: 
       objectReference: {fileID: 2123144111}
-    - target: {fileID: 7338147241012930555, guid: 97f8fcca319bd89468b1e97ec095387c, type: 3}
-      propertyPath: _monoInstallers.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7338147241012930555, guid: 97f8fcca319bd89468b1e97ec095387c, type: 3}
-      propertyPath: '_monoInstallers.Array.data[2]'
-      value: 
-      objectReference: {fileID: 496648356}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 3866653763492687859, guid: 97f8fcca319bd89468b1e97ec095387c, type: 3}
-    - {fileID: 7388084886225251950, guid: 97f8fcca319bd89468b1e97ec095387c, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97f8fcca319bd89468b1e97ec095387c, type: 3}
