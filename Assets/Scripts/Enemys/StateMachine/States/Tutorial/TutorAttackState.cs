@@ -21,7 +21,6 @@ namespace Enemys.StateMachine
 
         public void Enter()
         {
-            Debug.Log("ASDASDASDASDASDASDASDAS");
             _enemy.Agent.isStopped = false;
             _enemy.Agent.speed = _configAttackConfig.Speed;
             _view.StartRunning();

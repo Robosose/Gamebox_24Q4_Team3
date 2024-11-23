@@ -1,4 +1,5 @@
 using Enemys.State;
+using UnityEngine;
 
 namespace Enemys.StateMachine.States
 {
@@ -9,6 +10,7 @@ namespace Enemys.StateMachine.States
         private IStateSwitcher _stateSwitcher;
         private EnemyView _enemyView;
         private int _currentPoint = 0;
+        private bool _beIdling;
         
         public TutorPatrollingState(Enemy enemy, EnemyFieldOfView fov, IStateSwitcher stateSwitcher,
             EnemyView enemyView)
@@ -35,13 +37,14 @@ namespace Enemys.StateMachine.States
         {
             _fov.SeePlayer += OnSeePlayer;
             _enemyView.StopWalking();
+            _currentPoint++;
         }
 
         public void Update()
         {
-            if (_enemy.Agent.remainingDistance < .1f)
+            if (_enemy.Agent.remainingDistance < .1f && !_beIdling)
             {
-                _currentPoint++;
+                _beIdling = true;
                 _stateSwitcher.SwitchState<TutorIdlingState>();
             }
         }
