@@ -298,17 +298,17 @@ Light:
   m_Color: {r: 0.2951673, g: 0.42197704, b: 0.9339623, a: 1}
   m_Intensity: 100
   m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 23.638567
+  m_SpotAngle: 46.272728
+  m_InnerSpotAngle: 6.792765
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 9.929085
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -358,13 +358,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363925822}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.54670775, y: -0.4484535, z: -0.44845366, w: 0.54670775}
-  m_LocalPosition: {x: 4.085, y: 2.212, z: 2.039}
+  m_LocalRotation: {x: 0.5803119, y: -0.47601834, z: -0.41907975, w: 0.5108981}
+  m_LocalPosition: {x: 2.16, y: 1.828, z: 1.788}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 11.277, y: -90, z: -90}
+  m_LocalEulerAnglesHint: {x: 11.185, y: -97.421, z: -91.447}
 --- !u!114 &523102808 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4492541528400984586, guid: 0c30e7beac84ecd44bd7304302c92236, type: 3}
