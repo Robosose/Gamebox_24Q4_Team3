@@ -52,6 +52,11 @@ public class TutorTimer : MonoBehaviour
 
         if (_redLight != null) _redLight.enabled = false;
         if (_greenLight != null) _greenLight.enabled = true;
+
+        foreach (Light light in _light)
+        {
+            light.enabled = false;
+        }
     }
 }
 
