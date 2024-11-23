@@ -5,27 +5,28 @@ public class MirrorTutorialEvent : MonoBehaviour
     [SerializeField] private bool _isTutor;
     [SerializeField] private LayerMask ignoreMask;
     private bool _hit;
-    
+
     private void Update()
     {
-        if(!_isTutor)
+        if (_hit)
             return;
-        RaycastHit hit;
-        int layerMask = ~(1 << ignoreMask);
-        if (Physics.Raycast(transform.position, transform.forward, out hit,Mathf.Infinity,layerMask))
+        if (!_isTutor)
+            return;
+
+        RaycastHit hit = new RaycastHit();
+        int ignore = ~ignoreMask;
+        if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, ignore))
         {
-            print(hit.transform.tag);
-            if(!hit.transform.CompareTag("Enemy"))
+            if (!hit.transform.CompareTag("Enemy"))
                 return;
-            if (!_hit)
+            hit.transform.TryGetComponent(out Enemy enemy);
+            if (enemy)
             {
-                hit.transform.TryGetComponent(out Enemy enemy);
-                if (enemy)
-                {
-                    enemy.SeeEnemy?.Invoke();
-                }
-                _hit = true;
+                print("Hit");
+                enemy.SeeEnemy?.Invoke();
             }
+
+            _hit = true;
         }
     }
 

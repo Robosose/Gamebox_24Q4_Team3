@@ -5,22 +5,18 @@ using Zenject;
 public class MirrorMove : MonoBehaviour
 {
     [SerializeField] private Rig _rig;
+    [SerializeField] private Transform _upperPointPosition;
+    [SerializeField] private Transform _bottomPointPosition;
+    [SerializeField] private Transform _upperCrouchPointPosition;
+    [SerializeField] private Transform _bottomCrouchPointPosition;
     [SerializeField] private Transform _rightHandTarget;
     [SerializeField] private GameObject _camera;
     [SerializeField] private float _distanceBeforePlayer;
-    [SerializeField] private float _upperPosition;
-    [SerializeField] private float _bottomPosition;
-    [SerializeField] private float _upperCrouchPosition;
-    [SerializeField] private float _bottomCrouchPosition;
     [SerializeField] private float _leftBorder;
     [SerializeField] private float _rightBorder;
     [SerializeField] private float _border;
     [SerializeField] private float _sensitivity;
     [SerializeField] private float _crouchTime;
-    [SerializeField] private Transform _upperPointPosition;
-    [SerializeField] private Transform _bottomPointPosition;
-    [SerializeField] private Transform _upperCrouchPointPosition;
-    [SerializeField] private Transform _bottomCrouchPointPosition;
     private InputManager _inputManager;
     private float _rotateX;
     private float _rotateY;
