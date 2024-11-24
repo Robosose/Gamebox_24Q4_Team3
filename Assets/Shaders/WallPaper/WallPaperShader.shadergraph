@@ -3782,7 +3782,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "a9a762d460b9495bb771eeb2786517c2",
     "m_Id": 0,
-    "m_DisplayName": "AODefault",
+    "m_DisplayName": "DefaultColor",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
