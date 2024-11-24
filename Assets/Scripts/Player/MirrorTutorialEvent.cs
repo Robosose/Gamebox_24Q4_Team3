@@ -12,6 +12,7 @@ public class MirrorTutorialEvent : MonoBehaviour
     {
         if (_hit)
             return;
+        
         if (!_isTutor)
             return;
 
@@ -21,15 +22,14 @@ public class MirrorTutorialEvent : MonoBehaviour
         {
             if (!hit.transform.CompareTag("Enemy"))
                 return;
+            
             hit.transform.TryGetComponent(out Enemy enemy);
             if (enemy)
             {
-                print("Hit");
                 enemy.SeeEnemy?.Invoke();
                 HitEnemy?.Invoke();
+                _hit = true;
             }
-
-            _hit = true;
         }
     }
 
