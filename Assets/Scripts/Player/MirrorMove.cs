@@ -11,12 +11,12 @@ public class MirrorMove : MonoBehaviour
     [SerializeField] private Transform _bottomCrouchPointPosition;
     [SerializeField] private Transform _rightHandTarget;
     [SerializeField] private GameObject _camera;
-    [SerializeField] private float _distanceBeforePlayer;
     [SerializeField] private float _leftBorder;
     [SerializeField] private float _rightBorder;
     [SerializeField] private float _border;
     [SerializeField] private float _sensitivity;
     [SerializeField] private float _crouchTime;
+    [SerializeField] private PlayerControllers _playerControllers;
     private InputManager _inputManager;
     private float _rotateX;
     private float _rotateY;
@@ -47,7 +47,7 @@ public class MirrorMove : MonoBehaviour
         var moveValue = Vector3.Lerp(
             Vector3.Lerp(_bottomPointPosition.localPosition, _bottomCrouchPointPosition.localPosition, _crouchValue),
             Vector3.Lerp(_upperPointPosition.localPosition, _upperCrouchPointPosition.localPosition, _crouchValue),
-            MapValueToZeroToOne(_camera.transform.localEulerAngles.x, 50, -40));
+            MapValueToZeroToOne(_camera.transform.localEulerAngles.x, _playerControllers.BottomLimit1, _playerControllers.UpperLimit1));
 
         _rightHandTarget.localPosition = moveValue;
         if (_inputManager.IsRotatingMirror())
