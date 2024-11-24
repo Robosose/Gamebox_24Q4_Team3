@@ -38,6 +38,9 @@ public class TutorialCallEnemy : MonoBehaviour
             StartCoroutine(MirrorEvent());
         }
     }
+    
+    //closeDoor
+    
 
     private IEnumerator MirrorEvent()
     {
