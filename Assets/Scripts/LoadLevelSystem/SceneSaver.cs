@@ -15,6 +15,8 @@ public class SceneSaver : Singleton<SceneSaver>
     
     private void Start()
     {
+        _background.color = Color.clear;
+        _slider.SetActive(false);
         SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.sceneUnloaded += OnSceneUnloaded;
     }

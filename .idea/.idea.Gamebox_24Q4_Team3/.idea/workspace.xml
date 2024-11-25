@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Woman_Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Woman_Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Load/LoadScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Load/LoadScreen.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LoadLevelSystem/SceneSaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LoadLevelSystem/SceneSaver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +19,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/Effect_TrypophobiaActivate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Programs/Unity/Projects/Gamebox_24Q4_Team3/Assets/Scripts/Enemys/StateMachine/States/Tutorial/TutorPatrollingState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Programs/Unity/Projects/Gamebox_24Q4_Team3/Assets/Scripts/Enemys/StateMachine/States/Tutorial/TutorPatrollingState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_StartTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadLevelSystem/ChangeLoadScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine/Samples~/Shared Assets/Scripts/SimplePlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization/Runtime/Localized Reference/LocalizedReference.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.probuilder/Runtime/Core/ShapeGenerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/Runtime/Passes/AdditionalLightsShadowCasterPass.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline/Samples~/Customization/Video/VideoPlayableBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/TMP/TMP_PackageResourceImporter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Tests/Editor/TMP/FontEngineTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9ff2ec5163204af481ac0a675d8e1bf82ac00/44/8b69c3e2/Physics.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
