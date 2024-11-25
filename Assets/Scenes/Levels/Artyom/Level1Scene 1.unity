@@ -1048,6 +1048,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: walls_kitchen
       objectReference: {fileID: 0}
+    - target: {fileID: 8055530355094169642, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.72302747
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055530355094169642, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055530355094169642, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6908193
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055530355094169642, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055530355094169642, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 87.39
+      objectReference: {fileID: 0}
     - target: {fileID: 8737288758082898381, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.4002495
