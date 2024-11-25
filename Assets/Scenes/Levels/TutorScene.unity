@@ -228,6 +228,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2309944555998164312, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2395621437905785734, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -1342,6 +1346,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4802101714698190355, guid: 71d61c33e335626468811831addf69b7, type: 3}
+      propertyPath: _isActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7295944287913009158, guid: 71d61c33e335626468811831addf69b7, type: 3}
       propertyPath: m_Name
       value: BellSoundTrigger
@@ -1790,9 +1798,53 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2729275872094722948, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729275872094722948, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729275872094722948, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849200285425345343, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 1742553114}
+    - target: {fileID: 4849200285425345343, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
+      propertyPath: loadImagesByIndex.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6864803770000245017, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
       propertyPath: m_Name
       value: LoadScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761456897070937840, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761456897070937840, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8257173864333523406, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8257173864333523406, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8257173864333523406, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8257173864333523406, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8286028203094084604, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1833,6 +1885,14 @@ PrefabInstance:
     - target: {fileID: 8286028203094084604, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8818394943485331028, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946522678563785248, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
+      propertyPath: m_LocalizedAssetReference.m_TableEntryReference.m_KeyId
+      value: 5892089229312
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2158,6 +2218,17 @@ Light:
   m_CorrespondingSourceObject: {fileID: 4524052480887548252, guid: 58cdaa0c29307974996f1fbb87b93e83, type: 3}
   m_PrefabInstance: {fileID: 1712290483}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1742553114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2729275872094722948, guid: f17508d21d2c33c458fe5aa53fa6c153, type: 3}
+  m_PrefabInstance: {fileID: 1663172825}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1865454689 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4855773438854369937, guid: 58cdaa0c29307974996f1fbb87b93e83, type: 3}

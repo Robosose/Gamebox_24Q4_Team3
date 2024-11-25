@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 6567002007766299911}
   - component: {fileID: 202140895978515451}
   - component: {fileID: 2729275872094722948}
+  - component: {fileID: 8946522678563785248}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -262,6 +263,41 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8946522678563785248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728654316167911994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f55fcc3768689a4f9cf863b8c11c618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LocalizedAssetReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:9f3349861b7846a48bd3940ff2bd050f
+    m_TableEntryReference:
+      m_KeyId: 101819002880
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+  m_UpdateAsset:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2729275872094722948}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+        m_MethodName: set_sprite
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!1 &6864803770000245017
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +309,7 @@ GameObject:
   - component: {fileID: 8286028203094084604}
   - component: {fileID: 7785411185340724527}
   - component: {fileID: 5206889431619667536}
+  - component: {fileID: 4849200285425345343}
   m_Layer: 0
   m_Name: LoadScreen
   m_TagString: Untagged
@@ -332,6 +369,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _loadAnimator: {fileID: 7785411185340724527}
   _canvas: {fileID: 8818394943485331028}
+--- !u!114 &4849200285425345343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6864803770000245017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1908b7301e604eb4c874919aa4054976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadImagesByIndex:
+  - index: 0
+    screenName: FirstScreen
+  - index: 1
+    screenName: SecondScreen
+  - index: 2
+    screenName: ThirdScreen
+  - index: 3
+    screenName: FourthScreen
+  spriteEvent: {fileID: 8946522678563785248}
 --- !u!1 &7236166664973679139
 GameObject:
   m_ObjectHideFlags: 0
