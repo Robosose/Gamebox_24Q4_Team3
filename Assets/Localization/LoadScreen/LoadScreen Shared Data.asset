@@ -23,6 +23,14 @@ MonoBehaviour:
     m_Key: SecondScreen
     m_Metadata:
       m_Items: []
+  - m_Id: 204124593500160
+    m_Key: ThirdScreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206812836179968
+    m_Key: FourthScreen
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 5919800860755886175
@@ -47,5 +55,13 @@ MonoBehaviour:
           m_TableCodes:
           - en
           - ru
+        - m_KeyId: 204124593500160
+          m_TableCodes:
+          - en
+          - ru
+        - m_KeyId: 206812836179968
+          m_TableCodes:
+          - ru
+          - en
         m_TypeString: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null

@@ -27,6 +27,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7fba172869410ca46a52a99cb3cfecfb
+    m_Address: Loading_4.2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8de169e971beabf498bbcb5eccea6408
     m_Address: ENG_4-2
     m_ReadOnly: 1
@@ -39,8 +45,8 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a4e747239665a8f4e8ec24fe756f4df9
-    m_Address: ENG_3-2
+  - m_GUID: a76aa420967a0fd41933683177e95dd0
+    m_Address: Loading_3.2
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

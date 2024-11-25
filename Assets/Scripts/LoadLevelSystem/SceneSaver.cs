@@ -1,12 +1,13 @@
 using Patterns.Singleton;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Action = System.Action;
+using UnityEngine.UI;
 
 public class SceneSaver : Singleton<SceneSaver>
 {
     [SerializeField] private Animator _loadAnimator;
-    [SerializeField] private GameObject _canvas;
+    [SerializeField] private Image _background;
+    [SerializeField] private GameObject _slider;
     private static readonly int Load = Animator.StringToHash("Load");
     private string _levelName;
     private const string LevelNameKey = "LevelName";
@@ -20,14 +21,16 @@ public class SceneSaver : Singleton<SceneSaver>
     
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        _background.color = Color.clear;
+        _slider.SetActive(false);
         if(SceneManager.GetActiveScene().buildIndex !=0)
             SaveCurrentScene();
     }
     
     private void OnSceneUnloaded(Scene scene)
     {
+        _background.color = Color.clear;
         _loadAnimator.ResetTrigger(Load);
-        _canvas.SetActive(false);
     }
 
     private void SaveCurrentScene()
@@ -75,6 +78,8 @@ public class SceneSaver : Singleton<SceneSaver>
     private void ActivateAnimation()
     {
         Time.timeScale = 0;
+        _background.color = Color.white;
+        _slider.SetActive(true);
         _loadAnimator.SetTrigger(Load);
     }
 

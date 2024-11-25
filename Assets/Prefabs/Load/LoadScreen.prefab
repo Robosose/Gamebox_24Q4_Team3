@@ -368,7 +368,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loadAnimator: {fileID: 7785411185340724527}
-  _canvas: {fileID: 8818394943485331028}
+  _background: {fileID: 2729275872094722948}
+  _slider: {fileID: 8200302205289255321}
 --- !u!114 &4849200285425345343
 MonoBehaviour:
   m_ObjectHideFlags: 0
