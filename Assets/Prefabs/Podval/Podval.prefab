@@ -1050,7 +1050,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9148217556477729016
 Transform:
   m_ObjectHideFlags: 0
@@ -1105,6 +1105,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   castRadius: 0.3
   door: {fileID: 1850227599431230122}
+  _audioSource: {fileID: 0}
+  _morror: {fileID: 0}
 --- !u!1 &1273926460499283074
 GameObject:
   m_ObjectHideFlags: 0
@@ -3991,8 +3993,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.5, y: 1, z: 0.7214331}
+  m_Center: {x: 2.0298086e-16, y: 0, z: -0.13928348}
 --- !u!114 &1861189561557568251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4011,6 +4013,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   castRadius: 0.3
   door: {fileID: 1850227599431230122}
+  _audioSource: {fileID: 0}
+  _morror: {fileID: 0}
 --- !u!1 &5588972532610033468
 GameObject:
   m_ObjectHideFlags: 0

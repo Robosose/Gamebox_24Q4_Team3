@@ -14,8 +14,9 @@ public class TutorialCallEnemy : MonoBehaviour
     private bool _inMirrorTableArea;
     private bool _isGettingMirror;
 
-    //Добавление звука при зайрытии двери P S Влад
+    // Дополнительные Поля P.S. Влад
     [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private GameObject _morror;
 
     private void Update()
     {
@@ -68,7 +69,11 @@ public class TutorialCallEnemy : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
+        {
             _inMirrorTableArea = true;
+            //Код добавленный Владом
+            Destroy(_morror.gameObject);
+        }
     }
 
     private void OnTriggerExit(Collider other)
