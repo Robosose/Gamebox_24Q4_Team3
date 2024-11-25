@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Models/Komnati/Children's Room/Textures/closet2_mat_normal.png.meta
 guid: c2b2a95c0a343854a80f92d5c73799c3
+========
+guid: e62c24b7b7964064c808c35bcb0da288
+>>>>>>>> newIvan:Assets/Models/Komnati/Children's Room/Textures/carpet_mat_normal.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

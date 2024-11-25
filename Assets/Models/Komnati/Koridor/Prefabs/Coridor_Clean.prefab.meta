@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Models/Komnati/Koridor/Prefabs/Coridor_Clean.prefab.meta
 guid: f79e9bf6971646e46a0d480ca557c983
+========
+guid: 2d3dad9f84c153047b7605fd8356cb84
+>>>>>>>> newIvan:Assets/Models/Komnati/Children's Room/Children's Room.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

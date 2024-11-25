@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_GUID: e6135f2110cd14842a793e6e6471ca72
+  m_SerializeEntries:
+  - m_GUID: 0ab68c95e60c17648a54008d3f253f5c
+    m_Address: Assets/Sprites/MainMenu/ENG/ENG_5.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1dd564ae8a8f4024cb82f8c382e4776a
+    m_Address: Assets/Sprites/MainMenu/RUS/RUS_2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d0d66a32bb051343983d88db1c50ed8
+    m_Address: Assets/Sprites/MainMenu/ENG/ENG_4.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4356dc4765404f04fa556cd424e010d6
+    m_Address: Assets/Sprites/MainMenu/RUS/RUS_3.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 501f9b583a98ee8478067cf95b3f3e3d
+    m_Address: Assets/Sprites/MainMenu/ENG/ENG_3.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5923eb1067c186d41aee1a257ad46fd9
+    m_Address: Assets/Sprites/MainMenu/ENG/ENG_1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e640e854236e9b45a36c9a10c175b72
+    m_Address: Assets/Sprites/MainMenu/RUS/RUS_4.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 95db9748c1ef1284f98a8efbb198929d
+    m_Address: Assets/Sprites/MainMenu/ENG/ENG_2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f98f6a14805691f43a76de4a2faa8b9d
+    m_Address: Assets/Sprites/MainMenu/RUS/RUS_5.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fba2502c6f4e983439e1fe0b689fd0c1
+    m_Address: RUS_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 36925f5dffd252a4caf333ed9eb60ca0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 161af67720049f34eb94e7f5a3467e50, type: 2}
+    - {fileID: 11400000, guid: 7785f821d9a955245965430b0cd4ff9a, type: 2}

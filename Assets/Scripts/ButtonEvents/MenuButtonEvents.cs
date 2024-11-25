@@ -1,11 +1,15 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MenuButtonEvents : MonoBehaviour
 {
-    public void StartGameButton()
+    public void StartNewGameButton()
     {
-        SceneManager.LoadScene("Scenes/Mechanics/CubeScene");
+        SceneSaver.Instance.LoadScene(ScenesType.StartScene);
+    }
+
+    public void ContinueButton()
+    {
+        SceneSaver.Instance.LoadScene(ScenesType.SavedScene);
     }
     
     public void ExitButton()

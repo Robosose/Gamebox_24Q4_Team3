@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Models/Komnati.meta
 guid: 4257044eaf01fc34a8617b21c26d5ee7
+========
+guid: ba1bc8358460bec4d8ad8a641e314146
+>>>>>>>> newIvan:Assets/Models/Woman.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

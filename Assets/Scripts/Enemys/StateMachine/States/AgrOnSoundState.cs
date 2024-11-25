@@ -27,15 +27,23 @@ namespace Enemys.StateMachine.States
         public void Enter()
         {
             _enemy.Agent.speed = _config.AttackConfig.Speed;
-            _enemy.PlayerInput.LoudSound += SetNewDestination;
-            SetNewDestination();
+            _enemy.SoundTrigger.OnBellSoundTriggered += SetNewDestination;
+            _fov.SeePlayer += OnSeePlayer;
+            SetNewDestination(_enemy.LastSoundPosition);
             _view.StartRunning();
+        }
+
+        private void OnSeePlayer()
+        {
+            _stateSwitcher.SwitchState<AttackState>();
+
         }
 
         public void Exit()
         {
             ZeroingOutCoroutine();
-            _enemy.PlayerInput.LoudSound -= SetNewDestination;
+            _enemy.SoundTrigger.OnBellSoundTriggered -= SetNewDestination;
+            _fov.SeePlayer += OnSeePlayer;
             _view.StopRunning();
         }
 
@@ -57,12 +65,12 @@ namespace Enemys.StateMachine.States
             _coroutine = null;
         }
         
-        private void SetNewDestination()
+        private void SetNewDestination(Transform transform)
         {
             ZeroingOutCoroutine();
-            if(Vector3.Distance(_enemy.Agent.destination.normalized, _fov.PlayerRef.transform.position) < 1f)
+            if(Vector3.Distance(_enemy.Agent.destination.normalized, transform.position) < 1f)
                 return;
-            _enemy.Agent.SetDestination(_fov.PlayerRef.transform.position);
+            _enemy.Agent.SetDestination(transform.position);
             _view.StartRunning();
         }
         
