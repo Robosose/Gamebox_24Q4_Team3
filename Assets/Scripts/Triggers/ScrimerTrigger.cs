@@ -3,9 +3,11 @@ using UnityEngine;
 
 public class ScrimerTrigger : MonoBehaviour
 {
-    [SerializeField, Range(10, 30)] private float _lifeTime;
-
+    [Header("Settings")]
+    [SerializeField, Range(1, 10)] private float _lifeTime;
     [SerializeField] private GameObject[] _scrimers;
+
+    private bool _isTriggered;
 
     void Start()
     {
@@ -17,22 +19,31 @@ public class ScrimerTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !_isTriggered)
         {
-            foreach (var scrimers in _scrimers)
-            {
-                scrimers.SetActive(true);
-                LifeScrimers();
-            }
+            _isTriggered = true;
+            ActivateScreamers();
+            StartCoroutine(DeactivateScreamersAfterDeley());
         }
     }
 
-    private IEnumerator LifeScrimers()
+    private void ActivateScreamers()
+    {
+        foreach (var scrimers in _scrimers)
+        {
+            scrimers.SetActive(true);
+        }
+    }
+
+    private IEnumerator DeactivateScreamersAfterDeley()
     {
         yield return new WaitForSeconds(_lifeTime);
+
         foreach (var scrimers in _scrimers)
         {
             scrimers.SetActive(false);
         }
+
+        Destroy(gameObject);
     }
 }
