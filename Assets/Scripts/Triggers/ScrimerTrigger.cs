@@ -6,6 +6,7 @@ public class ScrimerTrigger : MonoBehaviour
     [Header("Settings")]
     [SerializeField, Range(1, 10)] private float _lifeTime;
     [SerializeField] private GameObject[] _scrimers;
+    [SerializeField] private AudioSource _audioSource;
 
     private bool _isTriggered;
 
@@ -32,6 +33,7 @@ public class ScrimerTrigger : MonoBehaviour
         foreach (var scrimers in _scrimers)
         {
             scrimers.SetActive(true);
+            _audioSource.Play();
         }
     }
 
