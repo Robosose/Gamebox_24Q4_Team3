@@ -1082,6 +1082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Podval (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5588972532610033468, guid: 58cdaa0c29307974996f1fbb87b93e83, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
