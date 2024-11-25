@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
+public partial class @InputSystem_Actions : IInputActionCollection2, IDisposable
 {
     public InputActionAsset asset { get; }
     public @InputSystem_Actions()
@@ -139,6 +139,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""name"": ""FreeCameraFlyUp"",
                     ""type"": ""Button"",
                     ""id"": ""7e357390-73d2-4b96-b85c-93656f8df567"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ToggleMirror"",
+                    ""type"": ""Button"",
+                    ""id"": ""586dd1a4-b84e-42cc-931f-36b5a80b5f94"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -585,6 +594,17 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""action"": ""FreeCameraFlyUp"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""07411a38-3699-4146-a439-8e7868b501ab"",
+                    ""path"": ""<Keyboard>/v"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""ToggleMirror"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -1203,6 +1223,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Player_RotateMirror = m_Player.FindAction("RotateMirror", throwIfNotFound: true);
         m_Player_FreeCameraActivate = m_Player.FindAction("FreeCameraActivate", throwIfNotFound: true);
         m_Player_FreeCameraFlyUp = m_Player.FindAction("FreeCameraFlyUp", throwIfNotFound: true);
+        m_Player_ToggleMirror = m_Player.FindAction("ToggleMirror", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1296,6 +1317,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_RotateMirror;
     private readonly InputAction m_Player_FreeCameraActivate;
     private readonly InputAction m_Player_FreeCameraFlyUp;
+    private readonly InputAction m_Player_ToggleMirror;
     public struct PlayerActions
     {
         private @InputSystem_Actions m_Wrapper;
@@ -1313,6 +1335,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         public InputAction @RotateMirror => m_Wrapper.m_Player_RotateMirror;
         public InputAction @FreeCameraActivate => m_Wrapper.m_Player_FreeCameraActivate;
         public InputAction @FreeCameraFlyUp => m_Wrapper.m_Player_FreeCameraFlyUp;
+        public InputAction @ToggleMirror => m_Wrapper.m_Player_ToggleMirror;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1361,6 +1384,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @FreeCameraFlyUp.started += instance.OnFreeCameraFlyUp;
             @FreeCameraFlyUp.performed += instance.OnFreeCameraFlyUp;
             @FreeCameraFlyUp.canceled += instance.OnFreeCameraFlyUp;
+            @ToggleMirror.started += instance.OnToggleMirror;
+            @ToggleMirror.performed += instance.OnToggleMirror;
+            @ToggleMirror.canceled += instance.OnToggleMirror;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -1404,6 +1430,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @FreeCameraFlyUp.started -= instance.OnFreeCameraFlyUp;
             @FreeCameraFlyUp.performed -= instance.OnFreeCameraFlyUp;
             @FreeCameraFlyUp.canceled -= instance.OnFreeCameraFlyUp;
+            @ToggleMirror.started -= instance.OnToggleMirror;
+            @ToggleMirror.performed -= instance.OnToggleMirror;
+            @ToggleMirror.canceled -= instance.OnToggleMirror;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1607,6 +1636,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         void OnRotateMirror(InputAction.CallbackContext context);
         void OnFreeCameraActivate(InputAction.CallbackContext context);
         void OnFreeCameraFlyUp(InputAction.CallbackContext context);
+        void OnToggleMirror(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

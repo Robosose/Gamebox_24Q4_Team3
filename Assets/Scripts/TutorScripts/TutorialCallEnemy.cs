@@ -14,6 +14,9 @@ public class TutorialCallEnemy : MonoBehaviour
     private bool _inMirrorTableArea;
     private bool _isGettingMirror;
 
+    //Добавление звука при зайрытии двери P S Влад
+    [SerializeField] private AudioSource _audioSource;
+
     private void Update()
     {
         if (_isGettingMirror)
@@ -48,6 +51,9 @@ public class TutorialCallEnemy : MonoBehaviour
         door.TryGetComponent(out Animator animator);
         animator.enabled = false;
         door.transform.localEulerAngles = Vector3.zero;
+
+        //Код добавленный Владом
+        _audioSource.Play();
     }
 
     private IEnumerator MirrorEvent()
