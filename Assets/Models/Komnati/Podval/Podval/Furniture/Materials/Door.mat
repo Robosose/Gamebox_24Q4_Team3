@@ -20,11 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:Assets/Models/Komnati/Podval/Podval/Furniture/Materials/Door.mat
   m_Name: Door
-========
-  m_Name: Door_Wood
->>>>>>>> newIvan:Assets/Models/Komnati/Koridor/Materials/Door_Wood.mat
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -35,11 +31,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-<<<<<<<< HEAD:Assets/Models/Komnati/Podval/Podval/Furniture/Materials/Door.mat
   m_CustomRenderQueue: 2000
-========
-  m_CustomRenderQueue: -1
->>>>>>>> newIvan:Assets/Models/Komnati/Koridor/Materials/Door_Wood.mat
   stringTagMap:
     RenderType: Opaque
   disabledShaderPasses:
@@ -49,19 +41,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-<<<<<<<< HEAD:Assets/Models/Komnati/Podval/Podval/Furniture/Materials/Door.mat
         m_Texture: {fileID: 2800000, guid: 117b776c89607d24f9bdf79152533ce1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 2800000, guid: 7af5bf603be0c6b409317f1e5d93c1ec, type: 3}
-========
-        m_Texture: {fileID: 2800000, guid: 185f4a574842a554fa3fe9907bd39a38, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: bf5d224983522a343bad0286558910db, type: 3}
->>>>>>>> newIvan:Assets/Models/Komnati/Koridor/Materials/Door_Wood.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -81,19 +65,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-<<<<<<<< HEAD:Assets/Models/Komnati/Podval/Podval/Furniture/Materials/Door.mat
         m_Texture: {fileID: 2800000, guid: 117b776c89607d24f9bdf79152533ce1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 2800000, guid: b2c873776b1e34a4382a008e1781f305, type: 3}
-========
-        m_Texture: {fileID: 2800000, guid: 185f4a574842a554fa3fe9907bd39a38, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: f9f2fd81c3811bf4ba10b85f0e141964, type: 3}
->>>>>>>> newIvan:Assets/Models/Komnati/Koridor/Materials/Door_Wood.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -131,7 +107,7 @@ Material:
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
-    - _Cutoff: 0.5
+    - _Cutoff: 0.154
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -145,7 +121,7 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.5
+    - _Smoothness: 0.52
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -154,25 +130,9 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.7397059, b: 0.70500004, a: 1}
-    - _Color: {r: 1, g: 0.7397059, b: 0.70500004, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
-<<<<<<<< HEAD:Assets/Models/Komnati/Podval/Podval/Furniture/Materials/Door.mat
-========
---- !u!114 &706791172653403679
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 9
->>>>>>>> newIvan:Assets/Models/Komnati/Koridor/Materials/Door_Wood.mat

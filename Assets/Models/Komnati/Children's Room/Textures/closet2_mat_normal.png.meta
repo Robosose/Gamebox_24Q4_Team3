@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Models/Komnati/Children's Room/Textures/closet2_mat_normal.png.meta
 guid: c2b2a95c0a343854a80f92d5c73799c3
-========
-guid: e62c24b7b7964064c808c35bcb0da288
->>>>>>>> newIvan:Assets/Models/Komnati/Children's Room/Textures/carpet_mat_normal.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -59,7 +55,7 @@ TextureImporter:
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 1
-  textureShape: 1
+  textureShape: 2
   singleChannelComponent: 0
   flipbookRows: 1
   flipbookColumns: 1
@@ -67,9 +63,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform

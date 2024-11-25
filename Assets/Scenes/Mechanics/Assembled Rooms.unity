@@ -890,7 +890,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.06666667
+  m_VoxelSize: 0.046666667
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 0}
   m_BuildHeightMesh: 0
@@ -4324,7 +4324,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.06666667
+  m_VoxelSize: 0.046666667
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 2c87c262b649b7a45a541bf4b730b7f6, type: 2}
   m_BuildHeightMesh: 0
@@ -4437,6 +4437,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coridor_Dirt
       objectReference: {fileID: 0}
+    - target: {fileID: 4420513381549279250, guid: f3a2cf9c5360e8a4ea672a5e1457ea2b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 88a16114419155347b6cf2a191dcf5ea, type: 2}
+    - target: {fileID: 6208917591523824391, guid: f3a2cf9c5360e8a4ea672a5e1457ea2b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 77270bf930bd5e34d8c4987089fb99ee, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4450,6 +4458,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1915442215475272892, guid: b9c00eaaf2b311b47b81e7bda1d68481, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 77270bf930bd5e34d8c4987089fb99ee, type: 2}
+    - target: {fileID: 2697534381089458554, guid: b9c00eaaf2b311b47b81e7bda1d68481, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 88a16114419155347b6cf2a191dcf5ea, type: 2}
     - target: {fileID: 3798744701429453138, guid: b9c00eaaf2b311b47b81e7bda1d68481, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.245
@@ -4507,6 +4523,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2802213427955099029, guid: 95600d5e56b7d774d9dce74dbaec0d51, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 88a16114419155347b6cf2a191dcf5ea, type: 2}
     - target: {fileID: 3650525722830078419, guid: 95600d5e56b7d774d9dce74dbaec0d51, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4551,6 +4571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Podval
       objectReference: {fileID: 0}
+    - target: {fileID: 8416872562889270436, guid: 95600d5e56b7d774d9dce74dbaec0d51, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 77270bf930bd5e34d8c4987089fb99ee, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
