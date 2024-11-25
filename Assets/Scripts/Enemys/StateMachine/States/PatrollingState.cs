@@ -32,14 +32,22 @@ namespace Enemys.StateMachine.States
         public void Enter()
         {
             _agent.speed = _config.Speed;
-            _enemy.PlayerInput.LoudSound += OnLoudSound;
+            _enemy.SoundTrigger.OnBellSoundTriggered += OnLoudSound;
+            _fov.SeePlayer += OnSeePlayer;
             _currentPointIndex = 0;
             _view.StartWalking();
             _agent.SetDestination(_enemy.Points[_currentPointIndex].position);
         }
 
-        private void OnLoudSound()
+        private void OnSeePlayer()
         {
+            _stateSwitcher.SwitchState<AttackState>();
+        }
+
+        private void OnLoudSound(Transform transform)
+        {
+            if(transform is null)
+                return;
             if(_cor is not null)
                 _enemy.StopCoroutine(_cor);
             _cor = null;
@@ -53,14 +61,12 @@ namespace Enemys.StateMachine.States
                 _enemy.StopCoroutine(_cor);
             _isIdling = false;
             _view.StopWalking();
-            _enemy.PlayerInput.LoudSound -= OnLoudSound;
+            _fov.SeePlayer -= OnSeePlayer;
+            _enemy.SoundTrigger.OnBellSoundTriggered -= OnLoudSound;
         }
 
         public void Update()
         {
-            if(_fov.IsSeePlayer)
-                _stateSwitcher.SwitchState<AttackState>();
-            
             if(_agent.remainingDistance <= .1f || _isIdling )
             {
                 _isIdling = true;

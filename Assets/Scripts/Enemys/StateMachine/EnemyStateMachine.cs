@@ -12,14 +12,9 @@ namespace Enemys.StateMachine
         private List<IState> _states;
         private IState _currentState;
 
-        public EnemyStateMachine(Enemy enemy, EnemyFieldOfView fov, EnemyView view)
+        public EnemyStateMachine(Enemy enemy, EnemyFieldOfView fov, EnemyView view, bool isTutor)
         {
-            _states = new List<IState>()
-            {
-                new PatrollingState(enemy, enemy.Config.PatrolingConfig, fov, this, view),
-                new AttackState(enemy, enemy.Config.AttackConfig, this, view),
-                new AgrOnSoundState(fov, enemy, enemy.Config, this, view)
-            };
+            _states = isTutor ? CreateTutorStates(enemy, fov, view) : CreateStandardStates(enemy, fov, view);
             
             _currentState = _states[0];
             _currentState.Enter();
@@ -41,5 +36,20 @@ namespace Enemys.StateMachine
                 throw new ArgumentNullException($"{nameof(_currentState)} is null.");
             _currentState.Update();
         }
+
+        private List<IState> CreateTutorStates(Enemy enemy, EnemyFieldOfView fov, EnemyView view) => new List<IState>()
+        {
+            new TutorPatrollingState(enemy, fov, this, view),
+            new TutorIdlingState(enemy, fov, this, view, enemy.LookAt),
+            new TutorAttackState(enemy, enemy.Config.AttackConfig, this, view),
+        };
+
+        private List<IState> CreateStandardStates(Enemy enemy, EnemyFieldOfView fov, EnemyView view) =>
+            new List<IState>()
+            {
+                new PatrollingState(enemy, enemy.Config.PatrolingConfig, fov, this, view),
+                new AttackState(enemy, enemy.Config.AttackConfig, this, view),
+                new AgrOnSoundState(fov, enemy, enemy.Config, this, view)
+            };
     }
 }

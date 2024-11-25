@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using Bell;
 using UnityEngine;
 using Zenject;
 
@@ -14,7 +16,9 @@ public class PlayerInput : MonoBehaviour
     [Header("Free Camera Movement Settings")] 
     [SerializeField] private float _normalFlySpeed;
     [SerializeField] private float _slowFlySpeed;
-    
+
+    [Space] [SerializeField] private LayerMask _enemyMask;
+
     private Vector3 _playerVelocity;
     private CharacterController _characterController;
     private InputManager _inputManager;
@@ -31,10 +35,10 @@ public class PlayerInput : MonoBehaviour
     private IMovementMode _sprintMode;
     private IMovementMode _crouchMode;
 
-    public Action LoudSound;
+    private BellSoundTrigger _trigger;
 
     [Inject]
-    private void Construct(InputManager inputManager)
+    private void Construct(InputManager inputManager, BellSoundTrigger trigger)
     {
         _characterController = GetComponent<CharacterController>();
         _playerView = GetComponent<PlayerView>();
@@ -47,6 +51,7 @@ public class PlayerInput : MonoBehaviour
         _crouchMode = new CrouchMode(_crouchSpeed);
 
         _currentMovementMode = _walkMode;
+        _trigger = trigger;
     }
 
     private void Update()
@@ -79,7 +84,8 @@ public class PlayerInput : MonoBehaviour
         var move = new Vector3(movement.x, 0f, movement.y);
 
         if (_currentMovementMode == _sprintMode && move != Vector3.zero)
-            LoudSound?.Invoke();
+            _trigger.OnSoundTriggered(transform);
+
 
         move = _cameraTransform.forward * move.z + _cameraTransform.right * move.x;
         move.y = 0f;
@@ -88,6 +94,7 @@ public class PlayerInput : MonoBehaviour
         _playerVelocity.y += _gravityValue * Time.deltaTime;
         _characterController.Move(move * (_currentMovementMode.GetSpeed() * Time.deltaTime));
     }
+
 
     private void FreeMove()
     {
@@ -151,7 +158,7 @@ public class PlayerInput : MonoBehaviour
         if (_mouseVelocity > 10000)
         {
             _bellSoundManager.PlayBellSound(_mouseVelocity);
-            // LoudSound?.Invoke();
+            _trigger.OnSoundTriggered(transform);
         }
 
         _previousMousePosition = currentMousePosition;

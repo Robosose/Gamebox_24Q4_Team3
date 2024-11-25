@@ -1678,10 +1678,10 @@ GameObject:
   - component: {fileID: 6174710758180971227}
   - component: {fileID: 7330471004962911016}
   - component: {fileID: 2640834437880402410}
-  - component: {fileID: 184991851020043639}
   - component: {fileID: 7214271303479441704}
   - component: {fileID: 6495652090480783622}
   - component: {fileID: 5292909045334079681}
+  - component: {fileID: 2085554819063028776}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Enemy
@@ -1750,27 +1750,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &184991851020043639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6661288265918174070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ce486fc6d844ee58359ec242806249d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _agent: {fileID: 2640834437880402410}
-  _config: {fileID: 11400000, guid: 754ac17f26eaa2a439d52f5a6cea4591, type: 2}
-  _points:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  _fov: {fileID: 2468520339955648536}
-  _view: {fileID: 7214271303479441704}
 --- !u!114 &7214271303479441704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1834,6 +1813,29 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &2085554819063028776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661288265918174070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ce486fc6d844ee58359ec242806249d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _agent: {fileID: 2640834437880402410}
+  _config: {fileID: 11400000, guid: 754ac17f26eaa2a439d52f5a6cea4591, type: 2}
+  _points:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _fov: {fileID: 636578467722781162}
+  _view: {fileID: 7214271303479441704}
+  _isTutor: 0
+  LastSoundPosition: {fileID: 0}
 --- !u!1 &6699232135150798912
 GameObject:
   m_ObjectHideFlags: 0
@@ -2204,7 +2206,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 226895629446509274}
-  - component: {fileID: 2468520339955648536}
   - component: {fileID: 636578467722781162}
   m_Layer: 0
   m_Name: mixamorig:Head
@@ -2229,22 +2230,6 @@ Transform:
   - {fileID: 2430233955800839079}
   m_Father: {fileID: 41681040716012259}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2468520339955648536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8660482771912180218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 473622edb52f49b2af49b1df30d7439b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  _isSeePlayer: 0
-  PlayerRef: {fileID: 0}
-  Config: {fileID: 0}
 --- !u!114 &636578467722781162
 MonoBehaviour:
   m_ObjectHideFlags: 0
