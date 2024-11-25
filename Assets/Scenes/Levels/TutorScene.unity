@@ -812,6 +812,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 11.185, y: -97.421, z: -91.447}
+--- !u!1 &440982739 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1850227599431230122, guid: 58cdaa0c29307974996f1fbb87b93e83, type: 3}
+  m_PrefabInstance: {fileID: 1712290483}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &523102808 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4492541528400984586, guid: 0c30e7beac84ecd44bd7304302c92236, type: 3}
@@ -1111,6 +1116,7 @@ MonoBehaviour:
   mirror: {fileID: 2029574513}
   enemy: {fileID: 29187417}
   castRadius: 0.3
+  door: {fileID: 440982739}
 --- !u!1001 &795703589
 PrefabInstance:
   m_ObjectHideFlags: 0

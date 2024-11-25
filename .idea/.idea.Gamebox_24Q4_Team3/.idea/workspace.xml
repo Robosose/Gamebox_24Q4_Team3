@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_DoorMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_DoorMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_StartTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_StartTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/WallPaper/WallPaperShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/WallPaper/WallPaperShader.shadergraph" afterDir="false" />
-    </list>
+    <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

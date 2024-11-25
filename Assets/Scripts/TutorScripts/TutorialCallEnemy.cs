@@ -8,7 +8,7 @@ public class TutorialCallEnemy : MonoBehaviour
     [SerializeField] private GameObject mirror;
     [SerializeField] private GameObject enemy;
     [SerializeField] private float castRadius = .3f;
-
+    [SerializeField] private GameObject door;
     private Ray _ray;
     private float _lookTimer;
     private bool _inMirrorTableArea;
@@ -29,8 +29,12 @@ public class TutorialCallEnemy : MonoBehaviour
 
         RaycastHit hit;
         if (!Physics.SphereCast(ray.origin, castRadius, ray.direction, out hit)) return;
-        
-        if (!hit.transform.CompareTag("Mirror")) return;
+
+        if (!hit.transform.CompareTag("Mirror"))
+        {
+            _lookTimer = 0;
+            return;
+        }
             
         _lookTimer += Time.deltaTime;
         if (_lookTimer >= lookTime)
@@ -38,14 +42,19 @@ public class TutorialCallEnemy : MonoBehaviour
             StartCoroutine(MirrorEvent());
         }
     }
-    
-    //closeDoor
-    
+
+    private void CloseDoor()
+    {
+        door.TryGetComponent(out Animator animator);
+        animator.enabled = false;
+        door.transform.localEulerAngles = Vector3.zero;
+    }
 
     private IEnumerator MirrorEvent()
     {
         _isGettingMirror = true;
         mirror.SetActive(true);
+        CloseDoor();
         yield return new WaitForSeconds(timeBeforeSpawnEnemy);
         enemy.SetActive(true);
     }
