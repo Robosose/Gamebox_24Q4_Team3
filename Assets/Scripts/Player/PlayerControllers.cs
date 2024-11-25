@@ -11,6 +11,9 @@ public class PlayerControllers : MonoBehaviour
     [SerializeField] private float mouseSensitivity = 10f;
     [SerializeField] private float _walkSpeed = 1f;
     [SerializeField] private float _runSpeed = 2f;
+
+    public float UpperLimit1 => UpperLimit;
+    public float BottomLimit1 => BottomLimit;
     
     private Rigidbody _playerRigidbody;
     private InputManager _inputManager;

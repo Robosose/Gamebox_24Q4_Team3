@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TutorScripts/TutorialCallEnemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TutorScripts/TutorialCallEnemy.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Env/walls_kitchen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Env/walls_kitchen.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Podval/Podval.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Podval/Podval.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/MirrorTutorialEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/MirrorTutorialEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-    </list>
+    <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,6 +138,7 @@
       <workItem from="1732247114754" duration="1096000" />
       <workItem from="1732311305890" duration="381000" />
       <workItem from="1732367639807" duration="621000" />
+      <workItem from="1732451176881" duration="4559000" />
     </task>
     <servers />
   </component>

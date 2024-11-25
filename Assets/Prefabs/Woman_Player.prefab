@@ -293,7 +293,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926749917914655185}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7f021e4816e942849a8730dd82762943, type: 3}
@@ -465,7 +465,7 @@ MonoBehaviour:
   BoneRoot: {fileID: 825378209696676491}
   Camera: {fileID: 7249211666638670417}
   UpperLimit: -40
-  BottomLimit: 50
+  BottomLimit: 40
   mouseSensitivity: 10
   _walkSpeed: 1
   _runSpeed: 2
@@ -488,12 +488,12 @@ MonoBehaviour:
   _bottomCrouchPointPosition: {fileID: 2657920238902580094}
   _rightHandTarget: {fileID: 4676492399732105787}
   _camera: {fileID: 4773074653679290808}
-  _distanceBeforePlayer: 20
   _leftBorder: 40
   _rightBorder: 15
   _border: 15
   _sensitivity: 6
   _crouchTime: 0.35
+  _playerControllers: {fileID: 7642188654328931327}
 --- !u!1 &939081513167052268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,6 +1070,7 @@ GameObject:
   m_Component:
   - component: {fileID: 825378209696676491}
   - component: {fileID: 8058248229549552434}
+  - component: {fileID: 8838003004218662336}
   m_Layer: 3
   m_Name: head.x
   m_TagString: Untagged
@@ -1093,6 +1094,27 @@ Transform:
   m_Father: {fileID: 3710889488259064508}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &8058248229549552434
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2178844151734856439}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &8838003004218662336
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2092,7 +2114,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5f8bd1e035167304fb456421d83c8c9b, type: 2}
+  - {fileID: 2100000, guid: b40146b94ea1f2640b75a9bdc7169fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2190,8 +2212,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 7336047327889580959}
   m_AABB:
-    m_Center: {x: 0.2684744, y: 0.023656297, z: -0.013707576}
-    m_Extent: {x: 0.019039564, y: 0.020947061, z: 0.016925236}
+    m_Center: {x: -0.012339711, y: 0.21983832, z: 0.11356744}
+    m_Extent: {x: 0.29985368, y: 0.52888244, z: 0.2458983}
   m_DirtyAABB: 0
 --- !u!1 &4110804805711598734
 GameObject:
@@ -2827,7 +2849,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.05
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -3928,7 +3950,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6928346092240485962}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
   m_Name: 
@@ -5435,7 +5457,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5f8bd1e035167304fb456421d83c8c9b, type: 2}
+  - {fileID: 2100000, guid: b40146b94ea1f2640b75a9bdc7169fbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5533,8 +5555,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 7336047327889580959}
   m_AABB:
-    m_Center: {x: 0.29602894, y: 0.01387625, z: 0.003962338}
-    m_Extent: {x: 0.027308732, y: 0.027767109, z: 0.03015314}
+    m_Center: {x: 0.015580356, y: 0.45822513, z: 0.28278145}
+    m_Extent: {x: 0.37955207, y: 0.6875007, z: 0.4032031}
   m_DirtyAABB: 0
 --- !u!1 &9087850869189432912
 GameObject:
@@ -5872,11 +5894,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2218881657778101008, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: _isTutor
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2218881657778101008, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: ignoreMask.m_Bits
-      value: 776
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 3115469063662117187, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_Name
@@ -5885,6 +5907,10 @@ PrefabInstance:
     - target: {fileID: 3115469063662117187, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115469063662117187, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3163825779829149678, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_Layer
