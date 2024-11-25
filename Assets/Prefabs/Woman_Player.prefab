@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 8912182124551739614}
   - component: {fileID: 7642188654328931327}
   - component: {fileID: 5124596531348726193}
+  - component: {fileID: 2096064678492502638}
   m_Layer: 8
   m_Name: Woman_Player
   m_TagString: Player
@@ -293,7 +294,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926749917914655185}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7f021e4816e942849a8730dd82762943, type: 3}
@@ -488,13 +489,27 @@ MonoBehaviour:
   _bottomCrouchPointPosition: {fileID: 2657920238902580094}
   _rightHandTarget: {fileID: 4676492399732105787}
   _camera: {fileID: 4773074653679290808}
-  _distanceBeforePlayer: 20
   _leftBorder: 40
   _rightBorder: 15
   _border: 15
   _sensitivity: 6
   _crouchTime: 0.35
   _playerControllers: {fileID: 7642188654328931327}
+--- !u!114 &2096064678492502638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926749917914655185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0eb6a1175cc4049bbaaa0295176169, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flickThreshold: 100
+  bellSource: {fileID: 2309944555998164312}
+  delayBeforeNextBell: 2
 --- !u!1 &939081513167052268
 GameObject:
   m_ObjectHideFlags: 0
