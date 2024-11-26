@@ -11,7 +11,8 @@ namespace Enemys.StateMachine.States
         private EnemyView _enemyView;
         private int _currentPoint = 0;
         private bool _beIdling;
-        
+        private float _footstepTimer;
+  
         public TutorPatrollingState(Enemy enemy, EnemyFieldOfView fov, IStateSwitcher stateSwitcher,
             EnemyView enemyView)
         {
@@ -47,8 +48,21 @@ namespace Enemys.StateMachine.States
                 _beIdling = true;
                 _stateSwitcher.SwitchState<TutorIdlingState>();
             }
+
+            FootstepTimer();
         }
-        
+
+        private void FootstepTimer()
+        {
+            Debug.Log("remainingDistance !>= .1f");
+            _footstepTimer += Time.deltaTime;
+            if (_footstepTimer >= _enemyView.FootstepInterval)
+            {
+                _enemyView.PlayRandomFootstep();
+                _footstepTimer = 0f;
+            }
+        }
+
         private void SetDestination()
         {
             _enemy.Agent.SetDestination(_enemy.Points[_currentPoint].position);

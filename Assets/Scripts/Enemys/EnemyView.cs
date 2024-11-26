@@ -13,6 +13,9 @@ namespace Enemys
         [Header("Audio")]
         [SerializeField] private AudioSource _audioSource;
         [SerializeField] private AudioClip[] _footstepSounds;
+        [SerializeField] private float _footstepInterval;
+
+        public float FootstepInterval => _footstepInterval;
 
         public void StartRunning() => _animator.SetBool(IsRunning, true);
         public void StopRunning() => _animator.SetBool(IsRunning, false);
