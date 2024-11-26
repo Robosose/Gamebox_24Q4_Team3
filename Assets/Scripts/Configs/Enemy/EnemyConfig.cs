@@ -1,9 +1,8 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Configs.Enemy
 {
-    [CreateAssetMenu(fileName = "EnemyConfig", menuName = "Configs/Enemy", order = 0)]
+    [CreateAssetMenu(fileName = "EnemyConfig", menuName = "Configs/Enemy")]
     public class EnemyConfig : ScriptableObject
     {
         [SerializeField] private PatrollingDataConfig patrollingDataConfig;
