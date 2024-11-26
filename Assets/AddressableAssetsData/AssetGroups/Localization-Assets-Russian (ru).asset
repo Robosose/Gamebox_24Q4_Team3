@@ -39,8 +39,20 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-ru
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69b620479ff59f7448df170c2f0d9a75
+    m_Address: RUS_2N
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6c94782329c91ab42b82ae99229b7697
     m_Address: RUS_1-2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c76c21898bd1be498420f563d2b5042
+    m_Address: RUS_5N
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ru
@@ -51,8 +63,26 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-ru
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b71b9742cf1ed5744a70951bf449b6c7
+    m_Address: RUS_4N
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e84805e5a269499429c5f162c4be8574
+    m_Address: RUS_3N
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e8862d177b9b8f9438c7cb71623e6f88
     m_Address: Loading_2.1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8c2306778773074296727f3a9c2ee00
+    m_Address: RUS_6N
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ru

@@ -15,14 +15,44 @@ MonoBehaviour:
   m_GroupName: Localization-Assets-English (en)
   m_GUID: 7dd8755aa5c89ca4fa60dfe3d5d9bae2
   m_SerializeEntries:
+  - m_GUID: 07bf72b32135b1245bc593c4f47d8d3d
+    m_Address: ENG_5N
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 21169498f97b77d43bd5607774e07707
     m_Address: Loading_2.2
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 24b841c93fee8a246b5873c5cd80378a
+    m_Address: ENG_3N
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d48da54af99ff54090f77ac9b962eea
+    m_Address: ENG_2N
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 49b4d4cd3cf1dda41a1e3d149b60ddab
     m_Address: Loading_1.2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d582c021842d014b9c794a1c0e7ebc0
+    m_Address: ENG_4N
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5d47dad98c4a7d34693fa7cf492d23fe
+    m_Address: ENG_6N
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
