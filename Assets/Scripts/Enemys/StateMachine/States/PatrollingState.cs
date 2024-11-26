@@ -20,7 +20,7 @@ namespace Enemys.StateMachine.States
 
         //Поля Влада
         private float _footstepTimer;
-        private float _footstepInterval = 0.5f;
+        private float _footstepInterval = 1f;
 
         public PatrollingState(Enemy enemy, PatrolingConfig cfg, EnemyFieldOfView fov, IStateSwitcher stateSwitcher,
             EnemyView enemyView)
@@ -87,9 +87,9 @@ namespace Enemys.StateMachine.States
         //Метод для возспроизведения звуков шагов PS Влад remainingDistance нерабочая хуетень 
         private void FootstepTimer()
         {
-            if(_agent.remainingDistance > .1f)
+            if(_agent.remainingDistance >= .1f)
             {
-                Debug.Log("remainingDistance !> .1f");
+                Debug.Log("remainingDistance !>= .1f");
                 _footstepTimer += Time.deltaTime;
                 if(_footstepTimer >= _footstepInterval)
                 {
