@@ -14,6 +14,10 @@ public class TutorialCallEnemy : MonoBehaviour
     private bool _inMirrorTableArea;
     private bool _isGettingMirror;
 
+    // Дополнительные Поля P.S. Влад
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private GameObject _morror;
+
     private void Update()
     {
         if (_isGettingMirror)
@@ -48,6 +52,9 @@ public class TutorialCallEnemy : MonoBehaviour
         door.TryGetComponent(out Animator animator);
         animator.enabled = false;
         door.transform.localEulerAngles = Vector3.zero;
+
+        //Код добавленный Владом
+        _audioSource.Play();
     }
 
     private IEnumerator MirrorEvent()
@@ -62,7 +69,11 @@ public class TutorialCallEnemy : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
+        {
             _inMirrorTableArea = true;
+            //Код добавленный Владом
+            Destroy(_morror.gameObject);
+        }
     }
 
     private void OnTriggerExit(Collider other)

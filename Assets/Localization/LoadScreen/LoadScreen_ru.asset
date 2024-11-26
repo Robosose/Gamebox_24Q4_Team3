@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
+  m_Name: LoadScreen_ru
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ru
+  m_SharedData: {fileID: 11400000, guid: 9f3349861b7846a48bd3940ff2bd050f, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 101819002880
+    m_Localized: '9c926fd1fd3d5bf48948c1bfb90b35b7[Loading_1.1]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5892089229312
+    m_Localized: 'e8862d177b9b8f9438c7cb71623e6f88[Loading_2.1]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 204124593500160
+    m_Localized: '6639ea20078b8ef44bafe01188e3d8e4[Loading_3.1]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206812836179968
+    m_Localized: 'fde71d2f49dff4c4b86bbfc521e06302[Loading_4.1]'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

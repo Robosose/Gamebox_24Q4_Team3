@@ -33,8 +33,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-ru
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6639ea20078b8ef44bafe01188e3d8e4
+    m_Address: Loading_3.1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6c94782329c91ab42b82ae99229b7697
     m_Address: RUS_1-2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c926fd1fd3d5bf48948c1bfb90b35b7
+    m_Address: Loading_1.1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8862d177b9b8f9438c7cb71623e6f88
+    m_Address: Loading_2.1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fde71d2f49dff4c4b86bbfc521e06302
+    m_Address: Loading_4.1
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ru

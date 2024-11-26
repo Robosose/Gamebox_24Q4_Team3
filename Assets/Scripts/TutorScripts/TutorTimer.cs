@@ -14,6 +14,9 @@ public class TutorTimer : MonoBehaviour
     [Header("Timer Settings")]
     [SerializeField] private float _triggerTime;
 
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource _audioSource; 
+
     private float _timer;
 
     private bool _hasTriggered;
@@ -49,6 +52,7 @@ public class TutorTimer : MonoBehaviour
             return;
         
         _animator.SetTrigger(animationTriggerName);
+        _audioSource.Play();
 
         if (_redLight != null) _redLight.enabled = false;
         if (_greenLight != null) _greenLight.enabled = true;
