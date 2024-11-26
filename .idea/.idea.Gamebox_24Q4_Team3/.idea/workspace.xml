@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerVignette.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerVignette.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/MainMenu/MainMenu Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/MainMenu/MainMenu Shared Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Woman_AnimController_New.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Woman_AnimController_New.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Women_Idle_Crouch.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Woman/Animation/Women_Idle_Crouch.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Woman_Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Woman_Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/MirrorMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/MirrorMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/MirrorTutorialEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/MirrorTutorialEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControllers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControllers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInput.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/TMP/TMP_PackageResourceImporter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Tests/Editor/TMP/FontEngineTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9ff2ec5163204af481ac0a675d8e1bf82ac00/44/8b69c3e2/Physics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5bf0c891ea345fe93688f835df32fdc1dda00/f2/7491a461/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -148,7 +157,7 @@
       <workItem from="1732451176881" duration="4559000" />
       <workItem from="1732507182805" duration="1211000" />
       <workItem from="1732597011636" duration="1384000" />
-      <workItem from="1732641018917" duration="3902000" />
+      <workItem from="1732641018917" duration="12691000" />
     </task>
     <servers />
   </component>

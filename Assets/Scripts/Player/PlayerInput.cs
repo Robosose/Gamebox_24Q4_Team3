@@ -112,13 +112,13 @@ public class PlayerInput : MonoBehaviour
 
     private void SetMovementMode()
     {
-        if (_inputManager.IsSprinting())
-            _currentMovementMode = _sprintMode;
-        
-        else if (_inputManager.IsCrouching())
-            _currentMovementMode = _crouchMode;
-        else
-            _currentMovementMode = _walkMode;
+        // // if (_inputManager.IsSprinting())
+        // //     _currentMovementMode = _sprintMode;
+        //
+        // else if (_inputManager.IsCrouching())
+        //     _currentMovementMode = _crouchMode;
+        // else
+        //     _currentMovementMode = _walkMode;
     }
 
     private void UpdateAnimation()

@@ -9,8 +9,8 @@ public class PlayerControllers : MonoBehaviour
     [SerializeField] private float UpperLimit = -40f;
     [SerializeField] private float BottomLimit = 40f;
     [SerializeField] private float mouseSensitivity = 10f;
+    [SerializeField] private float _crouchSpeed = 0.7f;
     [SerializeField] private float _walkSpeed = 1f;
-    [SerializeField] private float _runSpeed = 2f;
 
     public float UpperLimit1 => UpperLimit;
     public float BottomLimit1 => BottomLimit;
@@ -61,7 +61,17 @@ public class PlayerControllers : MonoBehaviour
     {
         if (!_hasAnimator) return;
 
-        float targetSpeed = _inputManager.IsSprinting() ? _runSpeed : _walkSpeed;
+        float targetSpeed = 0f;
+        if (_inputManager.IsCrouching())
+        {
+            targetSpeed = _crouchSpeed;
+        }
+        else
+        {
+            targetSpeed = _walkSpeed;
+            //targetSpeed = _inputManager.IsSprinting() ? _runSpeed : _walkSpeed;
+        }
+
         if (_inputManager.IsCrouching()) targetSpeed = 1f;
 
         if (_inputManager.GetPlayerMovement() == Vector2.zero) targetSpeed = 0;
@@ -77,7 +87,7 @@ public class PlayerControllers : MonoBehaviour
         _playerRigidbody.AddForce(transform.TransformVector(new Vector3(xVelDifference, 0, zVelDifference)),
             ForceMode.VelocityChange);
 
-        _animator.SetFloat(_xVelHash, _inputManager.IsCrouching() ? 0 : _currentVelocity.x);
+        _animator.SetFloat(_xVelHash, _currentVelocity.x);
         _animator.SetFloat(_yVelHash, _currentVelocity.y);
     }
 
