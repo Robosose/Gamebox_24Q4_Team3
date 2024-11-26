@@ -23,7 +23,6 @@ namespace Enemys.StateMachine.States
 
         public void Enter()
         {
-            _enemy.Agent.speed = _enemy.Config.PatrolingConfig.Speed;
             SetDestination();
             _fov.SeePlayer += OnSeePlayer;
             _enemyView.StartWalking();

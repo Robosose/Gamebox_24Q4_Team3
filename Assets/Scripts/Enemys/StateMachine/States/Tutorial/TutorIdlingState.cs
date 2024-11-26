@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Enemys.State;
 using UnityEngine;
 
@@ -12,8 +10,6 @@ namespace Enemys.StateMachine.States
         private IStateSwitcher _stateSwitcher;
         private EnemyView _enemyView;
         private Transform _lookAt;
-        private Coroutine _cor;
-        
         public TutorIdlingState(Enemy enemy, EnemyFieldOfView fov, IStateSwitcher stateSwitcher,
             EnemyView enemyView, Transform lookAt)
         {
@@ -37,9 +33,6 @@ namespace Enemys.StateMachine.States
             _enemy.SeeEnemy -= PlayerSeeEnemy;
             _fov.SeePlayer -= SeePlayer;
             _enemy.Agent.isStopped = false;
-            if(_cor != null)
-                _enemy.StopCoroutine(_cor);
-            _cor = null;
         }
 
         public void Update()
@@ -54,14 +47,7 @@ namespace Enemys.StateMachine.States
 
         private void PlayerSeeEnemy()
         {
-            _cor = _enemy.StartCoroutine(TimeToSwitchState());
-        }
-
-        private IEnumerator TimeToSwitchState()
-        {
-            yield return new WaitForSeconds(2);
             _stateSwitcher.SwitchState<TutorPatrollingState>();
-
         }
     }
 }

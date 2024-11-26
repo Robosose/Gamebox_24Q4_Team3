@@ -53,7 +53,6 @@ public class TutorialCallEnemy : MonoBehaviour
         animator.enabled = false;
         door.transform.localEulerAngles = Vector3.zero;
 
-        //Код добавленный Владом
         _audioSource.Play();
     }
 
@@ -61,7 +60,7 @@ public class TutorialCallEnemy : MonoBehaviour
     {
         _isGettingMirror = true;
         mirror.SetActive(true);
-        CloseDoor();
+
         yield return new WaitForSeconds(timeBeforeSpawnEnemy);
         enemy.SetActive(true);
     }
@@ -71,14 +70,17 @@ public class TutorialCallEnemy : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             _inMirrorTableArea = true;
-            //Код добавленный Владом
             Destroy(_morror.gameObject);
+            CloseDoor();
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
+        {
             _inMirrorTableArea = false;
+            GetComponent<Collider>().enabled = false;
+        }
     }
 }
