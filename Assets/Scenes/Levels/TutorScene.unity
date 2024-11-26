@@ -1178,6 +1178,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 631793447}
     - target: {fileID: 4192689437916624001, guid: e2d11f6c046a7984cb8b19ed88ff9457, type: 3}
+      propertyPath: _config
+      value: 
+      objectReference: {fileID: 11400000, guid: 9163b77f3b66a664a9018f984ddad02f, type: 2}
+    - target: {fileID: 4192689437916624001, guid: e2d11f6c046a7984cb8b19ed88ff9457, type: 3}
       propertyPath: _isTutor
       value: 1
       objectReference: {fileID: 0}
@@ -1512,6 +1516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1334150546}
   - component: {fileID: 1334150545}
+  - component: {fileID: 1334150547}
   m_Layer: 0
   m_Name: TimerTutor
   m_TagString: Untagged
@@ -1557,6 +1562,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1334150547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334150544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d94ef94c03f4ad3aafa39ed7638ecbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _secondsToEnemyStart: 5
+  _enemy: {fileID: 1531796218}
+  _seconds: 0
 --- !u!114 &1459685845 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4802101714698190355, guid: 71d61c33e335626468811831addf69b7, type: 3}
@@ -1873,7 +1893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 600501206281970281, guid: 58cdaa0c29307974996f1fbb87b93e83, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 704578619870201049, guid: 58cdaa0c29307974996f1fbb87b93e83, type: 3}
       propertyPath: m_Layer
