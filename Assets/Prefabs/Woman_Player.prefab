@@ -300,7 +300,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 7f021e4816e942849a8730dd82762943, type: 3}
   m_Resource: {fileID: 8300000, guid: 7f021e4816e942849a8730dd82762943, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -344,7 +344,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5910,11 +5910,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2218881657778101008, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: _isTutor
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2218881657778101008, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: ignoreMask.m_Bits
-      value: 256
+      value: 776
       objectReference: {fileID: 0}
     - target: {fileID: 3115469063662117187, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_Name

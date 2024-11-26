@@ -17,7 +17,11 @@ namespace Enemys.StateMachine.States
         private bool _isIdling;
         private Coroutine _cor;
         private EnemyView _view;
-        
+
+        //Поля Влада
+        private float _footstepTimer;
+        private float _footstepInterval = 0.5f;
+
         public PatrollingState(Enemy enemy, PatrolingConfig cfg, EnemyFieldOfView fov, IStateSwitcher stateSwitcher,
             EnemyView enemyView)
         {
@@ -37,6 +41,9 @@ namespace Enemys.StateMachine.States
             _currentPointIndex = 0;
             _view.StartWalking();
             _agent.SetDestination(_enemy.Points[_currentPointIndex].position);
+
+            //
+            _footstepTimer = 0;
         }
 
         private void OnSeePlayer()
@@ -72,6 +79,23 @@ namespace Enemys.StateMachine.States
                 _isIdling = true;
                 if(_cor is null)
                     _cor = _enemy.StartCoroutine(IdlingTimer());
+            }
+
+            FootstepTimer();
+        }
+
+        //Метод для возспроизведения звуков шагов PS Влад remainingDistance нерабочая хуетень 
+        private void FootstepTimer()
+        {
+            if(_agent.remainingDistance > .1f)
+            {
+                Debug.Log("remainingDistance !> .1f");
+                _footstepTimer += Time.deltaTime;
+                if(_footstepTimer >= _footstepInterval)
+                {
+                    _view.PlayRandomFootstep();
+                    _footstepTimer = 0f;
+                }
             }
         }
         

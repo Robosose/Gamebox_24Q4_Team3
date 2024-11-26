@@ -8,6 +8,9 @@ public class MirrorTutorialEvent : MonoBehaviour
     public Action HitEnemy;
     private bool _hit;
 
+    //Поля дабавленные Владом
+    [SerializeField] private GameObject _triggerNextScene;
+
     private void Update()
     {
         if (_hit)
@@ -28,8 +31,14 @@ public class MirrorTutorialEvent : MonoBehaviour
             {
                 enemy.SeeEnemy?.Invoke();
                 HitEnemy?.Invoke();
-                _hit = true;
+                _hit = true;           
             }
+
+            //Код добавленный Владом
+            if (_triggerNextScene is null)
+                return;
+            if(_triggerNextScene != null)
+                _triggerNextScene.SetActive(true);
         }
     }
 
