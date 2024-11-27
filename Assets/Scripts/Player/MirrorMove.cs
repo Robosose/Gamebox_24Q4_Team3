@@ -40,7 +40,6 @@ public class MirrorMove : MonoBehaviour
     {
         _handDistance = GetFarthestDistance(_upperPointPosition, _upperCrouchPointPosition, _bottomPointPosition,
             _bottomCrouchPointPosition);
-        print(_handDistance);
     }
 
     private void Update()
