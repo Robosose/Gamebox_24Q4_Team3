@@ -4007,8 +4007,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 788e30da02fc73a4190f2b91f749f7a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookTime: 0.5
-  timeBeforeSpawnEnemy: 3
+  lookTime: 0.1
+  timeBeforeSpawnEnemy: 5
   mirror: {fileID: 0}
   enemy: {fileID: 0}
   castRadius: 0.3

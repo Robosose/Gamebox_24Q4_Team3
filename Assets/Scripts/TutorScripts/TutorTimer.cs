@@ -15,7 +15,9 @@ public class TutorTimer : MonoBehaviour
     [SerializeField] private float _triggerTime;
 
     [Header("Audio Settings")]
-    [SerializeField] private AudioSource _audioSource; 
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioSource _lampSound;
+    [SerializeField] private AudioClip _doorOpen;
 
     private float _timer;
 
@@ -52,7 +54,8 @@ public class TutorTimer : MonoBehaviour
             return;
         
         _animator.SetTrigger(animationTriggerName);
-        _audioSource.Play();
+        _audioSource.PlayOneShot(_doorOpen);
+        _lampSound.Pause();
 
         if (_redLight != null) _redLight.enabled = false;
         if (_greenLight != null) _greenLight.enabled = true;

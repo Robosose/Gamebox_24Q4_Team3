@@ -17,7 +17,7 @@ namespace Enemys.StateMachine.States
         private bool _isIdling;
         private Coroutine _cor;
         private EnemyView _view;
-        
+
         public PatrollingState(Enemy enemy, PatrolingConfig cfg, EnemyFieldOfView fov, IStateSwitcher stateSwitcher,
             EnemyView enemyView)
         {
@@ -36,7 +36,7 @@ namespace Enemys.StateMachine.States
             _fov.SeePlayer += OnSeePlayer;
             _currentPointIndex = 0;
             _view.StartWalking();
-            _agent.SetDestination(_enemy.Points[_currentPointIndex].position);
+            _agent.SetDestination(_enemy.Points[_currentPointIndex].position);          
         }
 
         private void OnSeePlayer()
@@ -73,7 +73,7 @@ namespace Enemys.StateMachine.States
                 if(_cor is null)
                     _cor = _enemy.StartCoroutine(IdlingTimer());
             }
-        }
+        }   
         
         private IEnumerator IdlingTimer()
         {

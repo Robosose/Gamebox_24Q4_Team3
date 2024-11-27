@@ -818,6 +818,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 148474640703573528}
+  - component: {fileID: 1950042191086557447}
   - component: {fileID: 8214238020151870354}
   - component: {fileID: 2465910244198915228}
   - component: {fileID: 3041198341073991137}
@@ -830,7 +831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &148474640703573528
 Transform:
   m_ObjectHideFlags: 0
@@ -848,6 +849,103 @@ Transform:
   - {fileID: 1809410085664021504}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1950042191086557447
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3638136874085014893}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1.8766251
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &8214238020151870354
 Animator:
   serializedVersion: 7
@@ -905,6 +1003,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 8214238020151870354}
+  _audioSource: {fileID: 1950042191086557447}
+  _footstepSounds:
+  - {fileID: 8300000, guid: 1110134e25683604aa40840d207e2382, type: 3}
+  - {fileID: 8300000, guid: c192fcaec85c3a646ae9fca42b7fdbad, type: 3}
+  - {fileID: 8300000, guid: c63eb341f62565d41bda208563d02d19, type: 3}
+  - {fileID: 8300000, guid: 72ae1c6fb12fc5e45ba13545d092b4b2, type: 3}
+  - {fileID: 8300000, guid: 8547d791d87c54944be15f81a7839ebe, type: 3}
 --- !u!54 &2083450693981713618
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -969,10 +1074,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _agent: {fileID: 2465910244198915228}
   _config: {fileID: 11400000, guid: 754ac17f26eaa2a439d52f5a6cea4591, type: 2}
-  _points: []
+  _points:
+  - {fileID: 0}
+  - {fileID: 0}
   _fov: {fileID: 4745391635014745719}
   _view: {fileID: 3041198341073991137}
-  _isTutor: 0
+  _isTutor: 1
   LastSoundPosition: {fileID: 0}
   LookAt: {fileID: 0}
 --- !u!1 &3695077812363045353
@@ -2362,7 +2469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473622edb52f49b2af49b1df30d7439b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 4192689437916624001}
   _isSeePlayer: 0
   PlayerRef: {fileID: 0}
   Config: {fileID: 11400000, guid: 754ac17f26eaa2a439d52f5a6cea4591, type: 2}

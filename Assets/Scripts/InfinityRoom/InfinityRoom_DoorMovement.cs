@@ -9,7 +9,7 @@ public class InfinityRoom_DoorMovement : MonoBehaviour
     [SerializeField] private Transform[] _points;
     [SerializeField] private float _timeBeforeNextPoint;
     [SerializeField] private GameObject door;
-
+    [SerializeField] private float velocityOpenDoor;
     [Header("Material")] 
     [SerializeField] private Transform _startTranslateMaterialPoint;
     [SerializeField] private Transform _endTranslateMaterialPoint;
@@ -32,6 +32,7 @@ public class InfinityRoom_DoorMovement : MonoBehaviour
         if (_pointIndex < _points.Length)
         {
             StartCoroutine(MoveDoor());
+            GetComponent<Collider>().enabled = false;
         }
     }
 
@@ -43,17 +44,29 @@ public class InfinityRoom_DoorMovement : MonoBehaviour
         {
             t += Time.deltaTime / _timeBeforeNextPoint;
             _doorTransform.position = Vector3.Lerp(startTransform, _points[_pointIndex].position, t);
-
-            if (_pointIndex + 1 == _points.Length)
-            {
-                door.transform.localRotation = Quaternion.Euler(door.transform.localRotation.x, Mathf.Lerp(0, 90, t),
-                    door.transform.localRotation.z);
-            }
-
+            
             yield return null;
         }
-
+        
+        GetComponent<Collider>().enabled = true;
         _pointIndex++;
+        
+        if (_pointIndex == _points.Length)
+        {
+            StartCoroutine(OpenDoor());
+        }
+    }
+
+    private IEnumerator OpenDoor()
+    {
+        var t = 0f;
+        while (t <=1)
+        {
+            t = Mathf.Clamp01(t + Time.deltaTime/velocityOpenDoor);
+            door.transform.localRotation = Quaternion.Euler(door.transform.localRotation.x, Mathf.Lerp(0, 90, t),
+                door.transform.localRotation.z);
+            yield return null;
+        }
     }
 
     private void Update()

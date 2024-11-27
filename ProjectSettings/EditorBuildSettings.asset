@@ -21,8 +21,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/TutorScene.unity
     guid: a7b35fba961d38f4d84e91788f0d3852
   - enabled: 1
-    path: Assets/Scenes/Levels/Level1Scene.unity
-    guid: d4710d0d8cad45645959e03bb6f7a137
+    path: Assets/Scenes/Levels/Artyom/Level1Scene 1.unity
+    guid: 8c75787a0af79b8459ecffc2cfcc7e54
   - enabled: 1
     path: Assets/Scenes/Levels/Level2Scene.unity
     guid: 854415e7e7c74ef4ba87be376c3d69a9
