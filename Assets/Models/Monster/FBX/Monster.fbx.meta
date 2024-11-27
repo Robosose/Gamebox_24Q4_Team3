@@ -3,7 +3,12 @@ guid: 6e9a69aca5e91c44297f96bf5e84e634
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Monstr
+    second: {fileID: 2100000, guid: 80fb6536258cdc84f9556956f53a3079, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
