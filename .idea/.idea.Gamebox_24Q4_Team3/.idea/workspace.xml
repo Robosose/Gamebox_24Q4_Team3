@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/GammaSliderSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/GammaSliderSettings.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/AudioMixer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/AudioMixer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/GammaMixer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/GammaMixer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/SliderSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/SliderSettings.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset.meta" afterDir="false" />
@@ -15,15 +25,10 @@
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Asset-Tables-English (en).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Asset-Tables-English (en).asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Asset-Tables-English (en).asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Asset-Tables-English (en).asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Asset-Tables-Russian (ru).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Asset-Tables-Russian (ru).asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Asset-Tables-Russian (ru).asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Asset-Tables-Russian (ru).asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-English (en).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-English (en).asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-English (en).asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-English (en).asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Russian (ru).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Russian (ru).asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Russian (ru).asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Russian (ru).asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Locales.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Locales.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English (en).asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English (en).asset.meta" afterDir="false" />
@@ -1005,7 +1010,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/AddES3Prefab.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/AddES3Prefab.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/AutoSaveWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/AutoSaveWindow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/AutoSaveWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/AutoSaveWindow.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3Asmdefs.unitypackage.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3AutoSaveEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3AutoSaveEditor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3AutoSaveEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3AutoSaveEditor.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3AutoSaveMgrEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3AutoSaveMgrEditor.cs" afterDir="false" />
@@ -1861,12 +1865,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Podval/Лапка.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Podval/Лапка.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Podval/Лапка_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Podval/Лапка_2.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_1N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_1N.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_2N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_2N.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_3N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_3N.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_4N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_4N.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_5N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_5N.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_6N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_6N.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Wallpaper.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Wallpaper.jpg.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Test.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Test/Alfabet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test/Alfabet.png.meta" afterDir="false" />
@@ -2251,27 +2249,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Arkadiy",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Arkadiy&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\pv487\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\pv487\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\pv487\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\pv487\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\pv487\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\pv487\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../GameBoxBuild\GameBox.exe" />
@@ -2356,7 +2354,8 @@
       <workItem from="1732367639807" duration="621000" />
       <workItem from="1732451176881" duration="4559000" />
       <workItem from="1732507182805" duration="1211000" />
-      <workItem from="1732654770333" duration="345000" />
+      <workItem from="1732654770333" duration="938000" />
+      <workItem from="1732734976465" duration="5357000" />
     </task>
     <servers />
   </component>
