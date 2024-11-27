@@ -467,7 +467,7 @@ MonoBehaviour:
   Camera: {fileID: 7249211666638670417}
   UpperLimit: -40
   BottomLimit: 40
-  mouseSensitivity: 10
+  mouseSensitivity: 4
   _walkSpeed: 1
   _runSpeed: 2
 --- !u!114 &5124596531348726193
@@ -5926,11 +5926,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3115469063662117187, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3163825779829149678, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198901376076941783, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
+      propertyPath: field of view
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7552256078662305415, guid: b973fa0589fefa247bb425d51d2d4f20, type: 3}
       propertyPath: m_Enabled

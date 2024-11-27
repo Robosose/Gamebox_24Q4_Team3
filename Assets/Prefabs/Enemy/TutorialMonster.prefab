@@ -1010,6 +1010,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c63eb341f62565d41bda208563d02d19, type: 3}
   - {fileID: 8300000, guid: 72ae1c6fb12fc5e45ba13545d092b4b2, type: 3}
   - {fileID: 8300000, guid: 8547d791d87c54944be15f81a7839ebe, type: 3}
+  _monsterVoices: []
+  _footstepIntervalWalk: 1
+  _footstepIntervalRun: 0.5
 --- !u!54 &2083450693981713618
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using Configs.Enemy;
 using Enemys.State;
 using UnityEngine;
+using Zenject.SpaceFighter;
 
 namespace Enemys.StateMachine
 {
@@ -10,6 +11,8 @@ namespace Enemys.StateMachine
         private readonly AttackConfig _configAttackConfig;
         private readonly EnemyStateMachine _enemyStateMachine;
         private readonly EnemyView _view;
+
+        private float _footstepTimer;
 
         public TutorAttackState(Enemy enemy, AttackConfig configAttackConfig, EnemyStateMachine enemyStateMachine, EnemyView view)
         {
@@ -34,6 +37,18 @@ namespace Enemys.StateMachine
         public void Update()
         {
             _enemy.Agent.SetDestination(_enemy.FOV.PlayerRef.transform.position);
+
+            FootstepTimer();
+        }
+
+        private void FootstepTimer()
+        {
+            _footstepTimer += Time.deltaTime;
+            if (_footstepTimer >= _view.FootstepIntervalRun)
+            {
+                _view.PlayRandomFootstep();
+                _footstepTimer = 0f;
+            }
         }
     }
 }

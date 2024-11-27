@@ -54,10 +54,11 @@ namespace Enemys.StateMachine.States
 
         private void FootstepTimer()
         {
-            Debug.Log("remainingDistance !>= .1f");
             _footstepTimer += Time.deltaTime;
-            if (_footstepTimer >= _enemyView.FootstepInterval)
+            Debug.Log("AAAAAAAAAAAAAAAAA");
+            if (_footstepTimer >= _enemyView.FootstepIntervalWalk)
             {
+                Debug.Log("AAAAAAAAAAAAAAAAA");
                 _enemyView.PlayRandomFootstep();
                 _footstepTimer = 0f;
             }

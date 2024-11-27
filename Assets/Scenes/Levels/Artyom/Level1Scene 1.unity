@@ -158,10 +158,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 334217700215693549, guid: 8697c04d89658ed469f513483b32a813, type: 3}
-      propertyPath: nextSceneIndex
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4939411457621527671, guid: 8697c04d89658ed469f513483b32a813, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.577
@@ -205,10 +201,6 @@ PrefabInstance:
     - target: {fileID: 6190096794690042527, guid: 8697c04d89658ed469f513483b32a813, type: 3}
       propertyPath: m_Name
       value: NextSceneTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 8213212564004571097, guid: 8697c04d89658ed469f513483b32a813, type: 3}
-      propertyPath: m_Size.x
-      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -648,17 +640,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 459607594825105060, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: field of view
-      value: 90
-      objectReference: {fileID: 0}
     - target: {fileID: 926749917914655185, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
       propertyPath: m_Name
       value: Woman_Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1664637210942805552, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5294505684255478872, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -699,10 +683,6 @@ PrefabInstance:
     - target: {fileID: 5294505684255478872, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7642188654328931327, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: mouseSensitivity
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
