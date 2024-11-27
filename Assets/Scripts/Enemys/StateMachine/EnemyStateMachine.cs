@@ -15,7 +15,7 @@ namespace Enemys.StateMachine
         public EnemyStateMachine(Enemy enemy, EnemyFieldOfView fov, EnemyView view, bool isTutor)
         {
             _states = isTutor ? CreateTutorStates(enemy, fov, view) : CreateStandardStates(enemy, fov, view);
-            
+
             _currentState = _states[0];
             _currentState.Enter();
         }
@@ -23,7 +23,7 @@ namespace Enemys.StateMachine
         public void SwitchState<T>() where T : IState
         {
             _currentState.Exit();
-
+            _states.ForEach(s => Debug.Log(s is T));
             _currentState = _states.FirstOrDefault(state => state is T);
             if (_currentState is null)
                 throw new ArgumentNullException($"{nameof(_currentState)} is null.");

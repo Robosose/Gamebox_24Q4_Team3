@@ -31,7 +31,7 @@ namespace Enemys.StateMachine.States
 
         private void OnSeePlayer()
         {
-            _stateSwitcher.SwitchState<TutorAttackState>();
+            _stateSwitcher.SwitchState<AttackState>();
         }
 
         public void Exit()
@@ -55,10 +55,8 @@ namespace Enemys.StateMachine.States
         private void FootstepTimer()
         {
             _footstepTimer += Time.deltaTime;
-            Debug.Log("AAAAAAAAAAAAAAAAA");
             if (_footstepTimer >= _enemyView.FootstepIntervalWalk)
             {
-                Debug.Log("AAAAAAAAAAAAAAAAA");
                 _enemyView.PlayRandomFootstep();
                 _footstepTimer = 0f;
             }

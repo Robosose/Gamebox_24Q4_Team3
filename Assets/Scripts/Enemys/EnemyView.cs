@@ -17,9 +17,11 @@ namespace Enemys
         [Space]
         [SerializeField] private float _footstepIntervalWalk;
         [SerializeField] private float _footstepIntervalRun;
+        [SerializeField] private float _monsterVoicesInterval;
 
         public float FootstepIntervalWalk => _footstepIntervalWalk;
         public float FootstepIntervalRun => _footstepIntervalRun;
+        public float MonsterVoicesInterval => _monsterVoicesInterval;
 
         public void StartRunning() => _animator.SetBool(IsRunning, true);
         public void StopRunning() => _animator.SetBool(IsRunning, false);

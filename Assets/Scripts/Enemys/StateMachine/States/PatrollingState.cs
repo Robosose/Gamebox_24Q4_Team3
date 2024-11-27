@@ -3,6 +3,7 @@ using Configs.Enemy;
 using Enemys.State;
 using UnityEngine;
 using UnityEngine.AI;
+using Zenject.SpaceFighter;
 
 namespace Enemys.StateMachine.States
 {
@@ -17,6 +18,8 @@ namespace Enemys.StateMachine.States
         private bool _isIdling;
         private Coroutine _cor;
         private EnemyView _view;
+        private float _footstepTimer;
+        private float _voiceTimer;
 
         public PatrollingState(Enemy enemy, PatrolingConfig cfg, EnemyFieldOfView fov, IStateSwitcher stateSwitcher,
             EnemyView enemyView)
@@ -72,7 +75,11 @@ namespace Enemys.StateMachine.States
                 _isIdling = true;
                 if(_cor is null)
                     _cor = _enemy.StartCoroutine(IdlingTimer());
+                VoiceTimer();
+                return;
             }
+
+            FootstepTimer();
         }   
         
         private IEnumerator IdlingTimer()
@@ -87,6 +94,26 @@ namespace Enemys.StateMachine.States
             _view.StartWalking();
             _isIdling = false;
             _cor = null;
+        }
+
+        private void FootstepTimer()
+        {
+            _footstepTimer += Time.deltaTime;
+            if (_footstepTimer >= _view.FootstepIntervalWalk)
+            {
+                _view.PlayRandomFootstep();
+                _footstepTimer = 0f;
+            }
+        }
+
+        private void VoiceTimer()
+        {
+            _voiceTimer += Time.deltaTime;
+            if (_voiceTimer >= _view.MonsterVoicesInterval)
+            {
+                _view.PlayMonsterVoices();
+                _voiceTimer = 0f;
+            }
         }
     }
 }

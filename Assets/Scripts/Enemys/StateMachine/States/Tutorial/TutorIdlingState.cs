@@ -10,6 +10,8 @@ namespace Enemys.StateMachine.States
         private IStateSwitcher _stateSwitcher;
         private EnemyView _enemyView;
         private Transform _lookAt;
+        private float _voiceTimer;
+
         public TutorIdlingState(Enemy enemy, EnemyFieldOfView fov, IStateSwitcher stateSwitcher,
             EnemyView enemyView, Transform lookAt)
         {
@@ -37,7 +39,7 @@ namespace Enemys.StateMachine.States
 
         public void Update()
         {
-            
+            VoiceTimer();
         }
 
         private void SeePlayer()
@@ -48,6 +50,16 @@ namespace Enemys.StateMachine.States
         private void PlayerSeeEnemy()
         {
             _stateSwitcher.SwitchState<TutorPatrollingState>();
+        }
+
+        private void VoiceTimer()
+        {
+            _voiceTimer += Time.deltaTime;
+            if (_voiceTimer >= _enemyView.MonsterVoicesInterval)
+            {
+                _enemyView.PlayMonsterVoices();
+                _voiceTimer = 0f;
+            }
         }
     }
 }
