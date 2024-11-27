@@ -29,7 +29,7 @@ public class LanguageSwitcher : MonoBehaviour
         ES3AutoSaveMgr.Current.Save();
     }
 
-    private void ChangeLanguage(string localeCode)
+    public void ChangeLanguage(string localeCode)
     {
         var selectedLocale = LocalizationSettings.AvailableLocales.GetLocale(localeCode);
         if (selectedLocale != null)
