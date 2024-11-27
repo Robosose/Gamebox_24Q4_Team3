@@ -61,7 +61,7 @@ public class PlayerControllers : MonoBehaviour
     {
         if (!_hasAnimator) return;
 
-        float targetSpeed = 0f;
+        float targetSpeed;
         if (_inputManager.IsCrouching())
         {
             targetSpeed = _crouchSpeed;
