@@ -90,6 +90,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseManager: {fileID: 0}
+--- !u!1 &5387439459677259928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8681087386496476370}
+  - component: {fileID: 4228009646305890074}
+  m_Layer: 0
+  m_Name: EnemySee
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8681087386496476370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5387439459677259928}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4085551183623016939}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4228009646305890074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5387439459677259928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48313e5ea86e4f0d9640a4596da50ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySeeTrigger: {fileID: 0}
 --- !u!1 &5763817506572157658
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,6 +168,7 @@ Transform:
   - {fileID: 6241517013904658160}
   - {fileID: 4022057301406768921}
   - {fileID: 5604916848294889121}
+  - {fileID: 8681087386496476370}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7338147241012930555
@@ -142,6 +188,7 @@ MonoBehaviour:
   - {fileID: 5818990925745149685}
   - {fileID: 4755486908772507239}
   - {fileID: 2091152037671937308}
+  - {fileID: 4228009646305890074}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:

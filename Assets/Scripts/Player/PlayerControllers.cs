@@ -11,12 +11,15 @@ public class PlayerControllers : MonoBehaviour
     [SerializeField] private float mouseSensitivity = 10f;
     [SerializeField] private float _crouchSpeed = 0.7f;
     [SerializeField] private float _walkSpeed = 1f;
+    [SerializeField] private float _slowWalkSpeed = 0.5f;
+    [SerializeField] private float _slowCrouchSpeed;
 
     public float UpperLimit1 => UpperLimit;
     public float BottomLimit1 => BottomLimit;
     
     private Rigidbody _playerRigidbody;
     private InputManager _inputManager;
+    private EnemySeeTrigger _enemySeeTrigger;
     private Animator _animator;
     private bool _hasAnimator;
 
@@ -27,11 +30,16 @@ public class PlayerControllers : MonoBehaviour
 
     private float _xRotation;
     private Vector2 _currentVelocity;
+    private bool _slow;
+    private float _currentSpeed;
 
     [Inject]
-    private void Construct(InputManager inputManager)
+    private void Construct(
+        InputManager inputManager,
+        EnemySeeTrigger enemySeeTrigger)
     {
         _inputManager = inputManager;
+        _enemySeeTrigger = enemySeeTrigger;
     }
 
     private void Start()
@@ -43,6 +51,7 @@ public class PlayerControllers : MonoBehaviour
         _yVelHash = Animator.StringToHash("Y_Velocity");
         _crouchHash = Animator.StringToHash("Crouch");
         _handBlendHash = Animator.StringToHash("HandBlend");
+        _enemySeeTrigger.SeePlayer += SlowMoveTrigger;
     }
 
     private void FixedUpdate()
@@ -61,24 +70,20 @@ public class PlayerControllers : MonoBehaviour
     {
         if (!_hasAnimator) return;
 
-        float targetSpeed;
         if (_inputManager.IsCrouching())
         {
-            targetSpeed = _crouchSpeed;
+            _currentSpeed = _slow?_slowCrouchSpeed:_crouchSpeed;
         }
         else
         {
-            targetSpeed = _walkSpeed;
-            //targetSpeed = _inputManager.IsSprinting() ? _runSpeed : _walkSpeed;
+            _currentSpeed = _slow?_slowWalkSpeed: _walkSpeed;
         }
 
-        if (_inputManager.IsCrouching()) targetSpeed = 1f;
+        if (_inputManager.GetPlayerMovement() == Vector2.zero) _currentSpeed = 0;
 
-        if (_inputManager.GetPlayerMovement() == Vector2.zero) targetSpeed = 0;
-
-        _currentVelocity.x = Mathf.Lerp(_currentVelocity.x, _inputManager.GetPlayerMovement().x * targetSpeed,
+        _currentVelocity.x = Mathf.Lerp(_currentVelocity.x, _inputManager.GetPlayerMovement().x * _currentSpeed,
             AnimBlendSpeed * Time.fixedDeltaTime);
-        _currentVelocity.y = Mathf.Lerp(_currentVelocity.y, _inputManager.GetPlayerMovement().y * targetSpeed,
+        _currentVelocity.y = Mathf.Lerp(_currentVelocity.y, _inputManager.GetPlayerMovement().y * _currentSpeed,
             AnimBlendSpeed * Time.fixedDeltaTime);
 
         var xVelDifference = _currentVelocity.x - _playerRigidbody.angularVelocity.x;
@@ -89,6 +94,11 @@ public class PlayerControllers : MonoBehaviour
 
         _animator.SetFloat(_xVelHash, _currentVelocity.x);
         _animator.SetFloat(_yVelHash, _currentVelocity.y);
+    }
+
+    private void SlowMoveTrigger()
+    {
+        _slow = true;
     }
 
     private void CamMovement()
@@ -127,5 +137,10 @@ public class PlayerControllers : MonoBehaviour
         float targetWeight = _inputManager.IsUsingMirror() ? 1f : 0f;
         float currentWeight = _animator.GetLayerWeight(1);
         _animator.SetLayerWeight(1, Mathf.Lerp(currentWeight, targetWeight, Time.deltaTime * AnimBlendSpeed));
+    }
+
+    public void SlowMove(bool slow)
+    {
+        _slow = slow;
     }
 }

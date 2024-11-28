@@ -14,7 +14,6 @@ public class TutorialCallEnemy : MonoBehaviour
     private bool _inMirrorTableArea;
     private bool _isGettingMirror;
 
-    // Дополнительные Поля P.S. Влад
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private GameObject _morror;
 
@@ -52,7 +51,6 @@ public class TutorialCallEnemy : MonoBehaviour
         door.TryGetComponent(out Animator animator);
         animator.enabled = false;
         door.transform.localEulerAngles = Vector3.zero;
-
         _audioSource.Play();
     }
 
@@ -60,7 +58,8 @@ public class TutorialCallEnemy : MonoBehaviour
     {
         _isGettingMirror = true;
         mirror.SetActive(true);
-
+        _morror.gameObject.SetActive(false);
+        CloseDoor();
         yield return new WaitForSeconds(timeBeforeSpawnEnemy);
         enemy.SetActive(true);
     }
@@ -70,8 +69,6 @@ public class TutorialCallEnemy : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             _inMirrorTableArea = true;
-            Destroy(_morror.gameObject);
-            CloseDoor();
         }
     }
 
@@ -80,7 +77,6 @@ public class TutorialCallEnemy : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             _inMirrorTableArea = false;
-            GetComponent<Collider>().enabled = false;
         }
     }
 }
