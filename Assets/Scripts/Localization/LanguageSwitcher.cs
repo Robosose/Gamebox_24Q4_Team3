@@ -1,8 +1,9 @@
+using Patterns.Singleton;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 
-public class LanguageSwitcher : MonoBehaviour
+public class LanguageSwitcher : Singleton<LanguageSwitcher>
 {
     [SerializeField] private TMP_Dropdown _dropdown;
     private string _currentLocal;

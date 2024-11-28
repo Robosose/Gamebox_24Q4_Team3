@@ -15,7 +15,7 @@ namespace Enemys.StateMachine
         public EnemyStateMachine(Enemy enemy, EnemyFieldOfView fov, EnemyView view, bool isTutor)
         {
             _states = isTutor ? CreateTutorStates(enemy, fov, view) : CreateStandardStates(enemy, fov, view);
-
+            _states.ForEach(s => Debug.Log(s.GetType()));
             _currentState = _states[0];
             _currentState.Enter();
         }
@@ -28,6 +28,7 @@ namespace Enemys.StateMachine
             if (_currentState is null)
                 throw new ArgumentNullException($"{nameof(_currentState)} is null.");
             _currentState.Enter();
+            Debug.Log(nameof(_currentState));
         }
 
         public void Update()
@@ -41,7 +42,7 @@ namespace Enemys.StateMachine
         {
             new TutorPatrollingState(enemy, fov, this, view),
             new TutorIdlingState(enemy, fov, this, view, enemy.LookAt),
-            new AttackState(enemy, enemy.Config.AttackConfig, this, view),
+            new TutorAttackState(enemy, enemy.Config.AttackConfig, this, view),
         };
 
         private List<IState> CreateStandardStates(Enemy enemy, EnemyFieldOfView fov, EnemyView view) =>
