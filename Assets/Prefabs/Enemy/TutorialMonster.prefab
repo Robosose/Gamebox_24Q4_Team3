@@ -1010,6 +1010,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c63eb341f62565d41bda208563d02d19, type: 3}
   - {fileID: 8300000, guid: 72ae1c6fb12fc5e45ba13545d092b4b2, type: 3}
   - {fileID: 8300000, guid: 8547d791d87c54944be15f81a7839ebe, type: 3}
+  _monsterVoices:
+  - {fileID: 8300000, guid: 13dfff1e69f70534f80efc490be322fa, type: 3}
+  - {fileID: 8300000, guid: fd54df970a3deb0449efb75f19631b8e, type: 3}
+  - {fileID: 8300000, guid: e247e3c0e8569e940b875e31031ecd85, type: 3}
+  - {fileID: 8300000, guid: 7183f621c095006499e5816565463649, type: 3}
+  - {fileID: 8300000, guid: 9e44c4fcda2ae024a8cbb4033abc651e, type: 3}
+  - {fileID: 8300000, guid: 3db0f60981cc23d4a9abc329a4aa52c6, type: 3}
+  - {fileID: 8300000, guid: b3dea00e6cbbfec40ac785edf079abc5, type: 3}
+  _footstepIntervalWalk: 0.7
+  _footstepIntervalRun: 0.4
+  _monsterVoicesInterval: 2
 --- !u!54 &2083450693981713618
 Rigidbody:
   m_ObjectHideFlags: 0

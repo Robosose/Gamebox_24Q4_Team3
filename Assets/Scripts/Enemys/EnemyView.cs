@@ -13,9 +13,15 @@ namespace Enemys
         [Header("Audio")]
         [SerializeField] private AudioSource _audioSource;
         [SerializeField] private AudioClip[] _footstepSounds;
-        [SerializeField] private float _footstepInterval;
+        [SerializeField] private AudioClip[] _monsterVoices;
+        [Space]
+        [SerializeField] private float _footstepIntervalWalk;
+        [SerializeField] private float _footstepIntervalRun;
+        [SerializeField] private float _monsterVoicesInterval;
 
-        public float FootstepInterval => _footstepInterval;
+        public float FootstepIntervalWalk => _footstepIntervalWalk;
+        public float FootstepIntervalRun => _footstepIntervalRun;
+        public float MonsterVoicesInterval => _monsterVoicesInterval;
 
         public void StartRunning() => _animator.SetBool(IsRunning, true);
         public void StopRunning() => _animator.SetBool(IsRunning, false);
@@ -31,13 +37,19 @@ namespace Enemys
             if(!_audioSource.enabled)
                 _audioSource.enabled = true;
 
-            if (!_audioSource.gameObject.activeInHierarchy)
-            {
-                Debug.LogWarning("AudioSource is on an inactive obj");
-                return;
-            }
-
             var randomClip = _footstepSounds[Random.Range(0, _footstepSounds.Length)];
+            _audioSource.PlayOneShot(randomClip);
+        }
+        
+        //Метод для воспроизведения голоса монстра PS Влад
+        public void PlayMonsterVoices()
+        {
+            if (_monsterVoices.Length == 0 && !_audioSource) return;
+
+            if (!_audioSource.enabled)
+                _audioSource.enabled = true;
+
+            var randomClip = _monsterVoices[Random.Range(0, _monsterVoices.Length)];
             _audioSource.PlayOneShot(randomClip);
         }
     }
