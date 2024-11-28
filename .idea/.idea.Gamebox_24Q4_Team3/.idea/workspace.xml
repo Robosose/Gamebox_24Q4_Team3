@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/GammaSliderSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/GammaSliderSettings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/AudioMixer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/AudioMixer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/GammaMixer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/GammaMixer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/SliderSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/SliderSettings.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroupTemplates.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroupTemplates.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroupTemplates/Packed Assets.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroupTemplates/Packed Assets.asset" afterDir="false" />
@@ -1077,7 +1066,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Attributes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Attributes.meta" afterDir="false" />
@@ -1496,7 +1484,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Podval/Podval.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Podval/Podval.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Podval/Podval.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Podval/Podval.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Pause.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Pause.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Pause.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Pause.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Woman.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Woman.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Woman/Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Woman/Woman.prefab" afterDir="false" />
@@ -1528,10 +1515,8 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/MySceneVlad.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/MySceneVlad.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/MySceneVlad.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/MySceneVlad.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene/MainMenu.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene/MainMenu.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mechanics/Arkadiy.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mechanics/Arkadiy.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mechanics/Assembled Rooms.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mechanics/Assembled Rooms.unity" afterDir="false" />
@@ -1553,6 +1538,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonEvents/MenuButtonEvents.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButtonEvents/MenuButtonEvents.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonEvents/PauseButtonEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButtonEvents/PauseButtonEvents.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonEvents/PauseButtonEvents.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButtonEvents/PauseButtonEvents.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButtonTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/Enemy/AttackConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/Enemy/AttackConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/Enemy/AttackConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/Enemy/AttackConfig.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/Enemy/EnemyConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/Enemy/EnemyConfig.cs.meta" afterDir="false" />
@@ -1668,6 +1654,10 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Room/RoomTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Room/RoomTimer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Room/RoomTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Room/RoomTrigger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Room/TutorialTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Room/TutorialTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/GammaSliderSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/GammaSliderSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/AudioMixer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/AudioMixer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/GammaMixer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/GammaMixer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/SliderSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/SliderSettings.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawn.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawn.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawn/Save.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawn/Save.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawn/Save.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawn/Save.cs.meta" afterDir="false" />
@@ -2355,7 +2345,7 @@
       <workItem from="1732451176881" duration="4559000" />
       <workItem from="1732507182805" duration="1211000" />
       <workItem from="1732654770333" duration="938000" />
-      <workItem from="1732734976465" duration="5357000" />
+      <workItem from="1732734976465" duration="6001000" />
     </task>
     <servers />
   </component>
