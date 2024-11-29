@@ -1,4 +1,3 @@
-using Settings;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,8 +8,8 @@ public class SetAudio : MonoBehaviour
 
     private void Start()
     {
-        musicSlider.value = Sound.Instance.MusicValue;
-        soundSlider.value = Sound.Instance.SoundValue;
+        musicSlider.value = Sound.Instance.GetMusicValue();
+        soundSlider.value = Sound.Instance.GetSoundValue();
     }
 
     public void SaveValue()

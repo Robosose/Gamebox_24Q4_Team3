@@ -29,6 +29,21 @@ public class LanguageSwitcher : Singleton<LanguageSwitcher>
             Debug.LogWarning($"Locale '{localeCode}' not found.");
         }
     }
+    
+    public void ChangeLanguage()
+    {
+        _currentLocal = _currentLocal == _enLocal?_ruLocal:_enLocal;
+        var selectedLocale = LocalizationSettings.AvailableLocales.GetLocale(_currentLocal);
+        if (selectedLocale != null)
+        {
+            LocalizationSettings.SelectedLocale = selectedLocale;
+            ES3.Save(DropdownValue,_currentLocal);
+        }
+        else
+        {
+            Debug.LogWarning($"Locale '{_currentLocal}' not found.");
+        }
+    }
 
     private void OnApplicationQuit()
     {

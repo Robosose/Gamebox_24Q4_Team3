@@ -6,14 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Easy Save 3/Types/ES3UserType_AudioMixer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Easy Save 3/Types/ES3UserType_AudioMixer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Easy Save 3/Types/ES3UserType_GammaMixer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Easy Save 3/Types/ES3UserType_GammaMixer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Easy Save 3/Types/ES3UserType_LanguageSwitcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Easy Save 3/Types/ES3UserType_LanguageSwitcher.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Load/Audio.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Load/Audio.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Pause.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Pause.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/SettingsPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/SettingsPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level2Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene/MainMenu/MainMenuVolume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene/MainMenu/MainMenuVolume Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LoadLevelSystem/SceneSaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LoadLevelSystem/SceneSaver.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Localization/LanguageSwitcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Localization/LanguageSwitcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Patterns/Singleton/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Patterns/Singleton/Singleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/GammaSliderSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/GammaSliderSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/Gamma.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/Gamma.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/SetAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/SetAudio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/SetGamma.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/SetGamma.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/Sound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/Sound.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/SliderSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/SliderSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/CutsceneTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/CutsceneTrigger.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +169,7 @@
       <workItem from="1732654770333" duration="938000" />
       <workItem from="1732734976465" duration="6001000" />
       <workItem from="1732813487881" duration="7861000" />
-      <workItem from="1732879904566" duration="26343000" />
+      <workItem from="1732879904566" duration="31576000" />
     </task>
     <servers />
   </component>

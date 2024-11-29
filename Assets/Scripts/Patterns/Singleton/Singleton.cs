@@ -12,11 +12,12 @@ namespace Patterns.Singleton
             {
                 if (_instance == null)
                 {
-                    _instance = FindObjectOfType<T>();
+                    _instance = FindAnyObjectByType<T>();
                     if (_instance == null)
                     {
                         var singletonObject = new GameObject(typeof(T).Name);
                         _instance = singletonObject.AddComponent<T>();
+                        print(singletonObject.name);
                         DontDestroyOnLoad(singletonObject);
                     }
                 }
@@ -33,6 +34,7 @@ namespace Patterns.Singleton
             }
             else
             {
+                print(gameObject.name);
                 Destroy(gameObject);
             }
         }

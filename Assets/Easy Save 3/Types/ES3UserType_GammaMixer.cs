@@ -9,26 +9,26 @@ namespace ES3Types
 	{
 		public static ES3Type Instance = null;
 
-		public ES3UserType_GammaMixer() : base(typeof(Settings.Gamma)){ Instance = this; priority = 1;}
+		public ES3UserType_GammaMixer() : base(typeof(Gamma)){ Instance = this; priority = 1;}
 
 
 		protected override void WriteComponent(object obj, ES3Writer writer)
 		{
-			var instance = (Settings.Gamma)obj;
+			var instance = (Gamma)obj;
 			
 			writer.WritePrivateField("_gamma", instance);
 		}
 
 		protected override void ReadComponent<T>(ES3Reader reader, object obj)
 		{
-			var instance = (Settings.Gamma)obj;
+			var instance = (Gamma)obj;
 			foreach(string propertyName in reader.Properties)
 			{
 				switch(propertyName)
 				{
 					
 					case "_gamma":
-					instance = (Settings.Gamma)reader.SetPrivateField("_gamma", reader.Read<System.Single>(), instance);
+					instance = (Gamma)reader.SetPrivateField("_gamma", reader.Read<System.Single>(), instance);
 					break;
 					default:
 						reader.Skip();
@@ -43,7 +43,7 @@ namespace ES3Types
 	{
 		public static ES3Type Instance;
 
-		public ES3UserType_GammaMixerArray() : base(typeof(Settings.Gamma[]), ES3UserType_GammaMixer.Instance)
+		public ES3UserType_GammaMixerArray() : base(typeof(Gamma[]), ES3UserType_GammaMixer.Instance)
 		{
 			Instance = this;
 		}
