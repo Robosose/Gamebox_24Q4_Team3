@@ -51,7 +51,7 @@ public class PlayerControllers : MonoBehaviour
         _yVelHash = Animator.StringToHash("Y_Velocity");
         _crouchHash = Animator.StringToHash("Crouch");
         _handBlendHash = Animator.StringToHash("HandBlend");
-        _enemySeeTrigger.SeePlayer += SlowMoveTrigger;
+        _enemySeeTrigger.SeePlayer += SlowMove;
     }
 
     private void FixedUpdate()
@@ -94,11 +94,6 @@ public class PlayerControllers : MonoBehaviour
 
         _animator.SetFloat(_xVelHash, _currentVelocity.x);
         _animator.SetFloat(_yVelHash, _currentVelocity.y);
-    }
-
-    private void SlowMoveTrigger()
-    {
-        _slow = true;
     }
 
     private void CamMovement()

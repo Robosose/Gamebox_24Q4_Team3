@@ -30,6 +30,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d7ce1daae4a85c429a0746450846062
+    m_Address: Assets/Localization/Cutscene/Cutscene Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9f3349861b7846a48bd3940ff2bd050f
     m_Address: Assets/Localization/LoadScreen/LoadScreen Shared Data.asset
     m_ReadOnly: 1
