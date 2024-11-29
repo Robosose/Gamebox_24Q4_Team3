@@ -11,7 +11,7 @@ public class LanguageSwitcher : Singleton<LanguageSwitcher>
     
     private void Start()
     {
-        _dropdown.value = _dropdownValue;
+        // _dropdown.value = _dropdownValue;
     }
 
     public void ChoseLanguage()

@@ -7,6 +7,7 @@ using Enemys.StateMachine;
 using UnityEngine;
 using UnityEngine.AI;
 using Zenject;
+using Random = UnityEngine.Random;
 
 public class Enemy : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private EnemyFieldOfView _fov;
     [SerializeField] private EnemyView _view;
     [SerializeField] private bool _isTutor;
+    [SerializeField] private bool _isRandomPatroller;
     
     private BellSoundTrigger _soundTrigger;
     private IStateSwitcher _switcher;
@@ -37,8 +39,8 @@ public class Enemy : MonoBehaviour
     
     private void Awake()
     {
-        _switcher = new EnemyStateMachine(this, _fov, _view, _isTutor);
-    }
+        _switcher = new EnemyStateMachine(this, _fov, _view, _isTutor, _isRandomPatroller);
+     }
 
     private void OnEnable()
     {
