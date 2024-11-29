@@ -13603,7 +13603,7 @@ GameObject:
   - component: {fileID: 1163740025}
   - component: {fileID: 1163740024}
   m_Layer: 0
-  m_Name: CutSceneTrigger
+  m_Name: CutsceneTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13617,7 +13617,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163740019}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 9f46e7240f7a28041b2ac227a729b18b, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: c56fde66d998e6d4ebaedb8a41b65417, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 354812495}

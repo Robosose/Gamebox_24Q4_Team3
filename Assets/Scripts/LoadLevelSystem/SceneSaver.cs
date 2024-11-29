@@ -1,4 +1,3 @@
-using System.Collections;
 using Patterns.Singleton;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -90,18 +89,8 @@ public class SceneSaver : Singleton<SceneSaver>
     {
         if (_loadingAsyncOperation != null)
         {
-            StartCoroutine(LoadLevel());
+            Time.timeScale = 1;
+            _loadingAsyncOperation.allowSceneActivation = true;
         }
-    }
-
-    private IEnumerator LoadLevel()
-    {
-        while (!_loadingAsyncOperation.isDone)
-        {
-            yield return null;
-        }
-
-        Time.timeScale = 1;
-        _loadingAsyncOperation.allowSceneActivation = true;
     }
 }
