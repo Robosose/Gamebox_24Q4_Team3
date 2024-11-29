@@ -9,12 +9,12 @@ namespace Settings
 
         private void OnEnable()
         {
-            _gammaSlider.onValueChanged.AddListener(GammaMixer.Instance.SetGammaValue);
+            _gammaSlider.onValueChanged.AddListener(Gamma.Instance.SetGammaValue);
         }
 
         private void OnDisable()
         {
-            _gammaSlider.onValueChanged.RemoveListener(GammaMixer.Instance.SetGammaValue);
+            _gammaSlider.onValueChanged.RemoveListener(Gamma.Instance.SetGammaValue);
         }
     }
 }
