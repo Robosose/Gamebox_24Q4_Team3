@@ -18,11 +18,12 @@ namespace Enemys.StateMachine.States
         private bool _isIdling;
         private Coroutine _cor;
         private EnemyView _view;
+        private bool _isRandomPatrolling;
         private float _footstepTimer;
         private float _voiceTimer;
 
         public PatrollingState(Enemy enemy, PatrolingConfig cfg, EnemyFieldOfView fov, IStateSwitcher stateSwitcher,
-            EnemyView enemyView)
+            EnemyView enemyView, bool isRandomPatrolling)
         {
             _enemy = enemy;
             _config = cfg;
@@ -30,6 +31,7 @@ namespace Enemys.StateMachine.States
             _agent = enemy.Agent;
             _fov = fov;
             _view = enemyView;
+            _isRandomPatrolling = isRandomPatrolling;
         }
         
         public void Enter()
@@ -80,16 +82,34 @@ namespace Enemys.StateMachine.States
             }
 
             FootstepTimer();
-        }   
+        }
+
+        private void SetNextPoint()
+        {
+            if (_currentPointIndex >= _enemy.Points.Length - 1)
+                _currentPointIndex = 0;
+            else
+                _currentPointIndex++;
+        }
+
+        private void SetRandomPoint()
+        {
+            var tmp = Random.Range(0, _enemy.Points.Length);
+            if(tmp == _currentPointIndex || _enemy.Points[tmp] is null)
+                SetRandomPoint();
+            _currentPointIndex = tmp;
+        }
         
         private IEnumerator IdlingTimer()
         {
             _view.StopWalking();
             yield return new WaitForSeconds(_config.IdlingTime);
-            if (_currentPointIndex >= _enemy.Points.Length - 1)
-                _currentPointIndex = 0;
+            
+            if (_isRandomPatrolling)
+                SetRandomPoint();
             else
-                _currentPointIndex++;
+                SetNextPoint();
+            
             _agent.SetDestination(_enemy.Points[_currentPointIndex].position);
             _view.StartWalking();
             _isIdling = false;

@@ -124,6 +124,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3638136874085014893, guid: e2d11f6c046a7984cb8b19ed88ff9457, type: 3}
   m_PrefabInstance: {fileID: 795703589}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &29187418 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4192689437916624001, guid: e2d11f6c046a7984cb8b19ed88ff9457, type: 3}
+  m_PrefabInstance: {fileID: 795703589}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29187417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ce486fc6d844ee58359ec242806249d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &77866702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3266,6 +3277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1334150546}
   - component: {fileID: 1334150545}
+  - component: {fileID: 1334150547}
   m_Layer: 0
   m_Name: TimerTutor
   m_TagString: Untagged
@@ -3314,6 +3326,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1334150547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334150544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d94ef94c03f4ad3aafa39ed7638ecbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _secondsToEnemyStart: 10
+  _enemy: {fileID: 29187418}
+  _seconds: 0
 --- !u!1 &1435422440
 GameObject:
   m_ObjectHideFlags: 0
