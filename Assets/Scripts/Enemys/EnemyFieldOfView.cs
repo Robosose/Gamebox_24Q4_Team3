@@ -72,7 +72,7 @@ namespace Enemys
                         _isSeePlayer = true;
                         PlayerRef = target.gameObject;
                         SeePlayer?.Invoke();
-                        _enemySeeTrigger.SeePlayer?.Invoke();
+                        _enemySeeTrigger.SeePlayer?.Invoke(true);
                         print($"See player at positions: {target.position}: {target.localPosition}");
                     }
                     else

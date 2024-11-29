@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-Assets-Russian (ru)
   m_GUID: b077e34c8fa892f4987d5ee72f85a5af
   m_SerializeEntries:
+  - m_GUID: 158aa3e491d0be84a86563f4f2ee1950
+    m_Address: Cat_scene_rus
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1b0e5d5557b31344797a9c1b39862895
     m_Address: RUS_2-2
     m_ReadOnly: 1

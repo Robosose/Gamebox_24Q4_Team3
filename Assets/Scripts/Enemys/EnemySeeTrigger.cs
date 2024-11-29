@@ -3,5 +3,5 @@ using UnityEngine;
 
 public class EnemySeeTrigger : MonoBehaviour
 {
-    public Action SeePlayer;
+    public Action<bool> SeePlayer;
 }
