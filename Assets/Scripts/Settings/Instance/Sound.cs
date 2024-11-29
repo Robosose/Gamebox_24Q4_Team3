@@ -26,11 +26,9 @@ namespace Settings
 
         private void LoadAudioValue()
         {
-            print(ES3.KeyExists(SoundSaveName));
             if (ES3.KeyExists(SoundSaveName))
             {
                 _soundValue = float.Parse(ES3.Load(SoundSaveName).ToString());
-                print(ES3.Load(SoundSaveName));
             }
 
             if(ES3.KeyExists(MusicSaveName))
@@ -51,7 +49,6 @@ namespace Settings
 
         public void SaveAudioValue()
         {
-            print("Save " + _soundValue);
             ES3.Save(MusicSaveName,_musicValue.ToString());
             ES3.Save(SoundSaveName,_soundValue.ToString());
         }

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _menuPausePanel: {fileID: 2507023010780327396}
-  _settingsPanel: {fileID: 0}
+  _settingsPanel: {fileID: 3644120647669818969}
 --- !u!114 &9221578436885509754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,7 +425,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5389041975804483638
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1160,5 +1160,10 @@ PrefabInstance:
 --- !u!224 &2139308246596069988 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 19981919577448965, guid: c4f830a7399b18d4c885dbd94d8ac9b2, type: 3}
+  m_PrefabInstance: {fileID: 2159094453027211361}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3644120647669818969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3414890275165875768, guid: c4f830a7399b18d4c885dbd94d8ac9b2, type: 3}
   m_PrefabInstance: {fileID: 2159094453027211361}
   m_PrefabAsset: {fileID: 0}

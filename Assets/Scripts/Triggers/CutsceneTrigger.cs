@@ -1,3 +1,4 @@
+using Settings;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -12,6 +13,8 @@ public class CutsceneTrigger : MonoBehaviour
             Time.timeScale = 0;
             _videoPlayer.Play();
             _audioSource.Play();
+            Sound.Instance.SetMusicValue(-80f);
+            Sound.Instance.SetSoundValue(-80f);
         }
     }
 }

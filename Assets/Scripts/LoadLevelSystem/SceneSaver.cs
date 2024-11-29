@@ -1,3 +1,4 @@
+using System.Collections;
 using Patterns.Singleton;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,7 +13,7 @@ public class SceneSaver : Singleton<SceneSaver>
     private string _levelName;
     private const string LevelNameKey = "LevelName";
     private AsyncOperation _loadingAsyncOperation;
-    
+
     private void Start()
     {
         _background.color = Color.clear;
@@ -20,15 +21,15 @@ public class SceneSaver : Singleton<SceneSaver>
         SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.sceneUnloaded += OnSceneUnloaded;
     }
-    
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         _background.color = Color.clear;
         _slider.SetActive(false);
-        if(SceneManager.GetActiveScene().buildIndex !=0)
+        if (SceneManager.GetActiveScene().buildIndex != 0)
             SaveCurrentScene();
     }
-    
+
     private void OnSceneUnloaded(Scene scene)
     {
         _background.color = Color.clear;
@@ -89,8 +90,18 @@ public class SceneSaver : Singleton<SceneSaver>
     {
         if (_loadingAsyncOperation != null)
         {
-            Time.timeScale = 1;
-            _loadingAsyncOperation.allowSceneActivation = true;
+            StartCoroutine(LoadLevel());
         }
+    }
+
+    private IEnumerator LoadLevel()
+    {
+        while (!_loadingAsyncOperation.isDone)
+        {
+            yield return null;
+        }
+
+        Time.timeScale = 1;
+        _loadingAsyncOperation.allowSceneActivation = true;
     }
 }
