@@ -12,7 +12,6 @@ public class PlayerBell : MonoBehaviour
     [SerializeField] private int _bellCallCount;
     
     private Vector2 _previousMousePosition;
-    
     private InputManager _inputManager;
     private BellSoundTrigger _bellSoundTrigger;
     public Action Call;
@@ -29,6 +28,9 @@ public class PlayerBell : MonoBehaviour
     private void Update()
     {
         if(_isBellCalled)
+            return;
+        
+        if(_inputManager.IsRotatingMirror())
             return;
         
         Vector2 currentMousePosition = _inputManager.GetMouseDelta();

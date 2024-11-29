@@ -105,7 +105,7 @@ public class PlayerControllers : MonoBehaviour
 
         Camera.position = BoneRoot.position;
 
-        if (_inputManager.IsRotatingMirror())
+        if (_inputManager.IsRotatingMirror() && _inputManager.IsUsingMirror())
             return;
         _xRotation -= mouseY * mouseSensitivity * Time.smoothDeltaTime;
         _xRotation = Mathf.Clamp(_xRotation, UpperLimit, BottomLimit);

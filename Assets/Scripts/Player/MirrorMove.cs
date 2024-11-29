@@ -71,7 +71,7 @@ public class MirrorMove : MonoBehaviour
 
     private void HandRotate()
     {
-        if (_inputManager.IsRotatingMirror())
+        if (_inputManager.IsRotatingMirror() && _inputManager.IsUsingMirror())
         {
             _rotateX = Mathf.Clamp(_rotateX + _inputManager.GetMouseDelta().x * Time.deltaTime * _sensitivity,
                 _baseRotateX - _leftBorder,
