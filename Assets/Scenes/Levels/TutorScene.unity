@@ -3855,7 +3855,7 @@ MonoBehaviour:
   - {fileID: 1712290485}
   _animator: {fileID: 1712290484}
   animationTriggerName: PlayAnimation
-  _triggerTime: 5
+  _triggerTime: 20
   _audioSource: {fileID: 558123295}
   _lampSound: {fileID: 1760495826}
   _doorOpen: {fileID: 8300000, guid: 5803c627fe74d4d409c8e72d7a581cc5, type: 3}
