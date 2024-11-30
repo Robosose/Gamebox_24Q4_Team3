@@ -93,8 +93,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: dae9e8c965b76ad4794a26f09db70a82, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: b99e9e312f77f46f6a8264126a1e3ac6, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -5398,8 +5398,20 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 545230306738700971, guid: 58cdaa0c29307974996f1fbb87b93e83, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1015724876321579860, guid: 58cdaa0c29307974996f1fbb87b93e83, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1387967430963732639, guid: 58cdaa0c29307974996f1fbb87b93e83, type: 3}
+      propertyPath: m_Intensity
+      value: 4.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1387967430963732639, guid: 58cdaa0c29307974996f1fbb87b93e83, type: 3}
+      propertyPath: m_Lightmapping
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1758661860125654564, guid: 58cdaa0c29307974996f1fbb87b93e83, type: 3}
