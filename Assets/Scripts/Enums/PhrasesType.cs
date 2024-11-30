@@ -7,6 +7,7 @@ namespace Enums
         HereAgain,
         BabyCry,
         InKitchen,
-        OpenDoor
+        OpenDoor,
+        WhatHappening
     }
 }

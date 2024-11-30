@@ -889,6 +889,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Woman_Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1332578323385281464, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
+      propertyPath: babyCryClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 156708da66aaf854aa78a82030af539b, type: 3}
+    - target: {fileID: 1332578323385281464, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
+      propertyPath: whatHappening
+      value: 
+      objectReference: {fileID: 8300000, guid: 618403dd3d30ffd4097b16f4b28c0f77, type: 3}
     - target: {fileID: 1664637210942805552, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -948,8 +956,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 926749917914655185, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 451928151}
   m_SourcePrefab: {fileID: 100100000, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
+--- !u!1 &451928150 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 926749917914655185, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
+  m_PrefabInstance: {fileID: 451928149}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &451928151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451928150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c64efd522ad97b94ca4363ff9ae4d405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &473322592
 PrefabInstance:
   m_ObjectHideFlags: 0

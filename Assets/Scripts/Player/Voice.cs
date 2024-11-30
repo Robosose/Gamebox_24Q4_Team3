@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Player
 {
-    public class Voice:MonoBehaviour
+    public class Voice : MonoBehaviour
     {
         [SerializeField] private AudioSource voiceSource;
         [SerializeField] private AudioClip closeDoorClip;
@@ -12,11 +12,11 @@ namespace Player
         [SerializeField] private AudioClip babyCryClip;
         [SerializeField] private AudioClip inKitchenClip;
         [SerializeField] private AudioClip openDoorClip;
-
+        [SerializeField] private AudioClip whatHappening;
 
         public void ChosePhrase(PhrasesType phrasesType)
         {
-            AudioClip clip = null; 
+            AudioClip clip = null;
             switch (phrasesType)
             {
                 case PhrasesType.CloseDoor:
@@ -37,6 +37,8 @@ namespace Player
                 case PhrasesType.OpenDoor:
                     clip = openDoorClip;
                     break;
+                case PhrasesType.WhatHappening:
+                    clip = whatHappening; break;
             }
 
             voiceSource.clip = clip;
