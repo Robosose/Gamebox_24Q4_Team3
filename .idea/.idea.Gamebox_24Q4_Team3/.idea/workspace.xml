@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputSystem/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBell.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDeath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDeath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/Sound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/Sound.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Woman_Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Woman_Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level1Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +159,7 @@
       <workItem from="1732813487881" duration="7861000" />
       <workItem from="1732879904566" duration="34174000" />
       <workItem from="1732947167449" duration="4877000" />
-      <workItem from="1732977430292" duration="16060000" />
+      <workItem from="1732977430292" duration="17111000" />
     </task>
     <servers />
   </component>
