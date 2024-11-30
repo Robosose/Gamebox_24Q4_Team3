@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Key: CurrentLanguage
     m_Metadata:
       m_Items: []
+  - m_Id: 1420575341981696
+    m_Key: Return
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 3380598641318953045
@@ -68,6 +72,10 @@ MonoBehaviour:
           - ru
           - en
         - m_KeyId: 4726321758208
+          m_TableCodes:
+          - en
+          - ru
+        - m_KeyId: 1420575341981696
           m_TableCodes:
           - en
           - ru

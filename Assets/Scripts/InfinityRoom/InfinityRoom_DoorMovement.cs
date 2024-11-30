@@ -33,7 +33,8 @@ public class InfinityRoom_DoorMovement : MonoBehaviour
         _triggerCounter++;
         if (_triggerCounter >= maxTriggerCount)
         {
-            doorCollider.enabled = false;
+            if(!doorCollider)
+                doorCollider.enabled = false;
             _wallBack.DoorMove();
             
             if (_pointIndex < _points.Length)

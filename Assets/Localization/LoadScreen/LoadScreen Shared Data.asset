@@ -31,6 +31,10 @@ MonoBehaviour:
     m_Key: FourthScreen
     m_Metadata:
       m_Items: []
+  - m_Id: 2026520287817728
+    m_Key: GameOver
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 5919800860755886175

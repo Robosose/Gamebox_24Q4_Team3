@@ -25,18 +25,18 @@ public class PlayerBell : MonoBehaviour
         _bellSoundTrigger = bellSoundTrigger;
     }
 
-    private void Start()
-    {
-        bellSource.Play();
-        bellSource.Pause();
-    }
+    // private void Start()
+    // {
+    //     bellSource.Play();
+    //     bellSource.Pause();
+    // }
 
     private void Update()
     {
         if(_isBellCalled)
             return;
         
-        if(_inputManager.IsRotatingMirror())
+        if(_inputManager.IsRotatingMirror() && _inputManager.IsUsingMirror())
             return;
         
         Vector2 currentMousePosition = _inputManager.GetMouseDelta();

@@ -33,7 +33,6 @@ namespace Patterns.Singleton
             }
             else
             {
-                print(gameObject.name);
                 Destroy(gameObject);
             }
         }

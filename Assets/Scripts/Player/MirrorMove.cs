@@ -59,6 +59,7 @@ public class MirrorMove : MonoBehaviour
             : Mathf.Clamp01(_crouchValue - Time.deltaTime / _crouchTime);
 
         _rig.weight = _mirrorMove;
+        //_rig.weight = 1;
 
         var moveValue = Vector3.Lerp(
             Vector3.Lerp(_bottomPointPosition.localPosition, _bottomCrouchPointPosition.localPosition, _crouchValue),
