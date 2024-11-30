@@ -6,12 +6,15 @@ public class LanguageSwitcher : Singleton<LanguageSwitcher>
 {
     private string _enLocal = "en";
     private string _ruLocal = "ru";
-    private string _currentLocal;
+    private string _currentLocal = "en";
     private const string DropdownValue = "DropdownValue";
 
     private void Start()
     {
-        _currentLocal = ES3.Load<string>(DropdownValue);
+        if(ES3.FileExists(Application.persistentDataPath))
+            if (ES3.KeyExists(DropdownValue))
+                _currentLocal = ES3.Load<string>(DropdownValue);
+        
         ChangeLanguage(_currentLocal);
     }
     

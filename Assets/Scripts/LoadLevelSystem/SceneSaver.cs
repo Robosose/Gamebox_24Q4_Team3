@@ -86,6 +86,13 @@ public class SceneSaver : Singleton<SceneSaver>
         _loadAnimator.SetTrigger(Load);
     }
 
+    public bool CheckSave()
+    {
+        if (!ES3.FileExists())
+            return false;
+        return ES3.KeyExists(LevelNameKey);
+    }
+
     public void OpenLoadedScene()
     {
         if (_loadingAsyncOperation != null)
