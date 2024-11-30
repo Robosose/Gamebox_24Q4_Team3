@@ -13695,6 +13695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _videoPlayer: {fileID: 1163740020}
   _audioSource: {fileID: 1163740025}
+  _sounds: {fileID: 0}
 --- !u!114 &1163740024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23950,6 +23951,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 9ce03115c7394be4ca317ad955dbe40e, type: 2}
+    - target: {fileID: 648747323551822597, guid: 0a916e2c97ea9124a806eda268834d68, type: 3}
+      propertyPath: maxTriggerCount
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 648747323551822597, guid: 0a916e2c97ea9124a806eda268834d68, type: 3}
       propertyPath: velocityOpenDoor
       value: 0.5

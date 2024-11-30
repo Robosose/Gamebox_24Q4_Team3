@@ -309,7 +309,7 @@ PrefabInstance:
       objectReference: {fileID: 40405358}
     - target: {fileID: 6174710758180971227, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.34
+      value: 14.61
       objectReference: {fileID: 0}
     - target: {fileID: 6174710758180971227, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -317,7 +317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6174710758180971227, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -27.16
+      value: -29.39
       objectReference: {fileID: 0}
     - target: {fileID: 6174710758180971227, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -353,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6661288265918174070, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -892,7 +892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemy: {fileID: 134060296}
-  _secondsToActiveEnemy: 5
+  _secondsToActiveEnemy: 10
 --- !u!4 &322060310
 Transform:
   m_ObjectHideFlags: 0
@@ -901,13 +901,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322060307}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.81, y: 1.52, z: -9.589}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.65554726, z: -0, w: 0.7551542}
+  m_LocalPosition: {x: 4.41, y: 1.52, z: -5.38}
+  m_LocalScale: {x: 0.25421, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -81.922, z: 0}
 --- !u!1 &325252432 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5017692059453248317, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}

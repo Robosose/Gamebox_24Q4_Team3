@@ -713,7 +713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemy: {fileID: 352925862}
-  _secondsToActiveEnemy: 5
+  _secondsToActiveEnemy: 10
 --- !u!4 &322060310
 Transform:
   m_ObjectHideFlags: 0
@@ -722,13 +722,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322060307}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5, y: 1.52, z: -10.78}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.70598054, z: -0, w: 0.70823133}
+  m_LocalPosition: {x: 4.6, y: 1.52, z: -5.58}
+  m_LocalScale: {x: 0.19811998, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -89.818, z: 0}
 --- !u!114 &337616476 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 602317783602691250, guid: bdb4272354dbee245b0bf51099d8e1fb, type: 3}
