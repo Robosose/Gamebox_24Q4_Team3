@@ -5,10 +5,13 @@ public class InfinityRoom_WallBack : MonoBehaviour
 {
     [SerializeField] private float _timeBeforeTargetPoint;
     [SerializeField] private Transform _targetPoint;
+    [SerializeField] private AudioSource _source;
 
     public void DoorMove()
     {
         StartCoroutine(DoorMovement());
+        _source.Play();
+        _source.loop = true;
     }
 
     private IEnumerator DoorMovement()

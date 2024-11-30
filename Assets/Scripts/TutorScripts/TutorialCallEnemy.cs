@@ -1,3 +1,4 @@
+using Player;
 using System.Collections;
 using UnityEngine;
 
@@ -9,11 +10,13 @@ public class TutorialCallEnemy : MonoBehaviour
     [SerializeField] private GameObject enemy;
     [SerializeField] private float castRadius = .3f;
     [SerializeField] private GameObject door;
+    public GameObject women;
     private Ray _ray;
     private float _lookTimer;
     private bool _inMirrorTableArea;
     private bool _isGettingMirror;
 
+    [SerializeField] private AudioSource _audioSourceStep;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private GameObject _morror;
 
@@ -60,8 +63,16 @@ public class TutorialCallEnemy : MonoBehaviour
         mirror.SetActive(true);
         _morror.gameObject.SetActive(false);
         CloseDoor();
+        _audioSourceStep.Play();
+        _audioSourceStep.loop=true;
         yield return new WaitForSeconds(timeBeforeSpawnEnemy);
-        enemy.SetActive(true);
+        var voiceComponent = women.GetComponent<Player.Voice>();
+
+        if (voiceComponent != null)
+        {
+            voiceComponent.ChosePhrase(Enums.PhrasesType.InKitchen);
+        }
+        //enemy.SetActive(true);
     }
 
     private void OnTriggerEnter(Collider other)

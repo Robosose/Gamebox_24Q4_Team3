@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patrollingDataConfig:
     Radius: 15
-    AngleOfView: 100
+    AngleOfView: 128.4
     TargetMask:
       serializedVersion: 2
       m_Bits: 8
@@ -24,5 +24,5 @@ MonoBehaviour:
   _attackConfig:
     Speed: 1.5
   patrolingConfig:
-    Speed: 0.46
+    Speed: 0.9
     IdlingTime: 5
