@@ -4144,6 +4144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1905515376}
+  playerMirror: {fileID: 2029574513}
   _audioSourceStep: {fileID: 1617321130}
 --- !u!1 &1527888832
 GameObject:
