@@ -65,13 +65,13 @@ public class TutorialCallEnemy : MonoBehaviour
         CloseDoor();
         _audioSourceStep.Play();
         _audioSourceStep.loop=true;
-        yield return new WaitForSeconds(timeBeforeSpawnEnemy);
-        var voiceComponent = women.GetComponent<Player.Voice>();
+        var voiceComponent = women.GetComponent<Voice>();
 
         if (voiceComponent != null)
         {
-            voiceComponent.ChosePhrase(Enums.PhrasesType.InKitchen);
+            voiceComponent.ChosePhrase(Enums.PhrasesType.HereAgain);
         }
+        yield return new WaitForSeconds(timeBeforeSpawnEnemy);
         //enemy.SetActive(true);
     }
 

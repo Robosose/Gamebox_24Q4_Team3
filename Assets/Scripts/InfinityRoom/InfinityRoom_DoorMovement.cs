@@ -10,11 +10,15 @@ public class InfinityRoom_DoorMovement : MonoBehaviour
     [SerializeField] private float _timeBeforeNextPoint;
     [SerializeField] private GameObject door;
     [SerializeField] private float velocityOpenDoor;
+    [SerializeField] private int maxTriggerCount = 3;
+    [SerializeField] private InfinityRoom_WallBack _wallBack;
+    [SerializeField] private AudioSource crySource;
     [Header("Material")] 
     [SerializeField] private Transform _startTranslateMaterialPoint;
     [SerializeField] private Transform _endTranslateMaterialPoint;
     [SerializeField] private MeshRenderer _doorMeshRenderer;
 
+    private int _triggerCounter;
     private Material _doorMaterial;
     private int _pointIndex;
 
@@ -22,17 +26,27 @@ public class InfinityRoom_DoorMovement : MonoBehaviour
     {
         _doorMaterial = _doorMeshRenderer.material;
         _doorMeshRenderer.material = _doorMaterial;
+        crySource.Play();
+        crySource.Pause();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player"))
             return;
-
-        if (_pointIndex < _points.Length)
+        _triggerCounter++;
+        if (_triggerCounter >= maxTriggerCount)
         {
-            StartCoroutine(MoveDoor());
-            GetComponent<Collider>().enabled = false;
+            _wallBack.DoorMove();
+            
+            if(!crySource.isPlaying)
+                crySource.Play();
+            
+            if (_pointIndex < _points.Length)
+            {
+                StartCoroutine(MoveDoor());
+                GetComponent<Collider>().enabled = false;
+            }
         }
     }
 

@@ -9,7 +9,6 @@ public class InfinityRoom_StartTrigger : MonoBehaviour
         if(!other.CompareTag("Player"))
             return;
 
-        _particleSystem.gameObject.SetActive(true);
         _wallBack.DoorMove();
         gameObject.SetActive(false);
     }
