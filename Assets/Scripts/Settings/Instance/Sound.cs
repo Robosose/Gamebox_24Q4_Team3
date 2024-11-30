@@ -10,11 +10,8 @@ public class Sound : Singleton<Sound>
     private const string SoundSaveName = "SoundValue";
     private const string MusicSaveName = "MusicValue";
 
-    private float _musicValue;
-    private float _soundValue;
-
-    public float MusicValue => _musicValue;
-    public float SoundValue => _soundValue;
+    private float _musicValue = 0.8f;
+    private float _soundValue = 0.8f;
 
     private void Start()
     {
@@ -37,7 +34,7 @@ public class Sound : Singleton<Sound>
         if (ES3.KeyExists(SoundSaveName))
             return float.Parse(ES3.Load(SoundSaveName).ToString());
 
-        return 0.5f;
+        return _soundValue;
     }
     
     public float GetMusicValue()
@@ -45,7 +42,7 @@ public class Sound : Singleton<Sound>
         if (ES3.KeyExists(MusicSaveName))
             return float.Parse(ES3.Load(MusicSaveName).ToString());
         
-        return 0.5f;
+        return _musicValue;
     }
     
     public void SetMusicValue(float value)

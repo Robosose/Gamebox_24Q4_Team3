@@ -7,9 +7,7 @@ public class Gamma : Singleton<Gamma>
 {
     [SerializeField] private VolumeProfile profile;
     private const string GammaSaveName = "GammaValue";
-    private float _gammaValue;
-
-    public float GammaValue => _gammaValue;
+    private float _gammaValue = 0.5f;
 
     private void Start()
     {
@@ -27,7 +25,7 @@ public class Gamma : Singleton<Gamma>
     {
         if (ES3.KeyExists(GammaSaveName))
             return float.Parse(ES3.Load(GammaSaveName).ToString());
-        return 0.5f;
+        return _gammaValue;
     }
 
     public void SetGammaValue(float value)

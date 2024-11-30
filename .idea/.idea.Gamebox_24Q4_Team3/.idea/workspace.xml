@@ -6,31 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-English (en).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-English (en).asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Russian (ru).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Russian (ru).asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Localization/LoadScreen/LoadScreen Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/LoadScreen/LoadScreen Shared Data.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Localization/LoadScreen/LoadScreen_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/LoadScreen/LoadScreen_en.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Localization/Settings/Settings Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/Settings/Settings Shared Data.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Localization/Settings/Settings_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/Settings/Settings_en.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Localization/Settings/Settings_ru.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/Settings/Settings_ru.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Load/LoadScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Load/LoadScreen.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/SettingsPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/SettingsPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Woman_Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Woman_Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_DoorMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_DoorMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Patterns/Singleton/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Patterns/Singleton/Singleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/MirrorMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/MirrorMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBell.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/1.2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/1.2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_1N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_1N.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_2N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_2N.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_3N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_3N.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_4N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_4N.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_5N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_5N.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_6N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_6N.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_7N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Settings/RUS/RUS_7N.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Pause.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Pause.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/Gamma.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/Gamma.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/SetGamma.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/SetGamma.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/Sound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/Sound.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PauseMenu/ENG_2/1.1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/PauseMenu/ENG_2/1.1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PauseMenu/ENG_2/1.2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/PauseMenu/ENG_2/1.2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PauseMenu/ENG_2/1.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/PauseMenu/ENG_2/1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PauseMenu/ENG_2/ENG_5-2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/PauseMenu/ENG_2/ENG_5-2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PauseMenu/ENG_2/ENG_5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/PauseMenu/ENG_2/ENG_5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PauseMenu/ENG_2/ENG_7N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/PauseMenu/ENG_2/ENG_7N.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/PauseMenu/ENG_2/RUS_7N.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/PauseMenu/ENG_2/RUS_7N.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +167,7 @@
       <workItem from="1732813487881" duration="7861000" />
       <workItem from="1732879904566" duration="34174000" />
       <workItem from="1732947167449" duration="4877000" />
-      <workItem from="1732977430292" duration="11368000" />
+      <workItem from="1732977430292" duration="12814000" />
     </task>
     <servers />
   </component>

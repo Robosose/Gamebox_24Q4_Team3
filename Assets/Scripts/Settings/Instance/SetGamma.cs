@@ -7,7 +7,7 @@ public class SetGamma : MonoBehaviour
 
     private void Start()
     {
-        gammaSlider.value = Gamma.Instance.GammaValue;
+        gammaSlider.value = Gamma.Instance.GetGammaValue();
     }
 
     public void SaveValue()
