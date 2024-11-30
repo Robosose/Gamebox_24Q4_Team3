@@ -6,15 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Artyom/Leve2Scene2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Artyom/Leve2Scene2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AudioMixer/MusicMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AudioMixer/MusicMixer.mixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AudioMixer/SoundMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AudioMixer/SoundMixer.mixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Pause.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Pause.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Artyom/Level3Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Artyom/Level3Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene/MainMenu/MainMenuVolume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenuScene/MainMenu/MainMenuVolume Profile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_DoorMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_DoorMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_StartTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_StartTrigger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_WallBack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_WallBack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TutorScripts/TutorialCallEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TutorScripts/TutorialCallEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/OtherSounds/Plach_Rebenka.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/OtherSounds/Plach_Rebenka.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LoadLevelSystem/SceneSaver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LoadLevelSystem/SceneSaver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Localization/LanguageSwitcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Localization/LanguageSwitcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Patterns/Singleton/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Patterns/Singleton/Singleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/MirrorMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/MirrorMove.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,8 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline/Samples~/Customization/Video/VideoPlayableBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/TMP/TMP_PackageResourceImporter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Tests/Editor/TMP/FontEngineTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Tests/Editor/UGUI/RectMask2D/RectMask2DCulling.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Tests/Runtime/UGUI/InputField/GenericInputFieldTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9ff2ec5163204af481ac0a675d8e1bf82ac00/44/8b69c3e2/Physics.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -163,6 +167,7 @@
       <workItem from="1732813487881" duration="7861000" />
       <workItem from="1732879904566" duration="34174000" />
       <workItem from="1732947167449" duration="4877000" />
+      <workItem from="1732977430292" duration="4576000" />
     </task>
     <servers />
   </component>

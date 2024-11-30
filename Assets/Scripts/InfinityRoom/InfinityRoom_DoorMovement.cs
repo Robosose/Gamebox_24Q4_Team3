@@ -1,7 +1,5 @@
-using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class InfinityRoom_DoorMovement : MonoBehaviour
 {
@@ -12,7 +10,7 @@ public class InfinityRoom_DoorMovement : MonoBehaviour
     [SerializeField] private float velocityOpenDoor;
     [SerializeField] private int maxTriggerCount = 3;
     [SerializeField] private InfinityRoom_WallBack _wallBack;
-    [SerializeField] private AudioSource crySource;
+    [SerializeField] private Collider doorCollider;
     [Header("Material")] 
     [SerializeField] private Transform _startTranslateMaterialPoint;
     [SerializeField] private Transform _endTranslateMaterialPoint;
@@ -26,8 +24,6 @@ public class InfinityRoom_DoorMovement : MonoBehaviour
     {
         _doorMaterial = _doorMeshRenderer.material;
         _doorMeshRenderer.material = _doorMaterial;
-        crySource.Play();
-        crySource.Pause();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -37,10 +33,8 @@ public class InfinityRoom_DoorMovement : MonoBehaviour
         _triggerCounter++;
         if (_triggerCounter >= maxTriggerCount)
         {
+            doorCollider.enabled = false;
             _wallBack.DoorMove();
-            
-            if(!crySource.isPlaying)
-                crySource.Play();
             
             if (_pointIndex < _points.Length)
             {

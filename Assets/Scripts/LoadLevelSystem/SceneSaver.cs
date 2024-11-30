@@ -32,6 +32,7 @@ public class SceneSaver : Singleton<SceneSaver>
     private void OnSceneUnloaded(Scene scene)
     {
         _background.color = Color.clear;
+        _slider.SetActive(false);
         _loadAnimator.ResetTrigger(Load);
     }
 
