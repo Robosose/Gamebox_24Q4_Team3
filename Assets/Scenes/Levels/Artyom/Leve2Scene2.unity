@@ -723,7 +723,7 @@ Transform:
   m_GameObject: {fileID: 322060307}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5, y: 1.52, z: -14.32}
+  m_LocalPosition: {x: 4.5, y: 1.52, z: -10.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -778,7 +778,7 @@ PrefabInstance:
       objectReference: {fileID: 1716253560}
     - target: {fileID: 6174710758180971227, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.22
+      value: 12.4
       objectReference: {fileID: 0}
     - target: {fileID: 6174710758180971227, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -786,7 +786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6174710758180971227, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -31.82
+      value: -28.41
       objectReference: {fileID: 0}
     - target: {fileID: 6174710758180971227, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4748,6 +4748,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 54a172011512ad6419b0bb5921a944c7, type: 2}
+    - target: {fileID: 6132340181789480325, guid: 57f30c4c8c12990419e93544f506a0ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.169
+      objectReference: {fileID: 0}
     - target: {fileID: 6271790486617777047, guid: 57f30c4c8c12990419e93544f506a0ab, type: 3}
       propertyPath: m_Name
       value: walls_kitchen2

@@ -20870,7 +20870,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 334217700215693549, guid: 8697c04d89658ed469f513483b32a813, type: 3}
       propertyPath: nextSceneIndex
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4939411457621527671, guid: 8697c04d89658ed469f513483b32a813, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20882,7 +20882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4939411457621527671, guid: 8697c04d89658ed469f513483b32a813, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -69.92
+      value: -69.87
       objectReference: {fileID: 0}
     - target: {fileID: 4939411457621527671, guid: 8697c04d89658ed469f513483b32a813, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20915,6 +20915,10 @@ PrefabInstance:
     - target: {fileID: 6190096794690042527, guid: 8697c04d89658ed469f513483b32a813, type: 3}
       propertyPath: m_Name
       value: NextSceneTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190096794690042527, guid: 8697c04d89658ed469f513483b32a813, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8213212564004571097, guid: 8697c04d89658ed469f513483b32a813, type: 3}
       propertyPath: m_Size.x
@@ -25549,6 +25553,10 @@ PrefabInstance:
     - target: {fileID: 9093154372195285372, guid: 11bcbf9b5b18cc24186db1480770a733, type: 3}
       propertyPath: m_Name
       value: CutsceneTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093154372195285372, guid: 11bcbf9b5b18cc24186db1480770a733, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
