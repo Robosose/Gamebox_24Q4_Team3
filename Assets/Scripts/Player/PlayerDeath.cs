@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
+using Zenject;
 
 public class PlayerDeath : MonoBehaviour
 {
@@ -12,16 +12,25 @@ public class PlayerDeath : MonoBehaviour
     private bool _isAlign;
     public Action OnAligned;
     private static readonly int Death = Animator.StringToHash("Death");
+    private InputManager _inputManager;
 
+    [Inject]
+    public void Construct(InputManager inputManager)
+    {
+        _inputManager = inputManager;
+    }
+    
     public void IsDead(Vector3 target)
     {
-        print(_isAlign);
         if(!_isAlign)
             StartCoroutine(Dead(target));
     }
 
     private IEnumerator Dead(Vector3 target)
     {
+        _inputManager.ActionDisable();
+        Sound.Instance.MuteMusicAndSound();
+        
         _isAlign = true;
         
         Vector3 directionToTarget = target - transform.position;

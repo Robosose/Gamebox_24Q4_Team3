@@ -25,12 +25,6 @@ public class PlayerBell : MonoBehaviour
         _bellSoundTrigger = bellSoundTrigger;
     }
 
-    // private void Start()
-    // {
-    //     bellSource.Play();
-    //     bellSource.Pause();
-    // }
-
     private void Update()
     {
         if(_isBellCalled)

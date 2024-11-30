@@ -57,6 +57,12 @@ public class Sound : Singleton<Sound>
         soundMixer.SetFloat("MasterVolume", Mathf.Lerp(-80f, 10f, _soundValue));
     }
 
+    public void MuteMusicAndSound()
+    {
+        soundMixer.SetFloat("MasterVolume", -80f);
+        musicMixer.SetFloat("MasterVolume", -80f);
+    }
+
     public void SaveAudioValue()
     {
         ES3.Save(MusicSaveName, _musicValue.ToString());

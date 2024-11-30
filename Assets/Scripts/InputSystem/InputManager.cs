@@ -13,10 +13,20 @@ public class InputManager : MonoBehaviour
 
     private void OnEnable()
     {
-        _action.Enable();
+        ActionEnable();
     }
 
     private void OnDisable()
+    {
+        ActionDisable();
+    }
+
+    public void ActionEnable()
+    {
+        _action.Enable();
+    }
+    
+    public void ActionDisable()
     {
         _action.Disable();
     }
