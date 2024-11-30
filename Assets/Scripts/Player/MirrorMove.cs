@@ -88,8 +88,7 @@ public class MirrorMove : MonoBehaviour
     {
         var direction = new Vector3(targetPosition.x, 0, targetPosition.z) -
                         new Vector3(currentPosition.x, 0, currentPosition.z);
-        Debug.DrawRay(currentPosition, transform.forward.normalized * _handDistance, Color.blue, 1);
-
+        
         if (Physics.Raycast(currentPosition, transform.forward.normalized, out RaycastHit hit, _handDistance,
                 _collisionLayers))
         {

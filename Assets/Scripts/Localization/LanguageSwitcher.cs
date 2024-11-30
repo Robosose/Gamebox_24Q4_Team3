@@ -11,7 +11,7 @@ public class LanguageSwitcher : Singleton<LanguageSwitcher>
 
     private void Start()
     {
-        _currentLocal = ES3.Load(DropdownValue).ToString();
+        _currentLocal = ES3.Load<string>(DropdownValue);
         ChangeLanguage(_currentLocal);
     }
     

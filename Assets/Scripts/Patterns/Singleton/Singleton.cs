@@ -17,7 +17,6 @@ namespace Patterns.Singleton
                     {
                         var singletonObject = new GameObject(typeof(T).Name);
                         _instance = singletonObject.AddComponent<T>();
-                        print(singletonObject.name);
                         DontDestroyOnLoad(singletonObject);
                     }
                 }
