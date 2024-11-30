@@ -300,10 +300,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2085554819063028776, guid: c991335472d4f37408b68adca2570eb9, type: 3}
-      propertyPath: _points.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2085554819063028776, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: '_points.Array.data[0]'
       value: 
       objectReference: {fileID: 40405358}
@@ -350,6 +346,10 @@ PrefabInstance:
     - target: {fileID: 6661288265918174070, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: m_Name
       value: Monster 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6661288265918174070, guid: c991335472d4f37408b68adca2570eb9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1622,6 +1622,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2.6529999
       objectReference: {fileID: 0}
+    - target: {fileID: 3240850154339595765, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4974370883033730265, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
       propertyPath: m_Size.x
       value: 3.3963814
@@ -1669,6 +1673,10 @@ PrefabInstance:
     - target: {fileID: 7373919274730345950, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
       propertyPath: m_Name
       value: walls_kitchen
+      objectReference: {fileID: 0}
+    - target: {fileID: 8703623318766694442, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8737288758082898381, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
       propertyPath: m_LocalPosition.x
