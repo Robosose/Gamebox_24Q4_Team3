@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Mechanics/CubeScene.unity
     guid: aee68acab7ced594bb945e44d44be387
   - enabled: 0
+    path: Assets/Scenes/Levels/Level2Scene.unity
+    guid: 854415e7e7c74ef4ba87be376c3d69a9
+  - enabled: 0
     path: Assets/Scenes/Mechanics/Arkadiy.unity
     guid: 1321d840872333d4e892ca71c51b5058
   - enabled: 1
@@ -24,8 +27,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Level1Scene.unity
     guid: 8c75787a0af79b8459ecffc2cfcc7e54
   - enabled: 1
-    path: Assets/Scenes/Levels/Level2Scene.unity
-    guid: 854415e7e7c74ef4ba87be376c3d69a9
+    path: Assets/Scenes/Levels/Artyom/Leve2Scene2.unity
+    guid: 17bf92742769a714e8dd6dbf356cf387
+  - enabled: 1
+    path: Assets/Scenes/Levels/Artyom/Level3Scene.unity
+    guid: 15ccb6b8df2de3942ac74f46b59cdeec
+  - enabled: 1
+    path: Assets/Scenes/Levels/Artyom/Leve4Scene.unity
+    guid: 17826b61f20d3604fb4792ebe19a0114
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: c3490559030bf8549a19a3feb3042737, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 1e75db75b1742694cbaba52f2cdc11f1, type: 2}
