@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Woman_Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Woman_Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enums/PhrasesType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enums/PhrasesType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBell.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerVignette.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerVignette.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Voice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Voice.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,7 +155,7 @@
       <workItem from="1732879904566" duration="34174000" />
       <workItem from="1732947167449" duration="4877000" />
       <workItem from="1732977430292" duration="18679000" />
-      <workItem from="1733051986923" duration="13966000" />
+      <workItem from="1733051986923" duration="14739000" />
     </task>
     <servers />
   </component>
