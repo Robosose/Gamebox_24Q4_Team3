@@ -4816,6 +4816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: walls_kitchen2
       objectReference: {fileID: 0}
+    - target: {fileID: 6281232337781198830, guid: 57f30c4c8c12990419e93544f506a0ab, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6484815131113334588, guid: 57f30c4c8c12990419e93544f506a0ab, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
