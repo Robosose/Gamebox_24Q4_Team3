@@ -737,7 +737,7 @@ MonoBehaviour:
   flickThreshold: 100
   bellSource: {fileID: 2309944555998164312}
   delayBeforeNextBell: 1
-  bellCallCount: 0
+  bellCallCount: 3
 --- !u!114 &8136420197673772538
 MonoBehaviour:
   m_ObjectHideFlags: 0

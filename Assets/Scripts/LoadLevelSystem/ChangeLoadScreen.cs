@@ -21,7 +21,15 @@ public class ChangeLoadScreen : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        var data =  loadImagesByIndex.FirstOrDefault(i => i.index == SceneManager.GetActiveScene().buildIndex);
-        spriteEvent.AssetReference.TableEntryReference = data.screenName;
+        if (SceneManager.GetActiveScene().buildIndex < loadImagesByIndex.Count)
+        {
+            var data = loadImagesByIndex.FirstOrDefault(i => i.index == SceneManager.GetActiveScene().buildIndex);
+            spriteEvent.AssetReference.TableEntryReference = data.screenName;
+        }
+        else
+        {
+            var data = loadImagesByIndex[Random.Range(0,loadImagesByIndex.Count)];
+            spriteEvent.AssetReference.TableEntryReference = data.screenName;
+        }
     }
 }
