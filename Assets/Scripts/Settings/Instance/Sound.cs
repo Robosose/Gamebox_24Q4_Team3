@@ -1,6 +1,8 @@
+using System;
 using Patterns.Singleton;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class Sound : Singleton<Sound>
 {
@@ -13,9 +15,20 @@ public class Sound : Singleton<Sound>
     private float _musicValue = 0.8f;
     private float _soundValue = 0.8f;
 
-    private void Start()
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += RefreshAudio;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= RefreshAudio;
+    }
+
+    private void RefreshAudio(Scene scene, LoadSceneMode sceneMode)
     {
         LoadAudioValue();
+        
         SetMusicValue(_musicValue);
         SetSoundValue(_soundValue);
     }

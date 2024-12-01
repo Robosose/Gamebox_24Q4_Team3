@@ -131,10 +131,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Woman_Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2178844151734856439, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2517135328521120867, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
       propertyPath: _triggerNextScene
       value: 
@@ -181,46 +177,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5294505684255478872, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8058248229549552434, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: m_Radius
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8058248229549552434, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8058248229549552434, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: m_Center.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8058248229549552434, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: m_Center.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8058248229549552434, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: m_Center.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8838003004218662336, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: m_Radius
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8838003004218662336, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8838003004218662336, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: m_Center.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8838003004218662336, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8838003004218662336, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

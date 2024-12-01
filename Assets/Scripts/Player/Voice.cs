@@ -1,3 +1,4 @@
+using System.Collections;
 using Enums;
 using UnityEngine;
 
@@ -13,9 +14,20 @@ namespace Player
         [SerializeField] private AudioClip inKitchenClip;
         [SerializeField] private AudioClip openDoorClip;
         [SerializeField] private AudioClip whatHappening;
+        [SerializeField] private bool tutor;
+        private bool _isTalking;
 
         public void ChosePhrase(PhrasesType phrasesType)
         {
+            if (phrasesType == PhrasesType.OhBell &&tutor)
+                return;
+            if(!_isTalking)
+                StartCoroutine(PlayVoice(phrasesType));
+        }
+
+        private IEnumerator PlayVoice(PhrasesType phrasesType)
+        {
+            _isTalking = true;
             AudioClip clip = null;
             switch (phrasesType)
             {
@@ -38,11 +50,19 @@ namespace Player
                     clip = openDoorClip;
                     break;
                 case PhrasesType.WhatHappening:
-                    clip = whatHappening; break;
+                    clip = whatHappening;
+                    break;
             }
 
             voiceSource.clip = clip;
             voiceSource.Play();
+
+            while (voiceSource.isPlaying)
+            {
+                yield return null;
+            }
+
+            _isTalking = false;
         }
     }
 }
