@@ -5092,7 +5092,7 @@ PrefabInstance:
       objectReference: {fileID: -4016827618696470254, guid: 523176d71ba6d5942842710df7a5b5dc, type: 2}
     - target: {fileID: 6174710758180971227, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.22
+      value: 12.33
       objectReference: {fileID: 0}
     - target: {fileID: 6174710758180971227, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5100,7 +5100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6174710758180971227, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -31.82
+      value: -26.87
       objectReference: {fileID: 0}
     - target: {fileID: 6174710758180971227, guid: c991335472d4f37408b68adca2570eb9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22663,6 +22663,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -242.541
       objectReference: {fileID: 0}
+    - target: {fileID: 6411770285893489468, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.48
+      objectReference: {fileID: 0}
     - target: {fileID: 7373919274730345950, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
       propertyPath: m_Name
       value: walls_kitchen (1)
@@ -25798,7 +25802,7 @@ PrefabInstance:
     - target: {fileID: 501514108732104972, guid: 11bcbf9b5b18cc24186db1480770a733, type: 3}
       propertyPath: enClip
       value: 
-      objectReference: {fileID: 32900000, guid: 2cc469e24cc003f488ccff0471ac00a7, type: 3}
+      objectReference: {fileID: 32900000, guid: 00b6096116eb8ca40a1082d7220c75c5, type: 3}
     - target: {fileID: 501514108732104972, guid: 11bcbf9b5b18cc24186db1480770a733, type: 3}
       propertyPath: ruClip
       value: 
