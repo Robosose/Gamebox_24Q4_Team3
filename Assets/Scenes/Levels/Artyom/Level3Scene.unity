@@ -7652,10 +7652,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 926749917914655185, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1936127327}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
 --- !u!1001 &575493599
 PrefabInstance:
@@ -22870,66 +22867,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 3
   door: {fileID: 460170873}
---- !u!1 &1936127314 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 926749917914655185, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-  m_PrefabInstance: {fileID: 574590941}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1936127316 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1332578323385281464, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-  m_PrefabInstance: {fileID: 574590941}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936127314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9df8578807d04921ad7822a37e56400d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1936127327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936127314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 5919800983567991063
-  references:
-    version: 2
-    RefIds:
-    - rid: 5919800983567991063
-      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 1936127316}
-        m_TrackedProperties:
-          items:
-          - rid: 5919800983567991064
-        m_UpdateType: 0
-        m_Changed:
-          m_PersistentCalls:
-            m_Calls: []
-    - rid: 5919800983567991064
-      type: {class: LocalizedAssetProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
-      data:
-        m_Localized:
-          rid: 5919800983567991065
-        m_PropertyPath: voiceSource
-    - rid: 5919800983567991065
-      type: {class: LocalizedObject, ns: UnityEngine.Localization, asm: Unity.Localization}
-      data:
-        m_TableReference:
-          m_TableCollectionName: 
-        m_TableEntryReference:
-          m_KeyId: 0
-          m_Key: 
-        m_FallbackState: 0
-        m_WaitForCompletion: 0
 --- !u!4 &1938592128 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6792306099796101066, guid: 1295b8f6368fc6f42b318e50c305b6e3, type: 3}

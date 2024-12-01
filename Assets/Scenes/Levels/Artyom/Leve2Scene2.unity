@@ -893,14 +893,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Woman_Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1332578323385281464, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: babyCryClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 156708da66aaf854aa78a82030af539b, type: 3}
-    - target: {fileID: 1332578323385281464, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: whatHappening
-      value: 
-      objectReference: {fileID: 8300000, guid: 618403dd3d30ffd4097b16f4b28c0f77, type: 3}
     - target: {fileID: 1664637210942805552, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1008,7 +1000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2507023010780327396, guid: 88bc39fce1c589646a8fb1e35fb14324, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2596615928688186796, guid: 88bc39fce1c589646a8fb1e35fb14324, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1028,7 +1020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3644120647669818969, guid: 88bc39fce1c589646a8fb1e35fb14324, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5158238796202838216, guid: 88bc39fce1c589646a8fb1e35fb14324, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1192,7 +1184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8373604837015717486, guid: 88bc39fce1c589646a8fb1e35fb14324, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8490456731683217148, guid: 88bc39fce1c589646a8fb1e35fb14324, type: 3}
       propertyPath: m_AnchorMax.x

@@ -21,7 +21,7 @@ public class MirrorTutorialEvent : MonoBehaviour
 
         RaycastHit hit = new RaycastHit();
         int ignore = ~ignoreMask;
-        if (Physics.SphereCast(transform.position, transform.forward, out hit, Mathf.Infinity, ignore))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, ignore))
         {
             if (!hit.transform.CompareTag("Enemy"))
                 return;

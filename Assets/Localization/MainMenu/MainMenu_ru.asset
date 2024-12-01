@@ -38,6 +38,10 @@ MonoBehaviour:
     m_Localized: '1dd564ae8a8f4024cb82f8c382e4776a[RUS_2]'
     m_Metadata:
       m_Items: []
+  - m_Id: 5233041192693760
+    m_Localized: '53ddad6d42be7634ab9a5f758d6bab43[RUS]'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

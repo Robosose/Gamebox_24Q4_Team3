@@ -1,4 +1,3 @@
-using System;
 using Patterns.Singleton;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -12,8 +11,8 @@ public class Sound : Singleton<Sound>
     private const string SoundSaveName = "SoundValue";
     private const string MusicSaveName = "MusicValue";
 
-    private float _musicValue = 0.8f;
-    private float _soundValue = 0.8f;
+    private float _musicValue = 0.5f;
+    private float _soundValue = 0.5f;
 
     private void OnEnable()
     {
@@ -74,6 +73,12 @@ public class Sound : Singleton<Sound>
     {
         soundMixer.SetFloat("MasterVolume", -80f);
         musicMixer.SetFloat("MasterVolume", -80f);
+    }
+    
+    public void UnmuteMusicAndSound()
+    {
+        soundMixer.SetFloat("MasterVolume", Mathf.Lerp(-80f, 10f, _soundValue));
+        musicMixer.SetFloat("MasterVolume", Mathf.Lerp(-80f, 10f, _soundValue));
     }
 
     public void SaveAudioValue()

@@ -6,9 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="c7dac044-97b6-486a-b842-3d68fb7041d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebox_24Q4_Team3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene/LightingData.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/TutorScene/ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-English (en).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-English (en).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Russian (ru).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Russian (ru).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AudioMixer/MusicMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AudioMixer/MusicMixer.mixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/CharacterPhrases/CharacterPhrases Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/CharacterPhrases/CharacterPhrases Shared Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/CharacterPhrases/CharacterPhrases_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/CharacterPhrases/CharacterPhrases_en.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/MainMenu/MainMenu Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/MainMenu/MainMenu Shared Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/MainMenu/MainMenu_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/MainMenu/MainMenu_en.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Localization/MainMenu/MainMenu_ru.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Localization/MainMenu/MainMenu_ru.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Artyom/Leve2Scene2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Artyom/Leve2Scene2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Artyom/Level3Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Artyom/Level3Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/MirrorTutorialEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/MirrorTutorialEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/ReturnCursorStartScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/ReturnCursorStartScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/Sound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/Instance/Sound.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +38,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InfinityRoom/AudioTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InfinityRoom/InfinityRoom_StartTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadLevelSystem/ChangeLoadScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/ClearData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Triggers/CharacterVoiceTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Triggers/CutsceneTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.animation.rigging/Editor/Effectors/RigEffectorWizard.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine/Samples~/Shared Assets/Scripts/SimplePlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization/Runtime/Localized Reference/LocalizedReference.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.probuilder/Runtime/Core/ShapeGenerator.cs" root0="SKIP_HIGHLIGHTING" />
@@ -34,8 +48,12 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline/Samples~/Customization/Video/VideoPlayableBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/TMP/TMP_PackageResourceImporter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Tests/Editor/TMP/FontEngineTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Tests/Editor/TMP/TMP_EditorTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Tests/Editor/UGUI/RectMask2D/RectMask2DCulling.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Tests/Runtime/UGUI/EventSystem/SelectableTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Tests/Runtime/UGUI/InputField/GenericInputFieldTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Tests/Runtime/UGUI/TextEditor/TextEditorBackspaceDelete.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Tests/Runtime/UGUI/TextEditor/TextEditorTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9ff2ec5163204af481ac0a675d8e1bf82ac00/44/8b69c3e2/Physics.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -54,7 +72,7 @@
     &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Ivan&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,

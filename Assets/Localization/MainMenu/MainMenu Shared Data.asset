@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Key: Continue
     m_Metadata:
       m_Items: []
+  - m_Id: 5233041192693760
+    m_Key: Disclaimer
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 5919800686144389120
@@ -71,5 +75,9 @@ MonoBehaviour:
           m_TableCodes:
           - ru
           - en
+        - m_KeyId: 5233041192693760
+          m_TableCodes:
+          - en
+          - ru
         m_TypeString: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null

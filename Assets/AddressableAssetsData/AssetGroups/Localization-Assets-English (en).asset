@@ -46,14 +46,14 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 359d7f8d6b4956d49aa6cda2ec61e695
-    m_Address: Locked
+  - m_GUID: 414a3f98251d08249bb86d538e21c302
+    m_Address: 1.1
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 414a3f98251d08249bb86d538e21c302
-    m_Address: 1.1
+  - m_GUID: 470cd515b42b97f44b08f90cf6df7d49
+    m_Address: ENG
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
@@ -120,6 +120,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a7b8cb49b2dbd9e4798fdea9b2dcf0b6
     m_Address: ENG_1-2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0003ed8b3f141d498ffeb5fb757e552
+    m_Address: What
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
