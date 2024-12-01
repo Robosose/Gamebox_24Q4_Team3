@@ -22607,6 +22607,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2.56
       objectReference: {fileID: 0}
+    - target: {fileID: 1763104840339842039, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2094558162061399747, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.7579994
@@ -22662,6 +22666,10 @@ PrefabInstance:
     - target: {fileID: 7373919274730345950, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
       propertyPath: m_Name
       value: walls_kitchen (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7373919274730345950, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8698230446088536239, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
       propertyPath: m_Enabled
