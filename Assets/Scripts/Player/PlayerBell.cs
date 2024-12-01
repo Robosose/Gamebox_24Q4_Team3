@@ -46,7 +46,6 @@ public class PlayerBell : MonoBehaviour
         if (delta.magnitude > flickThreshold)
         {
             Call?.Invoke();
-            _bellCounter++;
             StartCoroutine(CallBell());
         }
         _previousMousePosition = Vector2.zero;
@@ -55,6 +54,7 @@ public class PlayerBell : MonoBehaviour
     private IEnumerator CallBell()
     {
         _isBellCalled = true;
+        _bellCounter++;
         bellSource.Play();
         if (_bellCounter >= bellCallCount)
         {

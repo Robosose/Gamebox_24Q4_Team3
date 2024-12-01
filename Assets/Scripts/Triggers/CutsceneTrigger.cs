@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.Video;
 using Zenject;
 
 public class CutsceneTrigger : MonoBehaviour
 {
+    [SerializeField] private VideoClip enClip;
+    [SerializeField] private VideoClip ruClip;
     [SerializeField] private VideoPlayer _videoPlayer;
     [SerializeField] private AudioSource _audioSource;
     private InputManager _inputManager;
@@ -16,6 +19,7 @@ public class CutsceneTrigger : MonoBehaviour
 
     private void OnEnable()
     {
+        
         _videoPlayer.loopPointReached += OnVideoEnd;
     }
 
@@ -36,6 +40,7 @@ public class CutsceneTrigger : MonoBehaviour
             Sound.Instance.MuteMusicAndSound();
             _inputManager.ActionDisable();
             Time.timeScale = 0;
+            _videoPlayer.clip = LanguageSwitcher.Instance.CurrentLocal == LanguageSwitcher.Instance.EnLocal ? enClip : ruClip;
             _videoPlayer.Play();
             _audioSource.Play();
         }

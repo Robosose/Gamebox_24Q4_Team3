@@ -7,6 +7,11 @@ public class LanguageSwitcher : Singleton<LanguageSwitcher>
     private string _enLocal = "en";
     private string _ruLocal = "ru";
     private string _currentLocal = "en";
+
+    public string RuLocal => _ruLocal;
+    public string EnLocal => _enLocal;
+    public string CurrentLocal => _currentLocal;
+    
     private const string DropdownValue = "DropdownValue";
 
     private void Start()
