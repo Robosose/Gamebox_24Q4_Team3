@@ -22663,6 +22663,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -242.541
       objectReference: {fileID: 0}
+    - target: {fileID: 6411770285893489468, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.48
+      objectReference: {fileID: 0}
     - target: {fileID: 7373919274730345950, guid: 4e4bc1469ac21434bb138b5542cf2fc1, type: 3}
       propertyPath: m_Name
       value: walls_kitchen (1)
