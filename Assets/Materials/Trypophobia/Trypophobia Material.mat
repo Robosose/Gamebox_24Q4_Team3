@@ -137,7 +137,7 @@ Material:
     - _MaskRadius: 0
     - _MaskRaius: 1
     - _Metallic: 0.18
-    - _NoiseScale: 60
+    - _NoiseScale: 150
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _Power: 1.5

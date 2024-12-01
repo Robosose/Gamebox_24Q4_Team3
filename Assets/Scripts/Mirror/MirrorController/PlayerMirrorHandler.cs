@@ -12,12 +12,4 @@ public class PlayerMirrorHandler : MonoBehaviour
         _inputManager = inputManager;
         _itemController = itemController;
     }
-
-    private void Update()
-    {
-        if (_inputManager.IsTogglingMirror())
-        {
-            _itemController.ToggleItem();
-        }
-    }
 }

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: EnemyConfig
   m_EditorClassIdentifier: 
   patrollingDataConfig:
-    Radius: 15
-    AngleOfView: 60
+    Radius: 10
+    AngleOfView: 120
     TargetMask:
       serializedVersion: 2
       m_Bits: 8
@@ -22,7 +22,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 64
   _attackConfig:
-    Speed: 0.5
+    Speed: 1.5
   patrolingConfig:
-    Speed: 0
+    Speed: 0.5
     IdlingTime: 5
