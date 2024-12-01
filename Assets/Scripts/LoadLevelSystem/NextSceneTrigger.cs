@@ -7,7 +7,7 @@ public class NextSceneTrigger : MonoBehaviour
     {
         if (!other.CompareTag("Player"))
             return;
-        
+        Sound.Instance.MuteMusicAndSound();
         SceneSaver.Instance.LoadSceneByIndex(nextSceneIndex);
     }
 }
