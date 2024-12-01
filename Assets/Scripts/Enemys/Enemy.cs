@@ -7,7 +7,6 @@ using Enemys.StateMachine;
 using UnityEngine;
 using UnityEngine.AI;
 using Zenject;
-using Random = UnityEngine.Random;
 
 public class Enemy : MonoBehaviour
 {
@@ -30,6 +29,7 @@ public class Enemy : MonoBehaviour
     public Transform LastSoundPosition;
     public Transform LookAt;
     public Action SeeEnemy;
+    public event Action<Transform> NewSoundPosition;
 
     [Inject]
     private void Construct(BellSoundTrigger trigger)
@@ -57,6 +57,7 @@ public class Enemy : MonoBehaviour
     private void LoudSound(Transform t)
     {
         LastSoundPosition = t;
+        NewSoundPosition?.Invoke(LastSoundPosition);
     }
 
     private void Update()
