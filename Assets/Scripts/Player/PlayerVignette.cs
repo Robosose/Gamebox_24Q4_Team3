@@ -11,6 +11,8 @@ namespace Player
         [SerializeField] private float _silenceTime;
 
         private float _silenceTimer;
+        public float SilenceTime => _silenceTime;
+        
         private int _currentPart;
 
         private void Start()
@@ -36,7 +38,7 @@ namespace Player
 
                 _vignetteImage.color =
                     new Color(_vignetteImage.color.r, _vignetteImage.color.g, _vignetteImage.color.b,
-                        Mathf.Lerp(0f, 1f,_silenceTimer));
+                        Mathf.Lerp(0f, 1f, _silenceTimer));
 
                 if (_silenceTimer <= 0)
                 {
@@ -49,7 +51,7 @@ namespace Player
         {
             _currentPart = Mathf.Clamp(_currentPart + 1, 0, _vignettePartCount);
 
-            var alpha = 1f / _vignettePartCount* _currentPart;
+            var alpha = 1f / _vignettePartCount * _currentPart;
             _vignetteImage.color =
                 new Color(_vignetteImage.color.r, _vignetteImage.color.g, _vignetteImage.color.b, alpha);
 

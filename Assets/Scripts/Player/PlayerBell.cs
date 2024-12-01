@@ -1,8 +1,11 @@
 using System;
 using System.Collections;
 using Bell;
+using Enums;
+using Player;
 using UnityEngine;
 using Zenject;
+using Random = UnityEngine.Random;
 
 public class PlayerBell : MonoBehaviour
 {
@@ -10,7 +13,9 @@ public class PlayerBell : MonoBehaviour
     [SerializeField] private AudioSource bellSource;
     [SerializeField] private float delayBeforeNextBell;
     [SerializeField] private int bellCallCount;
-    
+    [SerializeField] private Voice voice;
+    [SerializeField] private PlayerVignette playerVignette;
+    [Range(0f, 1f)] [SerializeField] private float phraseChance;
     private Vector2 _previousMousePosition;
     private InputManager _inputManager;
     private BellSoundTrigger _bellSoundTrigger;
@@ -34,6 +39,9 @@ public class PlayerBell : MonoBehaviour
 
     private void Update()
     {
+        if (playerVignette.SilenceTime <= 0)
+            _bellCounter = 0;
+        
         if(_isBellCalled)
             return;
         
@@ -55,7 +63,10 @@ public class PlayerBell : MonoBehaviour
     {
         _isBellCalled = true;
         _bellCounter++;
+        if(Random.value<phraseChance)
+            voice.ChosePhrase(PhrasesType.OhBell);
         bellSource.Play();
+        
         if (_bellCounter >= bellCallCount)
         {
             _bellSoundTrigger.OnSoundTriggered(transform);

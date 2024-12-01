@@ -19,6 +19,18 @@ MonoBehaviour:
     m_Key: OhBell
     m_Metadata:
       m_Items: []
+  - m_Id: 36346876047360
+    m_Key: WhatHappening
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36996015894528
+    m_Key: NeedHide
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40454873853952
+    m_Key: CryBaby
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 8718312503542546514
@@ -39,5 +51,17 @@ MonoBehaviour:
           m_TableCodes:
           - en
           - ru
+        - m_KeyId: 36346876047360
+          m_TableCodes:
+          - en
+          - ru
+        - m_KeyId: 36996015894528
+          m_TableCodes:
+          - en
+          - ru
+        - m_KeyId: 40454873853952
+          m_TableCodes:
+          - ru
+          - en
         m_TypeString: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null

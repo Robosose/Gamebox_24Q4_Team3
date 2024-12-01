@@ -15,6 +15,13 @@ MonoBehaviour:
   m_GroupName: Localization-Assets-Russian (ru)
   m_GUID: b077e34c8fa892f4987d5ee72f85a5af
   m_SerializeEntries:
+  - m_GUID: 156708da66aaf854aa78a82030af539b
+    m_Address: "\u041D\u0435 \u043F\u043B\u0430\u0447\u044C \u042F \u0438\u0434\u0443
+      \u043A \u0442\u0435\u0431\u0435"
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 158aa3e491d0be84a86563f4f2ee1950
     m_Address: Cat_scene_rus
     m_ReadOnly: 1
@@ -41,6 +48,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 37e19414e91144846b36a2aac3868631
     m_Address: RUS_4-2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 618403dd3d30ffd4097b16f4b28c0f77
+    m_Address: "\u0427\u0442\u043E \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u0438\u0442"
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ru
@@ -101,6 +114,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e8c2306778773074296727f3a9c2ee00
     m_Address: RUS_6N
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eebb74ba2b7b02848a9b8da800c33115
+    m_Address: "\u043D\u0443\u0436\u043D\u043E \u0441\u043F\u0440\u044F\u0442\u0430\u0442\u044C\u0441\u044F"
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ru

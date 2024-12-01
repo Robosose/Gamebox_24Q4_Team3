@@ -46,6 +46,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 359d7f8d6b4956d49aa6cda2ec61e695
+    m_Address: Locked
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 414a3f98251d08249bb86d538e21c302
     m_Address: 1.1
     m_ReadOnly: 1
@@ -64,8 +70,20 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f7ba676b254b5e4887e88cc47012d83
+    m_Address: Don't cry, sweetheart, I'm coming
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5d47dad98c4a7d34693fa7cf492d23fe
     m_Address: ENG_6N
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f955f449b2f58a48b2520d301af1cdf
+    m_Address: Hide now!
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

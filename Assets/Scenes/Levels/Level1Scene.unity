@@ -1335,7 +1335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 926749917914655185, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1664637210942805552, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
       propertyPath: m_IsActive
@@ -1380,14 +1380,6 @@ PrefabInstance:
     - target: {fileID: 5294505684255478872, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7642188654328931327, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: _slowCrouchSpeed
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7642188654328931327, guid: 1a7de70173ebf6e47ab835542e095f5f, type: 3}
-      propertyPath: mouseSensitivity
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
