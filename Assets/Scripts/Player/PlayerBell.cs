@@ -9,7 +9,7 @@ public class PlayerBell : MonoBehaviour
     [SerializeField] private float flickThreshold;
     [SerializeField] private AudioSource bellSource;
     [SerializeField] private float delayBeforeNextBell;
-    [SerializeField] private int _bellCallCount;
+    [SerializeField] private int bellCallCount;
     
     private Vector2 _previousMousePosition;
     private InputManager _inputManager;
@@ -23,6 +23,13 @@ public class PlayerBell : MonoBehaviour
     {
         _inputManager = inputManager;
         _bellSoundTrigger = bellSoundTrigger;
+    }
+
+    private IEnumerator Start()
+    {
+        _isBellCalled = true;
+        yield return new WaitForSeconds(2f);
+        _isBellCalled = false;
     }
 
     private void Update()
@@ -49,7 +56,7 @@ public class PlayerBell : MonoBehaviour
     {
         _isBellCalled = true;
         bellSource.Play();
-        if (_bellCounter >= _bellCallCount)
+        if (_bellCounter >= bellCallCount)
         {
             _bellSoundTrigger.OnSoundTriggered(transform);
             _bellCounter = 0;

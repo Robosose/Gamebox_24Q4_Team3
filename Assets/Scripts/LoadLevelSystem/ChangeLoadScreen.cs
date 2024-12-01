@@ -8,9 +8,15 @@ public class ChangeLoadScreen : MonoBehaviour
 {
     [SerializeField] private List<LoadImageByIndex> loadImagesByIndex;
     [SerializeField] private LocalizeSpriteEvent spriteEvent;
-    private void Start()
+
+    private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
